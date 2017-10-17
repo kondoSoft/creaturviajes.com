@@ -9,16 +9,15 @@ import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import { createStructuredSelector } from 'reselect';
 import makeSelectHome from './selectors';
+import Menu from '../../components/Menu';
 
-import { Navbar, ButtonNavBar } from './styled';
 
 export class Home extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div>
-        <Navbar>
-          <ButtonNavBar>Hola</ButtonNavBar>
-        </Navbar>
+      <Menu/>
+      <h1>Hola</h1>
       </div>
     );
   }
