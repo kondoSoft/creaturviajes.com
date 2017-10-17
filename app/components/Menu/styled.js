@@ -41,10 +41,10 @@ const ButtonNavBar = styled.button`
   }
 `
 
-const iconNavBar = styled.img`
+const IconNavBar = styled.img`
   width: 27px;
   height: 27px;
   margin-right: 7px;
 
 `
-export { Navbar, ButtonNavBar, iconNavBar }
+export { Navbar, ButtonNavBar, IconNavBar }

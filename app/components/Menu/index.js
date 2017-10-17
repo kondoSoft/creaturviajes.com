@@ -5,7 +5,7 @@
 */
 
 import React from 'react';
-import { Navbar, ButtonNavBar, iconNavBar } from './styled';
+import { Navbar, ButtonNavBar, IconNavBar } from './styled';
 import iconBusqueda from './icons/busqueda.svg';
 import iconCorreo from './icons/correo.svg';
 import iconDinero from './icons/dinero.svg';
@@ -20,11 +20,11 @@ function Menu() {
   return (
     <div>
     	<Navbar>
-      		<ButtonNavBar><iconNavBar src={iconDinero} alt=""></iconNavBar>Dolar $21 Euro$20</ButtonNavBar>
-      		<ButtonNavBar><iconNavBar src={iconLocalizacion} alt=""></iconNavBar>Puntos de Venta</ButtonNavBar>
-      		<ButtonNavBar><iconNavBar src={iconBusqueda} alt=""></iconNavBar>Buscar</ButtonNavBar>
-      		<ButtonNavBar><iconNavBar src={iconCorreo} alt=""></iconNavBar>Contacto</ButtonNavBar>
-      		<ButtonNavBar><iconNavBar src={iconUsuario} alt=""></iconNavBar>Iniciar Sesión</ButtonNavBar>
+      		<ButtonNavBar><IconNavBar src={iconDinero} alt=""></IconNavBar>Dolar $21 Euro$20</ButtonNavBar>
+      		<ButtonNavBar><IconNavBar src={iconLocalizacion} alt=""></IconNavBar>Puntos de Venta</ButtonNavBar>
+      		<ButtonNavBar><IconNavBar src={iconBusqueda} alt=""></IconNavBar>Buscar</ButtonNavBar>
+      		<ButtonNavBar><IconNavBar src={iconCorreo} alt=""></IconNavBar>Contacto</ButtonNavBar>
+      		<ButtonNavBar><IconNavBar src={iconUsuario} alt=""></IconNavBar>Iniciar Sesión</ButtonNavBar>
     	</Navbar>
     </div>
   );
