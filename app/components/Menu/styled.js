@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Navbar = styled.nav`
+const NavbarBlue = styled.nav`
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -47,4 +47,4 @@ const IconNavBar = styled.img`
   margin-right: 7px;
 
 `
-export { Navbar, ButtonNavBar, IconNavBar }
+export { NavbarBlue, ButtonNavBar, IconNavBar }
