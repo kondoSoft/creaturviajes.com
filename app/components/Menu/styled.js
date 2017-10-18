@@ -10,13 +10,33 @@ const NavbarBlue = styled.nav`
       align-items: center;
   -ms-flex-pack: justify;
       justify-content: right;
-  padding: 0.5rem 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 7%;
   width: 100%;
   color: white;
   background-color: #001a5a;
-`
-const ButtonNavBar = styled.button`
+`;
 
+const NavbarWhite = styled.nav`
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+    -ms-flex-wrap: center;
+        flex-wrap: center;
+   -ms-flex-align: center;
+      align-items: center;
+    -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;  
+  width: 100%;
+  color: white;
+  background-color: #ffffff;
+`;
+
+const ButtonNavBar = styled.a`
+  font-family: AvenirRoman;
   display: inline-block;
   font-weight: normal;
   text-align: center;
@@ -26,25 +46,60 @@ const ButtonNavBar = styled.button`
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  border: 1px solid transparent;
-  padding: 1rem 2.5rem 1rem 2.5rem;
+  border: ${props => props.blue ? '1px solid transparent' : 'none'};
+  padding: .5rem 1.5rem .5rem 1.5rem;
   font-size: 1rem;
   line-height: 1.25;
   transition: all 0.15s ease-in-out;
-  color: #fff;
-  background-color: #001a5a;
+  color: ${props => props.blue ? 'white' : 'black'};
+  background-color: ${props => props.blue ? '#001a5a' : 'white'};
+  margin-right: ${props => props.logo ? '7%' : ''};
   border-color: #001a5a;
   &:hover{
     color: #ffffff;
     background-color: #ee7202;
     border-color: #ee7202;
   }
-`
+  &:focus{
+    color: #ffffff;
+    background-color: #ee7202;
+    border-color: #ee7202;
+  }
+`;
+
+const Logo = styled(ButtonNavBar)`
+  background-color: 'white';
+  &:hover{
+    background-color: white;
+    border-color: white;
+  }
+  &:focus{
+    background-color: white;
+    border-color: white;
+  }
+`;
+
+const ButtonNavBarWhite = styled(ButtonNavBar)`
+    &:hover{
+      text-decoration: underline;
+      text-decoration-color: #ee7202;
+      color: #ee7202;
+      font-weight: bold;
+      background-color: white;
+    }
+`;
 
 const IconNavBar = styled.img`
-  width: 27px;
-  height: 27px;
-  margin-right: 7px;
+  width: ${props => props.logo ? '254px' : '27px'};
+  height: ${props => props.logo ? '' : '27px;'}
+  margin-right: 15px;  
+`;
 
-`
-export { NavbarBlue, ButtonNavBar, IconNavBar }
+export { 
+  NavbarBlue, 
+  NavbarWhite, 
+  ButtonNavBar,
+  ButtonNavBarWhite,
+  IconNavBar,
+  Logo
+}
