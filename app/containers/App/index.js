@@ -12,7 +12,7 @@
  */
 
 import React from 'react';
-import '!style-loader!css-loader!../../main.css';
+//import '!style-loader!css-loader!../../main.css';
 //import '../../main.css'
 // import MainSearch from '../../components/MainSearch'
 // import '../../assets/css/index.css'
