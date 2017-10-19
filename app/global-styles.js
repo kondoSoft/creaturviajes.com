@@ -33,9 +33,6 @@ injectGlobal`
     height: 100%;
     width: 100%;
   }
-  h1{
-    font-family: AntroVectra;
-  }
   body {
     background-color:  #f5f4f4;
   }
