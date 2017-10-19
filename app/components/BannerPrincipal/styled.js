@@ -23,14 +23,12 @@ const ButtonBanner = styled.button`
   line-height: 1.25;
   transition: all 0.15s ease-in-out;
   color: #fff;
-background: #ee7202;
-border-color: #ee7202;
-position: absolute;
-left: 22%;
-bottom: 25%;
+  background: #ee7202;
+  border-color: #ee7202;
+  position: absolute;
+  left: 22%;
+  bottom: 25%;
 `;
-
-
 
 const TituloBanner = styled.p`
 	font-family: AntroVectra;
