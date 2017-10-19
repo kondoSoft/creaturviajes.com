@@ -11,6 +11,7 @@ import { createStructuredSelector } from 'reselect';
 import makeSelectHome from './selectors';
 import Menu from '../../components/Menu';
 import BannerPrincipal from '../../components/BannerPrincipal';
+import BotonWhats from '../../components/BotonFlotante';
 
 
 export class Home extends React.Component { // eslint-disable-line react/prefer-stateless-function
@@ -19,6 +20,7 @@ export class Home extends React.Component { // eslint-disable-line react/prefer-
       <div>
         <Menu/>
         <BannerPrincipal/>
+        <BotonWhats/>
       </div>
     );
   }
