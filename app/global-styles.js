@@ -37,7 +37,7 @@ injectGlobal`
     font-family: AntroVectra;
   }
   body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color:  #f5f4f4;
   }
 
   body.fontLoaded {
