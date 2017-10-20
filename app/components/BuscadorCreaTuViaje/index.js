@@ -6,14 +6,35 @@
 
 import React from 'react';
 import {
-		
+		CreaturBuscador,
+		SeccionIzquierda,
+		SeccionDestinos,
+		SeccionPaises,
+		SeccionTiposDeViaje,
+		SeccionFechasPresupuesto,
+		SeccionBotones,
+		BotonBuscadorAzul,
+		BotonBuscadorNaranja	
 		} from './styled.js'
 
 function BuscadorCreaTuViaje() {
   return (
-    <div>
-    	<h1>Hola</h1>
-    </div>
+  	<CreaturBuscador>
+	  	<SeccionIzquierda>
+	  		<SeccionDestinos>
+	  		</SeccionDestinos>
+	  		<SeccionPaises>
+	  		</SeccionPaises>
+	  	</SeccionIzquierda>
+	  	<SeccionTiposDeViaje>
+	  	</SeccionTiposDeViaje>
+	  	<SeccionFechasPresupuesto>
+	  	</SeccionFechasPresupuesto>
+	  	<SeccionBotones>
+	  		<BotonBuscadorAzul>Ver opciones</BotonBuscadorAzul>
+	  		<BotonBuscadorNaranja>Nueva búsqueda</BotonBuscadorNaranja>
+	  	</SeccionBotones>
+	</CreaturBuscador>
   );
 }
 
