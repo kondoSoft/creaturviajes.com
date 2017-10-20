@@ -25,6 +25,13 @@ export class Home extends React.Component { // eslint-disable-line react/prefer-
         <BotonesFlotantes/>
         <TituloSeccion Color="white" Text="CREA TU VIAJE" />
         <Buscador/>
+        <TituloSeccion Text="OPORTUNIDADES" />
+        <TituloSeccion Color="white" Text="ELIGE TU TIPO DE VIAJE" />
+        <TituloSeccion Text="LOS MÁS VENDIDO" />
+        <TituloSeccion Color="white" Text="VIAJE DE TEMPORADA" />
+
+
+
       </div>
     );
   }
