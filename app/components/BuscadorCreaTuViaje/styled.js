@@ -3,42 +3,57 @@ import styled from 'styled-components';
 const CreaturBuscador = styled.div`
 	width: 100%;
 	height: auto;
-	padding-top: 2%;
-	display: flex;
+	padding-top: 0px;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-bottom: 3%;
+	margin-top: 0px;
 	background: white;
+	display: flex;
 	flex-direction: row;
 	flex-flow: wrap;
 `;
 
+const TituloSeccion = styled.h3`
+	font-family: AvenirBook;
+	color: #001a5a;
+`;
+
 const SeccionIzquierda = styled.div`
 	width: 50%;
+	background: Peru;
 `;
+
+const InputsSecciones = styled.input`
+	
+`;
+
 const SeccionDestinos = styled.div`
 	width: 100%;
-	height: 50%;
-	background: blue;
+	background: palevioletred;
 `;
 
 const SeccionPaises = styled.div`
 	width: 100%;
-	height: 50%;
-	background: green;
+	background: palevioletred;
 `;
 
 const SeccionTiposDeViaje = styled.div`
 	width: 25%;
-	height: 500px;
-	background: violet;
+	background: CornflowerBlue;
 `;
+
+
 
 const SeccionFechasPresupuesto = styled.div`
 	width: 25%;
-	background: red;
+	background: Khaki;
 `;
 
 
 const SeccionBotones = styled.div`
 	width: 100%;
+	background: LightSkyBlue ;
 	display: flex;
 	justify-content: space-evenly;
 `;
@@ -71,7 +86,9 @@ const BotonBuscadorNaranja = styled(BotonBuscadorAzul)`
 
 export {
 	CreaturBuscador,
+	TituloSeccion,
 	SeccionIzquierda,
+	InputsSecciones,
 	SeccionDestinos,
 	SeccionPaises,
 	SeccionTiposDeViaje,
