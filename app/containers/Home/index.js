@@ -13,6 +13,7 @@ import Menu from '../../components/Menu';
 import BannerPrincipal from '../../components/BannerPrincipal';
 import BotonesFlotantes from '../../components/BotonFlotante';
 import Buscador from '../../components/BuscadorCreaTuViaje';
+import TituloSeccion from '../../components/TituloSecciones';
 
 
 export class Home extends React.Component { // eslint-disable-line react/prefer-stateless-function
@@ -22,6 +23,8 @@ export class Home extends React.Component { // eslint-disable-line react/prefer-
         <Menu/>
         <BannerPrincipal/>
         <BotonesFlotantes/>
+        <TituloSeccion>
+        </TituloSeccion>
         <Buscador/>
       </div>
     );
