@@ -5,13 +5,13 @@
 */
 
 import React from 'react';
-// import styled from 'styled-components';
+import {SeccionTitulo, Titulo} from './styled.js';
 
-
-function TituloSecciones() {
+function TituloSecciones(props) {
   return (
-    <div>
-    </div>
+  	<SeccionTitulo Color={props.Color}>
+  		<Titulo>{props.Text}</Titulo>
+  	</SeccionTitulo>
   );
 }
 
