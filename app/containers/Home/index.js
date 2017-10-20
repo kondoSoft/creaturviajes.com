@@ -23,8 +23,7 @@ export class Home extends React.Component { // eslint-disable-line react/prefer-
         <Menu/>
         <BannerPrincipal/>
         <BotonesFlotantes/>
-        <TituloSeccion>
-        </TituloSeccion>
+        <TituloSeccion Color="white" Text="CREA TU VIAJE" />
         <Buscador/>
       </div>
     );
