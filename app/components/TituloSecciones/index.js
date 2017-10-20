@@ -5,12 +5,14 @@
 */
 
 import React from 'react';
-import {SeccionTitulo, Titulo} from './styled.js';
+import {SeccionTitulo, Titulo, LineaTituloSeccion} from './styled.js';
 
 function TituloSecciones(props) {
   return (
   	<SeccionTitulo Color={props.Color}>
-  		<Titulo>{props.Text}</Titulo>
+  		<LineaTituloSeccion/>
+  			<Titulo>{props.Text}</Titulo>
+  		<LineaTituloSeccion/>
   	</SeccionTitulo>
   );
 }
