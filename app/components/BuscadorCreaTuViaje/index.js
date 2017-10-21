@@ -12,6 +12,7 @@ import {
 		InputsSecciones,
 		SeccionDestinos,
 		SeccionPaises,
+		ColumnassSeccion,
 		SeccionTiposDeViaje,
 		SeccionFechasPresupuesto,
 		SeccionBotones,
@@ -33,6 +34,8 @@ const Destinos = [
 					'América Latina',
 					'Norteamérica'
 				];
+var d = 0;
+
 const Paises = [
 				'Argentina',
 				'Bolivia',
@@ -50,6 +53,7 @@ const Paises = [
 				'Perú',
 				'México'
 				];
+var p = 0;
 
 const TiposDeViajes = [
 						'Viajes en grupo',
@@ -65,6 +69,7 @@ const TiposDeViajes = [
 						'Canal Barge Cruceros',
 						'Expediciones'
 					];
+var t = 0;
 
 function BuscadorCreaTuViaje() {
   return (
@@ -75,9 +80,11 @@ function BuscadorCreaTuViaje() {
 	  		{
 	  			Destinos.map(
 	  				(item)=>{
+	  					d++;
 	  					if (item === 'América Latina') {
 			  				return(
 				  				<div>
+				  					{d}
 							  		<InputsSecciones type="radio" id="valueDestinos" name="valueDestinos" value="valueDestinos" checked/>
 									<label> {item}</label>
 								</div>
@@ -85,13 +92,13 @@ function BuscadorCreaTuViaje() {
 	  					}else{
 	  						return(
 				  				<div>
+				  					{d}
 							  		<InputsSecciones type="radio" id="valueDestinos" name="valueDestinos" value="valueDestinos" />
 									<label> {item}</label>
 								</div>
 	  						)
 	  					}
 	  				}
-	  				
 	  			)
 	  		}
 	  		</SeccionDestinos>
@@ -100,9 +107,11 @@ function BuscadorCreaTuViaje() {
 	  			{
 	  				Paises.map(
 	  					(item)=>{
+	  						p++;
 	  						if (item === 'Argentina') {
 			  					return(
 				  					<div>
+				  						{p}
 								  		<InputsSecciones type="radio" id="valuePaises" name="valuePaises" value="valuePaises" checked/>
 										<label> {item}</label>
 									</div>
@@ -110,6 +119,7 @@ function BuscadorCreaTuViaje() {
 	  						}else{
 			  					return(
 				  					<div>
+				  						{p}
 								  		<InputsSecciones type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
 										<label> {item}</label>
 									</div>
@@ -125,7 +135,6 @@ function BuscadorCreaTuViaje() {
 	  		{ 
 	  			TiposDeViajes.map(
 					(item) => {
-
 			  			if (item === 'Viajes en grupo') {
 		  			  		return(
 			  			  		<div>

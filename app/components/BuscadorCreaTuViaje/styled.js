@@ -38,12 +38,15 @@ const SeccionPaises = styled.div`
 	background: palevioletred;
 `;
 
+const ColumnassSeccion = styled.div`
+	display: flex;
+	flex-direction: column;	
+`;
+
 const SeccionTiposDeViaje = styled.div`
 	width: 25%;
 	background: CornflowerBlue;
 `;
-
-
 
 const SeccionFechasPresupuesto = styled.div`
 	width: 25%;
@@ -91,6 +94,7 @@ export {
 	InputsSecciones,
 	SeccionDestinos,
 	SeccionPaises,
+	ColumnassSeccion,
 	SeccionTiposDeViaje,
 	SeccionFechasPresupuesto,
 	SeccionBotones,
