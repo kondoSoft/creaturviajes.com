@@ -9,6 +9,7 @@ const CreaturBuscador = styled.div`
 	padding-bottom: 3%;
 	margin-top: 0px;
 	background: white;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: row;
 	flex-flow: wrap;
@@ -32,6 +33,7 @@ const InputsSecciones = styled.input`
 const SeccionDestinos = styled.div`
 	width: 100%;
 	background: palevioletred;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: row;
 	flex-flow: wrap;
@@ -40,12 +42,14 @@ const SeccionDestinos = styled.div`
 const SeccionPaises = styled.div`
 	width: 100%;
 	background: palevioletred;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: row;
 	flex-flow: wrap;
 `;
 
 const ColumnasSeccion = styled.div`
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	width: 33.3%;
@@ -67,6 +71,7 @@ const SeccionFechasPresupuesto = styled.div`
 const SeccionBotones = styled.div`
 	width: 100%;
 	background: LightSkyBlue ;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: space-evenly;
 `;
