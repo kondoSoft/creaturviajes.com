@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
 const style = {
-	input: {
-		color: 'red'
+	labelNormal: {
+
 	},
-	input1: {
-		color: 'blue'
+	labelActive: {
+		color: '#ee7202',
+		fontFamily: 'AvenirBook',
+		textDecoration: 'underline'
 	}
 }
 const CreaturBuscador = styled.div`

@@ -226,10 +226,11 @@ class BuscadorCreaTuViaje extends React.Component {
   	  	  		  		{ 
   	  	  		  			TiposDeViajes.map(
   	  	  						(item, i) => {
+  	  	  							console.log(item)
   	  		  			  		return(
   	  			  			  		<ContenedorInputSeccion key={i}>
   	  			  				  		<InputsSecciones type="checkbox" id={"valueTipoDeViaje"+i} name="valueTipoDeViaje" onChange={(item)=>this.Destino(item)} />
-  	  			  						<label style={this.state.checked === true ? style.input : style.input1 }> {item}</label>
+  	  			  						<label for={"valueTipoDeViaje"+i} style={this.state.checked === true ? style.labelActive : style.labelNormal }> {item}</label>
   	  			  					</ContenedorInputSeccion>
   	  			  					)
   	  	  				  		}
