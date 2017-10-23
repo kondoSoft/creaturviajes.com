@@ -38,7 +38,7 @@ const SeccionPaises = styled.div`
 	background: palevioletred;
 `;
 
-const ColumnassSeccion = styled.div`
+const ColumnasSeccion = styled.div`
 	display: flex;
 	flex-direction: column;	
 `;
@@ -94,7 +94,7 @@ export {
 	InputsSecciones,
 	SeccionDestinos,
 	SeccionPaises,
-	ColumnassSeccion,
+	ColumnasSeccion,
 	SeccionTiposDeViaje,
 	SeccionFechasPresupuesto,
 	SeccionBotones,

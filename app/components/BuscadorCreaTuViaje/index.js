@@ -12,7 +12,7 @@ import {
 		InputsSecciones,
 		SeccionDestinos,
 		SeccionPaises,
-		ColumnassSeccion,
+		ColumnasSeccion,
 		SeccionTiposDeViaje,
 		SeccionFechasPresupuesto,
 		SeccionBotones,
@@ -77,27 +77,17 @@ function BuscadorCreaTuViaje() {
 	  	<SeccionIzquierda>
 	  		<SeccionDestinos>
 	  		<TituloSeccion>Destinos</TituloSeccion>
-	  		{
+	  		{ 
 	  			Destinos.map(
 	  				(item)=>{
-	  					d++;
-	  					if (item === 'América Latina') {
-			  				return(
-				  				<div>
-				  					{d}
-							  		<InputsSecciones type="radio" id="valueDestinos" name="valueDestinos" value="valueDestinos" checked/>
-									<label> {item}</label>
-								</div>
-			  				)
-	  					}else{
-	  						return(
-				  				<div>
-				  					{d}
-							  		<InputsSecciones type="radio" id="valueDestinos" name="valueDestinos" value="valueDestinos" />
-									<label> {item}</label>
-								</div>
-	  						)
-	  					}
+  						d++
+		  				return(
+			  				<div>
+			  					{d}
+						  		<InputsSecciones type="radio" id="valueDestinos" name="valueDestinos" value="valueDestinos" />
+								<label> {item}</label>
+							</div>
+		  				)
 	  				}
 	  			)
 	  		}
