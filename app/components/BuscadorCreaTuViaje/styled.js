@@ -67,7 +67,6 @@ const SeccionFechasPresupuesto = styled.div`
 	background: Khaki;
 `;
 
-
 const SeccionBotones = styled.div`
 	width: 100%;
 	background: LightSkyBlue ;
