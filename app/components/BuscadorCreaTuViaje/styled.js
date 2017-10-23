@@ -17,6 +17,7 @@ const CreaturBuscador = styled.div`
 const TituloSeccion = styled.h3`
 	font-family: AvenirBook;
 	color: #001a5a;
+	width: 100%;
 `;
 
 const SeccionIzquierda = styled.div`
@@ -31,16 +32,25 @@ const InputsSecciones = styled.input`
 const SeccionDestinos = styled.div`
 	width: 100%;
 	background: palevioletred;
+	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
 `;
 
 const SeccionPaises = styled.div`
 	width: 100%;
 	background: palevioletred;
+	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
 `;
 
 const ColumnasSeccion = styled.div`
 	display: flex;
-	flex-direction: column;	
+	flex-direction: column;
+	width: 33.3%;
+	background: #FFFFFF;
+	border: 1px solid #000000;
 `;
 
 const SeccionTiposDeViaje = styled.div`

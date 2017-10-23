@@ -77,47 +77,129 @@ function BuscadorCreaTuViaje() {
 	  	<SeccionIzquierda>
 	  		<SeccionDestinos>
 	  		<TituloSeccion>Destinos</TituloSeccion>
-	  		{ 
-	  			Destinos.map(
-	  				(item)=>{
-  						d++
-		  				return(
-			  				<div>
-			  					{d}
-						  		<InputsSecciones type="radio" id="valueDestinos" name="valueDestinos" value="valueDestinos" />
-								<label> {item}</label>
-							</div>
-		  				)
-	  				}
-	  			)
-	  		}
+	  		<ColumnasSeccion>
+				<div>
+			  		<InputsSecciones type="radio" id="valueDestinos" name="valueDestinos" value="valueDestinos" />
+					<label> {Destinos[0]}</label>
+				</div>
+				<div>
+			  		<InputsSecciones type="radio" id="valueDestinos" name="valueDestinos" value="valueDestinos" />
+					<label> {Destinos[1]}</label>
+				</div>
+				<div>
+			  		<InputsSecciones type="radio" id="valueDestinos" name="valueDestinos" value="valueDestinos" />
+					<label> {Destinos[2]}</label>
+				</div>
+				<div>
+					<InputsSecciones type="radio" id="valueDestinos" name="valueDestinos" value="valueDestinos" />
+					<label> {Destinos[3]}</label>
+				</div>
+				<div>
+					<InputsSecciones type="radio" id="valueDestinos" name="valueDestinos" value="valueDestinos" />
+					<label> {Destinos[4]}</label>
+				</div>
+			</ColumnasSeccion>
+			<ColumnasSeccion>
+				<div>
+					<InputsSecciones type="radio" id="valueDestinos" name="valueDestinos" value="valueDestinos" />
+					<label> {Destinos[5]}</label>
+				</div>
+				<div>
+			  		<InputsSecciones type="radio" id="valueDestinos" name="valueDestinos" value="valueDestinos" />
+					<label> {Destinos[6]}</label>
+				</div>
+				<div>
+			  		<InputsSecciones type="radio" id="valueDestinos" name="valueDestinos" value="valueDestinos" />
+					<label> {Destinos[7]}</label>
+				</div>
+				<div>
+			  		<InputsSecciones type="radio" id="valueDestinos" name="valueDestinos" value="valueDestinos" />
+					<label> {Destinos[8]}</label>
+				</div>
+			</ColumnasSeccion>		
+			<ColumnasSeccion>
+				<div>
+			  		<InputsSecciones type="radio" id="valueDestinos" name="valueDestinos" value="valueDestinos" />
+					<label> {Destinos[9]}</label>
+				</div>
+				<div>
+			  		<InputsSecciones type="radio" id="valueDestinos" name="valueDestinos" value="valueDestinos" />
+					<label> {Destinos[10]}</label>
+				</div>
+				<div>
+			  		<InputsSecciones type="radio" id="valueDestinos" name="valueDestinos" value="valueDestinos" />
+					<label> {Destinos[11]}</label>
+				</div>
+			</ColumnasSeccion>
 	  		</SeccionDestinos>
 	  		<SeccionPaises>
 	  			<TituloSeccion>Países</TituloSeccion>
-	  			{
-	  				Paises.map(
-	  					(item)=>{
-	  						p++;
-	  						if (item === 'Argentina') {
-			  					return(
-				  					<div>
-				  						{p}
-								  		<InputsSecciones type="radio" id="valuePaises" name="valuePaises" value="valuePaises" checked/>
-										<label> {item}</label>
-									</div>
-			  					)
-	  						}else{
-			  					return(
-				  					<div>
-				  						{p}
-								  		<InputsSecciones type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
-										<label> {item}</label>
-									</div>
-			  					)
-	  						}
-	  					}
-	  				)
-	  			}
+				<ColumnasSeccion>
+					<div>
+				  		<InputsSecciones type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
+						<label> {Paises[0]}</label>
+					</div>	
+					<div>
+						<InputsSecciones type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
+						<label> {Paises[1]}</label>
+					</div>	 
+					<div>
+				  		<InputsSecciones type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
+						<label> {Paises[2]}</label>
+					</div>	
+					<div>
+						<InputsSecciones type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
+						<label> {Paises[3]}</label>
+					</div> 			
+					<div>
+				  		<InputsSecciones type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
+						<label> {Paises[4]}</label>
+					</div>
+				</ColumnasSeccion>
+				<ColumnasSeccion>
+					<div>
+						<InputsSecciones type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
+						<label> {Paises[5]}</label>
+					</div>	 
+					<div>
+				  		<InputsSecciones type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
+						<label> {Paises[6]}</label>
+					</div>	
+					<div>
+						<InputsSecciones type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
+						<label> {Paises[7]}</label>
+					</div>
+					<div>
+				  		<InputsSecciones type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
+						<label> {Paises[8]}</label>
+					</div>	
+					<div>
+						<InputsSecciones type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
+						<label> {Paises[9]}</label>
+					</div>	 
+				</ColumnasSeccion>
+				<ColumnasSeccion>
+					<div>
+				  		<InputsSecciones type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
+						<label> {Paises[10]}</label>
+					</div>	
+					<div>
+						<InputsSecciones type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
+						<label> {Paises[11]}</label>
+					</div>
+					<div>
+				  		<InputsSecciones type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
+						<label> {Paises[12]}</label>
+					</div>	
+					<div>
+						<InputsSecciones type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
+						<label> {Paises[13]}</label>
+					</div>	 
+					<div>
+				  		<InputsSecciones type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
+						<label> {Paises[14]}</label>
+					</div>	
+				</ColumnasSeccion>
 	  		</SeccionPaises>
 	  	</SeccionIzquierda>
 	  	<SeccionTiposDeViaje>
