@@ -229,9 +229,9 @@ function BuscadorCreaTuViaje() {
 	  	<SeccionFechasPresupuesto>
 	  		<TituloSeccion>Mes de Salida</TituloSeccion>
 	  		<TituloSeccion>Presupuesto USD</TituloSeccion>
-	  		<InputRange />
+	  		<InputRange valor='$' valor2='' numMin={0} numMax={10000} numMinValue={2000} numMaxValue={8000} step={50}/>
 	  		<TituloSeccion>Duración del programa</TituloSeccion>
-	  		<InputRange />
+	  		<InputRange valor='' valor2=' días' numMin={0} numMax={30} numMinValue={2} numMaxValue={25} step={1}/>
 	  	</SeccionFechasPresupuesto>
 	  	<SeccionBotones>
 	  		<BotonBuscadorAzul>Ver opciones</BotonBuscadorAzul>
