@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import RangeInput from 'react-input-range';
 
 const InputContainer = styled.div`
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
 
 	input[type=range] {
 		-webkit-appearance: none;

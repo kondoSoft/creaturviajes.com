@@ -15,7 +15,10 @@ class InputRange extends React.Component{
 	constructor(props) {
 		super(props);
 		this.state = {
-			value: {min: 2, max: 10},
+			value: {
+					min: this.props.numMinValue, 
+					max: this.props.numMaxValue
+				},
 		}
 	}
   render(){
@@ -23,8 +26,10 @@ class InputRange extends React.Component{
 	return (
 	  <InputContainer>
 	  	<RangeInput
-	  	        maxValue={20}
-	  	        minValue={0}
+	  	  		formatLabel={value => this.props.valor + `${value}` + this.props.valor2}
+	  	        maxValue={this.props.numMax}
+	  	        minValue={this.props.numMin}
+	  	        step={this.props.step}
 	  	        value={this.state.value}
 	  	        onChange={value => this.setState({ value })} 
 		/>
