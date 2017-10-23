@@ -32,6 +32,7 @@ injectGlobal`
   body {
     height: 100%;
     width: 100%;
+    padding-top: 79px;
   }
   body {
     background-color:  #f5f4f4;
