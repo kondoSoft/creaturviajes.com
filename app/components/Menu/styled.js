@@ -63,6 +63,7 @@ const ButtonNavBar = styled.a`
   background-color: ${props => props.blue ? '#001a5a' : 'white'};
   margin-right: ${props => props.logo ? '7%' : ''};
   border-color: #001a5a;
+  display: ${props => props.displayNone ? 'none' : 'inherit'};
   &:hover{
     color: #ffffff;
     background-color: #ee7202;
