@@ -1,11 +1,19 @@
 import styled from 'styled-components';
 
+const style = {
+	input: {
+		color: 'red'
+	},
+	input1: {
+		color: 'blue'
+	}
+}
 const CreaturBuscador = styled.div`
 	width: 100%;
 	height: auto;
 	padding-top: 0px;
-	padding-left: 15%;
-	padding-right: 15%;
+	padding-left: 7%;
+	padding-right: 7%;
 	padding-bottom: 3%;
 	margin-top: 0px;
 	background: white;
@@ -13,6 +21,11 @@ const CreaturBuscador = styled.div`
 	display: flex;
 	flex-direction: row;
 	flex-flow: wrap;
+
+	label{
+		font-family: AvenirBook;
+		color: #8f8f8f;
+	}
 `;
 
 const TituloSeccion = styled.h3`
@@ -23,16 +36,28 @@ const TituloSeccion = styled.h3`
 
 const SeccionIzquierda = styled.div`
 	width: 50%;
-	background: Peru;
+	padding-top: 20px;
+	padding-bottom: 20px;
 `;
-
+const ContenedorInputSeccion = styled.div`
+	padding: 5px;
+	label{
+		&:hover, 
+		&:focus, 
+		&.focus, 
+		&:active {
+		  color: #ee7202;
+		  font-family: AvenirBook;
+		  text-decoration: underline;
+		}
+	}
+`;
 const InputsSecciones = styled.input`
-	
+
 `;
 
 const SeccionDestinos = styled.div`
 	width: 100%;
-	background: palevioletred;
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: row;
@@ -41,11 +66,11 @@ const SeccionDestinos = styled.div`
 
 const SeccionPaises = styled.div`
 	width: 100%;
-	background: palevioletred;
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: row;
 	flex-flow: wrap;
+
 `;
 
 const ColumnasSeccion = styled.div`
@@ -53,23 +78,22 @@ const ColumnasSeccion = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 33.3%;
-	background: #FFFFFF;
-	border: 1px solid #000000;
 `;
 
 const SeccionTiposDeViaje = styled.div`
 	width: 25%;
-	background: CornflowerBlue;
+	padding-top: 20px;
+	padding-bottom: 20px;
 `;
 
 const SeccionFechasPresupuesto = styled.div`
 	width: 25%;
-	background: Khaki;
+	padding-top: 20px;
+	padding-bottom: 20px;
 `;
 
 const SeccionBotones = styled.div`
 	width: 100%;
-	background: LightSkyBlue ;
 	display: -webkit-flex;
 	display: flex;
 	justify-content: space-evenly;
@@ -105,6 +129,7 @@ export {
 	CreaturBuscador,
 	TituloSeccion,
 	SeccionIzquierda,
+	ContenedorInputSeccion,
 	InputsSecciones,
 	SeccionDestinos,
 	SeccionPaises,
@@ -114,4 +139,5 @@ export {
 	SeccionBotones,
 	BotonBuscadorAzul,
 	BotonBuscadorNaranja,
+	style
 }
