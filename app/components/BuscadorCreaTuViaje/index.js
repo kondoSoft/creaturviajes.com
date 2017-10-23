@@ -19,7 +19,7 @@ import {
 		BotonBuscadorAzul,
 		BotonBuscadorNaranja
 		} from './styled.js'
-
+import InputRange from '../InputRange'
 const Destinos = [
 					'Todos los destinos',
 					'África',
@@ -229,7 +229,9 @@ function BuscadorCreaTuViaje() {
 	  	<SeccionFechasPresupuesto>
 	  		<TituloSeccion>Mes de Salida</TituloSeccion>
 	  		<TituloSeccion>Presupuesto USD</TituloSeccion>
+	  		<InputRange />
 	  		<TituloSeccion>Duración del programa</TituloSeccion>
+	  		<InputRange />
 	  	</SeccionFechasPresupuesto>
 	  	<SeccionBotones>
 	  		<BotonBuscadorAzul>Ver opciones</BotonBuscadorAzul>
