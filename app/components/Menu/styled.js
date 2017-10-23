@@ -1,5 +1,13 @@
 import styled from 'styled-components';
 
+const ContenedorMenu = styled.div`
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+`;
+
 const NavbarBlue = styled.nav`
   position: relative;
   display: -ms-flexbox;
@@ -96,6 +104,7 @@ const IconNavBar = styled.img`
 `;
 
 export { 
+  ContenedorMenu,
   NavbarBlue, 
   NavbarWhite, 
   ButtonNavBar,

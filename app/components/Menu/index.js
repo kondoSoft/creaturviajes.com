@@ -5,7 +5,8 @@
 */
 
 import React from 'react';
-import { NavbarBlue,
+import { ContenedorMenu,
+         NavbarBlue,
          NavbarWhite,
          ButtonNavBar,
          ButtonNavBarWhite,
@@ -25,7 +26,7 @@ import logoCreatur from '!file-loader!./icons/Logo_Creatur_Viajes.png';
 
 function Menu() {
   return (
-          <div>
+          <ContenedorMenu>
             <NavbarBlue>
                 <ButtonNavBar blue>
                   <IconNavBar src={iconDinero} alt="Icono Tipo de Cambio" />
@@ -77,7 +78,7 @@ function Menu() {
                 CREA TU VIAJE
               </ButtonNavBarWhite>
             </NavbarWhite>
-          </div>
+          </ContenedorMenu>
   );
 }
 
