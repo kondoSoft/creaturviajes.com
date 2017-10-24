@@ -83,7 +83,7 @@ const SeccionTiposDeViaje = styled.div`
 	width: 25%;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	padding-left: 15px;
+	padding-left: 6%;
 	border-right: 1px solid  #ee7202;
 	border-left: 1px solid  #ee7202;
 
@@ -93,7 +93,7 @@ const SeccionFechasPresupuesto = styled.div`
 	width: 25%;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	padding-left: 20px;
+	padding-left: 3%;
 `;
 
 const SeccionBotones = styled.div`
@@ -101,7 +101,7 @@ const SeccionBotones = styled.div`
 	display: -webkit-flex;
 	display: flex;
 	justify-content: center;
-	
+
 	div{
 		padding: 15px;
 		padding-top: 60px;

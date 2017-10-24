@@ -18,8 +18,11 @@ import {
 		SeccionBotones,
 		BotonBuscadorAzul,
 		BotonBuscadorNaranja
-		} from './styled.js'
-import InputRange from '../InputRange'
+		} from './styled.js';
+import InputRange from '../InputRange';
+
+import moment from 'moment/moment';
+
 const Destinos = [
 					'Todos los destinos',
 					'África',
@@ -81,6 +84,8 @@ class BuscadorCreaTuViaje extends React.Component {
   render(){
   	  return (
   	  	<form>
+  	  	{console.log('====================Moment=================')}
+  	  	{ console.log(moment('2017-01-01')) }
   	  	  	<CreaturBuscador>
   	  		  	<SeccionIzquierda>
   	  		  		<TituloSeccion>Destinos</TituloSeccion>
