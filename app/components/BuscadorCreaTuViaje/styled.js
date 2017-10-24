@@ -1,15 +1,5 @@
 import styled from 'styled-components';
 
-const style = {
-	labelNormal: {
-
-	},
-	labelActive: {
-		color: '#ee7202',
-		fontFamily: 'AvenirBook',
-		textDecoration: 'underline'
-	}
-}
 const CreaturBuscador = styled.div`
 	width: 100%;
 	height: auto;
@@ -41,64 +31,81 @@ const SeccionIzquierda = styled.div`
 	padding-top: 20px;
 	padding-bottom: 20px;
 `;
+
 const ContenedorInputSeccion = styled.div`
-	padding: 5px;
+	padding: 3%;
+	padding-right: 7%;
+	input[type='checkbox']:checked + label,
+	input[type='radio']:checked + label{
+		text-decoration: underline;
+		color: #ee7202;
+		font-family: AvenirBook;
+	}
 	label{
 		&:hover, 
 		&:focus, 
-		&.focus, 
+		&.focus,
 		&:active {
-		  color: #ee7202;
-		  font-family: AvenirBook;
 		  text-decoration: underline;
+		  color: #ee7202;
 		}
 	}
-`;
-const InputsSecciones = styled.input`
-
+	
 `;
 
 const SeccionDestinos = styled.div`
-	width: 100%;
+	width: 90%;
+	height: 200px;
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: row;
-	flex-flow: wrap;
+	border-bottom: 1px solid  #ee7202;
+
 `;
 
 const SeccionPaises = styled.div`
 	width: 100%;
+	height: 200px;
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: row;
-	flex-flow: wrap;
-
 `;
 
 const ColumnasSeccion = styled.div`
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
-	width: 33.3%;
+	width: 100%;
+	flex-wrap: wrap;
 `;
 
 const SeccionTiposDeViaje = styled.div`
 	width: 25%;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	padding-left: 15px;
+	border-right: 1px solid  #ee7202;
+	border-left: 1px solid  #ee7202;
+
 `;
 
 const SeccionFechasPresupuesto = styled.div`
 	width: 25%;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	padding-left: 20px;
 `;
 
 const SeccionBotones = styled.div`
 	width: 100%;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
+	
+	div{
+		padding: 15px;
+		padding-top: 60px;
+	}
 `;
 
 const BotonBuscadorAzul = styled.button `
@@ -125,14 +132,15 @@ const BotonBuscadorAzul = styled.button `
 const BotonBuscadorNaranja = styled(BotonBuscadorAzul)`
 	background: #ee7202;
 	border-color: #ee7202;
+
 `;
 
 export {
 	CreaturBuscador,
+	SeccionTitulo,
 	TituloSeccion,
 	SeccionIzquierda,
 	ContenedorInputSeccion,
-	InputsSecciones,
 	SeccionDestinos,
 	SeccionPaises,
 	ColumnasSeccion,
@@ -140,6 +148,5 @@ export {
 	SeccionFechasPresupuesto,
 	SeccionBotones,
 	BotonBuscadorAzul,
-	BotonBuscadorNaranja,
-	style
+	BotonBuscadorNaranja
 }
