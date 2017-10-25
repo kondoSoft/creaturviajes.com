@@ -5,12 +5,12 @@
 */
 
 import React from 'react';
-
+import Card from '../Card';
 
 function SeccionOportunidades() {
   return (
     <div>
-    <h1>hola</h1>
+    <Card/>
     </div>
   );
 }
