@@ -1,0 +1,22 @@
+/**
+*
+* Card
+*
+*/
+
+import React from 'react';
+
+
+function Card() {
+  return (
+    <div>
+    <h1>Card</h1>
+    </div>
+  );
+}
+
+Card.propTypes = {
+
+};
+
+export default Card;
