@@ -21,6 +21,9 @@ import {
 		} from './styled.js';
 import InputRange from '../InputRange';
 
+import 'react-widgets/dist/css/react-widgets.css';
+import RW from 'react-widgets';
+
 import moment from 'moment/moment';
 
 const Destinos = [
@@ -74,6 +77,9 @@ const TiposDeViajes = [
 					];
 var t = 0;
 
+var dt = moment();
+
+
 class BuscadorCreaTuViaje extends React.Component {
 	constructor(props) {
 		super(props);
@@ -84,8 +90,6 @@ class BuscadorCreaTuViaje extends React.Component {
   render(){
   	  return (
   	  	<form>
-  	  	{console.log('====================Moment=================')}
-  	  	{ console.log(moment('2017-01-01')) }
   	  	  	<CreaturBuscador>
   	  		  	<SeccionIzquierda>
   	  		  		<TituloSeccion>Destinos</TituloSeccion>
@@ -94,18 +98,18 @@ class BuscadorCreaTuViaje extends React.Component {
   	  		  				{
   	  		  					Destinos.map(
   	  		  						(item, i)=>{
-  	  		  							if (item === 'América Latina') {
+  	  		  							if (item === 'Todos los destinos') {
 		  		  							return(
 			  									<ContenedorInputSeccion key={i}>
-			  								  		<input type="radio" id={"valueDestinos" + i} name="valueDestinos" value={item} checked/>
-			  										<label> {item}</label>
+			  								  		<input type="radio" id={"valueDestinos" + i} name="valueDestinos" value={item} defaultChecked/>
+			  										<label htmlFor={"valueDestinos"+i}> {item}</label>
 			  									</ContenedorInputSeccion>
 		  		  							)
   	  		  							}else{
 		  		  							return(
 			  									<ContenedorInputSeccion key={i}>
 			  								  		<input type="radio" id={"valueDestinos" + i} name="valueDestinos" value={item} />
-			  										<label> {item}</label>
+			  										<label htmlFor={"valueDestinos"+i}> {item}</label>
 			  									</ContenedorInputSeccion>
 		  		  							)
   	  		  							}
@@ -118,67 +122,28 @@ class BuscadorCreaTuViaje extends React.Component {
   	  		  		<TituloSeccion>Países</TituloSeccion>
   	  		  		<SeccionPaises>
   	  		  				<ColumnasSeccion>
-	  	  						<ContenedorInputSeccion>
-	  	  					  		<input type="radio" id="valuePaises" name="valuePaises" value="valuePaises" checked />
-	  	  							<label> {Paises[0]}</label>
-	  	  						</ContenedorInputSeccion>	
-	  	  						<ContenedorInputSeccion>
-	  	  							<input type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
-	  	  							<label> {Paises[1]}</label>
-	  	  						</ContenedorInputSeccion>	 
-	  	  						<ContenedorInputSeccion>
-	  	  					  		<input type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
-	  	  							<label> {Paises[2]}</label>
-	  	  						</ContenedorInputSeccion>	
-	  	  						<ContenedorInputSeccion>
-	  	  							<input type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
-	  	  							<label> {Paises[3]}</label>
-	  	  						</ContenedorInputSeccion> 			
-	  	  						<ContenedorInputSeccion>
-	  	  					  		<input type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
-	  	  							<label> {Paises[4]}</label>
-	  	  						</ContenedorInputSeccion>
-	  	  						<ContenedorInputSeccion>
-	  	  							<input type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
-	  	  							<label> {Paises[5]}</label>
-	  	  						</ContenedorInputSeccion>	 
-	  	  						<ContenedorInputSeccion>
-	  	  					  		<input type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
-	  	  							<label> {Paises[6]}</label>
-	  	  						</ContenedorInputSeccion>	
-	  	  						<ContenedorInputSeccion>
-	  	  							<input type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
-	  	  							<label> {Paises[7]}</label>
-	  	  						</ContenedorInputSeccion>
-	  	  						<ContenedorInputSeccion>
-	  	  					  		<input type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
-	  	  							<label> {Paises[8]}</label>
-	  	  						</ContenedorInputSeccion>	
-	  	  						<ContenedorInputSeccion>
-	  	  							<input type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
-	  	  							<label> {Paises[9]}</label>
-	  	  						</ContenedorInputSeccion>
-	  	  						<ContenedorInputSeccion>
-	  	  					  		<input type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
-	  	  							<label> {Paises[10]}</label>
-	  	  						</ContenedorInputSeccion>	
-	  	  						<ContenedorInputSeccion>
-	  	  							<input type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
-	  	  							<label> {Paises[11]}</label>
-	  	  						</ContenedorInputSeccion>
-	  	  						<ContenedorInputSeccion>
-	  	  					  		<input type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
-	  	  							<label> {Paises[12]}</label>
-	  	  						</ContenedorInputSeccion>	
-	  	  						<ContenedorInputSeccion>
-	  	  							<input type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
-	  	  							<label> {Paises[13]}</label>
-	  	  						</ContenedorInputSeccion>	 
-	  	  						<ContenedorInputSeccion>
-	  	  					  		<input type="radio" id="valuePaises" name="valuePaises" value="valuePaises" />
-	  	  							<label> {Paises[14]}</label>
-	  	  						</ContenedorInputSeccion>	
-  	  						</ColumnasSeccion>
+  	  		  				{
+  	  		  					Paises.map(
+  	  		  						(item, i)=>{
+ 	  		  							if (item === 'Argentina') {
+  	  		  								return (
+  	  		  									<ContenedorInputSeccion key={i}>
+  	  		  										<input type="radio" id={"valuePaises" + i} name="valuePaises" value={item} defaultChecked/>
+  	  		  										<label htmlFor={"valuePaises"+i}> {item} </label>
+  	  		  									</ContenedorInputSeccion>
+  	  		  									)
+  	  		  							}else{
+  	  		  								return(
+  	  		  									<ContenedorInputSeccion key={i}>
+  	  		  										<input type="radio" id={"valuePaises" + i} name="valuePaises" value={item}/>
+  	  		  										<label htmlFor={"valuePaises"+i}> {item} </label>
+  	  		  									</ContenedorInputSeccion>
+  	  		  									)
+  	  		  							}
+  	  		  						}
+  	  		  					)
+  	  		  				}
+	  	  					</ColumnasSeccion>
   	  		  		</SeccionPaises>
   	  		  	</SeccionIzquierda>
   	  		  	<SeccionTiposDeViaje>
@@ -189,7 +154,7 @@ class BuscadorCreaTuViaje extends React.Component {
   	  							if (item === 'Viajes en grupo') {
 			  			  		return(
 				  			  		<ContenedorInputSeccion key={i}>
-				  				  		<input type="checkbox" id={"valueTipoDeViaje"+i} name={"valueTipoDeViaje"+i} checked/>
+				  				  		<input type="checkbox" id={"valueTipoDeViaje"+i} name={"valueTipoDeViaje"+i} defaultChecked/>
 				  						<label htmlFor={"valueTipoDeViaje"+i} > {item}</label>
 				  					</ContenedorInputSeccion>
 				  					)
@@ -207,6 +172,7 @@ class BuscadorCreaTuViaje extends React.Component {
   	  		  	</SeccionTiposDeViaje>
   	  		  	<SeccionFechasPresupuesto>
   	  		  		<TituloSeccion>Mes de Salida</TituloSeccion>
+  	  		  		{ console.log('===============dt===================') }
   	  		  		<TituloSeccion>Presupuesto USD</TituloSeccion>
   	  		  		<InputRange valor='$' valor2='' numMin={0} numMax={10000} numMinValue={2000} numMaxValue={8000} step={50}/>
   	  		  		<TituloSeccion>Duración del programa</TituloSeccion>

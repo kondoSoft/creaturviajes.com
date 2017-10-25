@@ -103,7 +103,7 @@ const SeccionBotones = styled.div`
 	justify-content: center;
 
 	div{
-		padding: 15px;
+		padding: 30px;
 		padding-top: 60px;
 	}
 `;
