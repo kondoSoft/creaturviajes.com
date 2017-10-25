@@ -14,7 +14,7 @@ import BannerPrincipal from '../../components/BannerPrincipal';
 import BotonesFlotantes from '../../components/BotonFlotante';
 import Buscador from '../../components/BuscadorCreaTuViaje';
 import TituloSeccion from '../../components/TituloSecciones';
-
+import SeccionOportunidades from '../../components/SeccionOportunidades';
 
 export class Home extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -26,6 +26,7 @@ export class Home extends React.Component { // eslint-disable-line react/prefer-
         <TituloSeccion Color="white" Text="CREA TU VIAJE" />
         <Buscador/>
         <TituloSeccion Text="OPORTUNIDADES" />
+        <SeccionOportunidades/>
         <TituloSeccion Color="white" Text="ELIGE TU TIPO DE VIAJE" />
         <TituloSeccion Text="LOS MÁS VENDIDO" />
         <TituloSeccion Color="white" Text="VIAJE DE TEMPORADA" />
