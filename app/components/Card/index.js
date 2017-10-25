@@ -5,13 +5,27 @@
 */
 
 import React from 'react';
+import { 
+	CuerpoCard, 
+	ImagenCard, 
+	TituloCard, 
+	EspacioTexto, 
+	TextoCard, 
+	EspacioBoton, 
+	ButtonCard } from './styled';
 
-
-function Card() {
+function Card(props) {
   return (
-    <div>
-    <h1>Card</h1>
-    </div>
+    <CuerpoCard>
+      <ImagenCard src={props.ImgCard} alt=''/>
+      <EspacioBoton>
+      	<ButtonCard>{props.TextoBoton}</ButtonCard>
+      </EspacioBoton>
+      <div>
+	      <TituloCard>{props.TituloCard}</TituloCard>
+	      <TextoCard>{props.TextoCuerpo}</TextoCard>
+      </div>
+    </CuerpoCard>
   );
 }
 
