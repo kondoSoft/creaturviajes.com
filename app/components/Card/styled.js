@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { ButtonBanner } from '../BannerPrincipal/styled'
 
 const CuerpoCard = styled.div`
-  width: 23%;
+  width: 440.45px;
   background-color: #ffffff;
   position: relative;
     div{
@@ -21,15 +21,15 @@ const ImagenCard = styled.img`
 const LogoPremium = styled.img`
   width: 20%;
   position: absolute;
-  right: 10%;
-  bottom: 24%;
+  right: 6%;
+  bottom: 28%;
 `;
 
 const TituloCard = styled.h3`
   width: 75%;
   font-family: AvenirBook;
   color: #001a5a;
-  font-size: 24px;
+  font-size: 22px;
 `;
 
 const TextoCard = styled.p`
