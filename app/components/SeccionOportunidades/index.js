@@ -11,6 +11,7 @@ import Crucero from '../../assets/ImagenesPruebaNuevoDiseniov2/crucero.jpg';
 import Temporada2 from '../../assets/ImagenesPruebaNuevoDiseniov2/temporada2.jpg';
 import Oportunidad3 from '../../assets/ImagenesPruebaNuevoDiseniov2/oportunidad3.jpg';
 
+
 function SeccionOportunidades() {
   return (
  	<DivOportunidades>
