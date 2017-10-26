@@ -18,9 +18,18 @@ const ImagenCard = styled.img`
   padding: 0px;
 `;
 
+const LogoPremium = styled.img`
+  width: 20%;
+  position: absolute;
+  right: 10%;
+  bottom: 24%;
+`;
+
 const TituloCard = styled.h3`
+  width: 75%;
   font-family: AvenirBook;
   color: #001a5a;
+  font-size: 24px;
 `;
 
 const TextoCard = styled.p`
@@ -69,7 +78,8 @@ const LinkLeerMas = styled.a`
 export {
   CuerpoCard, 
   ImagenCard, 
-  TituloCard, 
+  LogoPremium, 
+  TituloCard,
   TextoCard, 
   EspacioBoton, 
   ButtonCard,

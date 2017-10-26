@@ -8,15 +8,17 @@ import React from 'react';
 import { 
 	CuerpoCard, 
 	ImagenCard, 
-	TituloCard, 
-	EspacioTexto, 
-	TextoCard, 
+  LogoPremium,
+  TituloCard, 
+  EspacioTexto, 
+  TextoCard, 
 	EspacioBoton, 
 	ButtonCard,
   BotonCabecera,
   EspacioLink,
   LinkLeerMas
   } from './styled';
+import PalomaDorada from '../../assets/ImagenesPruebaNuevoDiseniov2/paloma.svg';
 
 function Card(props) {
   return (
@@ -28,6 +30,7 @@ function Card(props) {
       </EspacioBoton>
       <div>
 	      <TituloCard>{props.TituloCard}</TituloCard>
+        {props.Premium ? <LogoPremium src={PalomaDorada} alt='Logo Premium'/> : ''}
 	      <TextoCard>{props.TextoCuerpo}</TextoCard>
         <EspacioLink>
           {props.LinkLeerMas ? <LinkLeerMas>Leer más...</LinkLeerMas> : ''}
