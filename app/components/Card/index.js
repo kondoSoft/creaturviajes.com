@@ -12,18 +12,26 @@ import {
 	EspacioTexto, 
 	TextoCard, 
 	EspacioBoton, 
-	ButtonCard } from './styled';
+	ButtonCard,
+  BotonCabecera,
+  EspacioLink,
+  LinkLeerMas
+  } from './styled';
 
 function Card(props) {
   return (
     <CuerpoCard>
+        {props.BotonCabecera ? <BotonCabecera>{props.TextoBotonCabecera}</BotonCabecera> : ''}
       <ImagenCard src={props.ImgCard} alt=''/>
       <EspacioBoton>
-      	<ButtonCard>{props.TextoBoton}</ButtonCard>
+      	{props.BotonMedio ? <ButtonCard>{props.TextoBoton}</ButtonCard> : ''}
       </EspacioBoton>
       <div>
 	      <TituloCard>{props.TituloCard}</TituloCard>
 	      <TextoCard>{props.TextoCuerpo}</TextoCard>
+        <EspacioLink>
+          {props.LinkLeerMas ? <LinkLeerMas>Leer más...</LinkLeerMas> : ''}
+        </EspacioLink>
       </div>
     </CuerpoCard>
   );

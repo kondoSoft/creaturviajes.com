@@ -5,10 +5,11 @@ import { ButtonBanner } from '../BannerPrincipal/styled'
 const CuerpoCard = styled.div`
   width: 23%;
   background-color: #ffffff;
-  div{
-	padding: 5%;
-	padding-top: 10px;
-  }
+  position: relative;
+    div{
+       padding: 5%;
+       padding-top: 10px;
+    }
 `;
 
 const ImagenCard = styled.img`
@@ -25,7 +26,7 @@ const TituloCard = styled.h3`
 const TextoCard = styled.p`
   color: #95a5a6;
   font-size: 18px;
-  font-family: sans-serif;
+  font-family: AvenirRoman;
   text-align: justify;
 `;
 
@@ -44,5 +45,35 @@ const ButtonCard = styled(ButtonBanner)`
 	bottom: 50%;
 `;
 
+const BotonCabecera = styled(ButtonBanner)`
+  padding: 15px 50px 15px 50px;
+  font-size: 1rem;
+  bottom: auto;
+  left: auto;
+  top: 0px;
+  right: 0px;
+`;
 
-export {CuerpoCard, ImagenCard, TituloCard, TextoCard, EspacioBoton, ButtonCard}
+const EspacioLink = styled(EspacioBoton)`
+  justify-content: right;
+`;
+
+const LinkLeerMas = styled.a`
+  font-size: 1rem;
+  text-decoration: underline;
+  text-decoration-color: #ee7202;
+  color: #ee7202;
+  font-family: AvenirRoman;
+`;
+
+export {
+  CuerpoCard, 
+  ImagenCard, 
+  TituloCard, 
+  TextoCard, 
+  EspacioBoton, 
+  ButtonCard,
+  BotonCabecera,
+  EspacioLink,
+  LinkLeerMas
+}
