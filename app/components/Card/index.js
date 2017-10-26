@@ -25,9 +25,7 @@ function Card(props) {
     <CuerpoCard>
         {props.BotonCabecera ? <BotonCabecera>{props.TextoBotonCabecera}</BotonCabecera> : ''}
       <ImagenCard src={props.ImgCard} alt=''/>
-      <EspacioBoton>
-      	{props.BotonMedio ? <ButtonCard>{props.TextoBoton}</ButtonCard> : ''}
-      </EspacioBoton>
+      	{props.BotonMedio ? <EspacioBoton><ButtonCard>{props.TextoBoton}</ButtonCard></EspacioBoton> : ''}
       <div>
 	      <TituloCard>{props.TituloCard}</TituloCard>
         {props.Premium ? <LogoPremium src={PalomaDorada} alt='Logo Premium'/> : ''}
