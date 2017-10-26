@@ -8,6 +8,7 @@ const ButtonWhats = styled.img`
 	position: fixed;
 	right: 0;
 	top: 45%;
+	z-index: 999;
 `;
 
 export { ButtonWhats }
