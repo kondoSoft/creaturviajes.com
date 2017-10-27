@@ -87,22 +87,39 @@ const UltimaColumna = styled(ColumnaPrincipalFooter)`
 	width: 30%;
 	
 	div{
+		
 		display: flex;
 		flex-flow: row wrap;
+		justify-content: left;
+
 		div{
+			
 			width: 100%;
 			margin-top: 20px;
-		input{
-			background: white;
-			width: 60%;
-			height: 50px;
-		}
-		button{
-			background: #ee7202;
-			color: white;
-			width: 50px;
-			height: 50px;
-		}
+			
+			input{
+				font-family: AvenirRoman;
+				background: white;
+				width: 70%;
+				height: 50px;
+				padding-left: 5%;
+			}
+
+			::-webkit-input-placeholder {
+			  color: gray;
+			}
+			::-moz-placeholder {
+			  color: gray;
+			}
+			:-ms-input-placeholder {
+			  color: gray;
+			}
+
+			button{
+				background: #ee7202;
+				color: white;
+				width: 10%;
+			}
 		}
 	}
 `;

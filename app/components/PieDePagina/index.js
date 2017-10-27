@@ -88,7 +88,7 @@ function PieDePagina() {
 	    <p>Una empresa de</p>
 	    <img src={ LogoMayorista } alt=''/>
 	    <div>
-	    	<a>Política de privacidad/Términos y Condiciones </a>
+	    	<a>Política de privacidad / Términos y Condiciones </a>
 	    </div>
 	    </ContenedorFinal>
     </ContenedorFooter>
