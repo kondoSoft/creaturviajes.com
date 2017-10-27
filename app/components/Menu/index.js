@@ -13,16 +13,16 @@ import { ContenedorMenu,
          IconNavBar,
          Logo
        } from './styled';
-import iconBusqueda from './icons/busqueda.svg';
-import iconCorreo from './icons/correo.svg';
-import iconDinero from './icons/dinero.svg';
-import iconFacebook from './icons/facebook.svg';
-import iconGooglePlus from './icons/googleplus.svg';
-import iconInstagram from './icons/instagram.svg';
-import iconLocalizacion from './icons/localizacion.svg';
-import iconUsuario from './icons/usuario.svg';
-import iconYoutube from './icons/youtube.svg';
-import logoCreatur from '!file-loader!./icons/Logo_Creatur_Viajes.png';
+import iconBusqueda from '../../assets/icons/busqueda.svg';
+import iconCorreo from '../../assets/icons/correo.svg';
+import iconDinero from '../../assets/icons/dinero.svg';
+import iconFacebook from '../../assets/icons/facebook.svg';
+import iconGooglePlus from '../../assets/icons/googleplus.svg';
+import iconInstagram from '../../assets/icons/instagram.svg';
+import iconLocalizacion from '../../assets/icons/localizacion.svg';
+import iconUsuario from '../../assets/icons/usuario.svg';
+import iconYoutube from '../../assets/icons/youtube.svg';
+import logoCreatur from '!file-loader!../../assets/icons/Logo_Creatur_Viajes.png';
 import iconTelefono from '../../assets/ImagenesPruebaNuevoDiseniov2/telefono.svg'
 
 function Menu() {
