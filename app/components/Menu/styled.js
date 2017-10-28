@@ -65,26 +65,14 @@ const ButtonNavBar = styled.a`
   border-color: #001a5a;
   display: ${props => props.displayNone ? 'none' : 'inherit'};
   &:hover{
-    color: #ffffff;
-    background-color: #ee7202;
-    border-color: #ee7202;
-  }
-  &:focus{
-    color: #ffffff;
-    background-color: #ee7202;
-    border-color: #ee7202;
+    opacity: 0.5;
   }
 `;
 
 const Logo = styled(ButtonNavBar)`
-  background-color: 'white';
+  background-color: ;
   &:hover{
-    background-color: white;
-    border-color: white;
-  }
-  &:focus{
-    background-color: white;
-    border-color: white;
+    opacity: 1;
   }
 `;
 
