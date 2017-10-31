@@ -23,11 +23,6 @@ import {
 import InputRange from '../InputRange';
 import Calendario from '../Calendario';
 
-import 'react-widgets/dist/css/react-widgets.css';
-import RW from 'react-widgets';
-
-import moment from 'moment/moment';
-
 const Destinos = [
 					'Todos los destinos',
 					'África',
@@ -78,8 +73,6 @@ const TiposDeViajes = [
 						'Expediciones'
 					];
 var t = 0;
-
-var dt = moment();
 
 
 class BuscadorCreaTuViaje extends React.Component {

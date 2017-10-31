@@ -1,3 +1,10 @@
 import styled from 'styled-components';
 
-export {}
+const DivCalendario = styled.div`
+	
+`;
+
+
+export {
+	DivCalendario
+}

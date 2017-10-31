@@ -61,6 +61,14 @@ const BotonCabecera = styled(ButtonBanner)`
   left: auto;
   top: 0px;
   right: 0px;
+
+  @media (min-width: 1200px) {
+    bottom: auto;
+    left: auto;
+    top: 0px;
+    right: 0px;
+  }
+
 `;
 
 const EspacioLink = styled(EspacioBoton)`

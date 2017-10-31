@@ -10,20 +10,42 @@ const ContenedorMenu = styled.div`
 
 const NavbarBlue = styled.nav`
   position: relative;
-  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: justify;
-      justify-content: right;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-flex-align: center;
+         align-items: center;
+  -webkit-flex-pack: justify;
+  -webkit-flex-justify-content: flex-end;
+               justify-content: flex-end;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-right: 7%;
   width: 100%;
   color: white;
   background-color: #001a5a;
+
+  @media (max-width: 575px) {
+
+  }
+
+  @media (max-width: 767px) {
+
+
+  }
+
+  @media (max-width: 991px) {
+    padding-right: 2%;
+  }
+
+  @media (max-width: 1199px) {
+
+  }
+
+  @media (min-width: 1200px) {
+
+  }
 `;
 
 const NavbarWhite = styled.nav`
@@ -67,10 +89,32 @@ const ButtonNavBar = styled.a`
   &:hover{
     opacity: 0.5;
   }
+
+
+  @media (max-width: 575px) {
+
+  }
+
+  @media (max-width: 767px) {
+
+  }
+
+  @media (max-width: 991px) {
+    padding: 5px 12px 5px 12px;
+    font-size: 14px;
+    margin-right: ${props => props.logo ? '0px' : ''};
+
+
+  }
+
+  @media (max-width: 1199px) {
+  padding: 5px 12px 5px 12px;
+  font-size: 14px;
+  margin-right: ${props => props.logo ? '3%' : ''}; 
+  }
 `;
 
 const Logo = styled(ButtonNavBar)`
-  background-color: ;
   &:hover{
     opacity: 1;
   }
@@ -88,8 +132,29 @@ const ButtonNavBarWhite = styled(ButtonNavBar)`
 
 const IconNavBar = styled.img`
   width: ${props => props.logo ? '254px' : '27px'};
-  height: ${props => props.logo ? '' : '27px;'}
+  height: ${props => props.logo ? '80px' : '27px;'}
   margin-right: 15px;  
+
+
+  @media (max-width: 575px) {
+
+  }
+
+  @media (max-width: 767px) {
+
+  }
+
+  @media (max-width: 991px) {
+    width: ${props => props.logo ? '127px' : '14px'};
+    height: ${props => props.logo ? '50px' : '14px;'}
+    margin-right: 15px;  
+  }
+
+  @media (max-width: 1199px) {
+      width: ${props => props.logo ? '180px' : '14px'};
+      height: ${props => props.logo ? '60px' : '14px;'}
+      margin-right: 15px;      
+  }
 `;
 
 export { 
