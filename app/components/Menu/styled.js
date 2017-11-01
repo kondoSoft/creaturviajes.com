@@ -10,7 +10,10 @@ const ContenedorMenu = styled.div`
 
 const NavbarBlue = styled.nav`
   position: relative;
+  /* Safari 6.1+ */
   display: -webkit-flex;
+   /* IE 10 */ 
+  display: -ms-flex;
   display: flex;
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;

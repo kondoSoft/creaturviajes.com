@@ -32,9 +32,8 @@ const SeccionIzquierda = styled.div`
 	padding-bottom: 20px;
 `;
 
-const ContenedorInputSeccion = styled.div`
-	padding: 3%;
-	padding-right: 7%;
+const ContenedorInputSeccion = styled.div`	
+	margin: 2%;
 	input[type='checkbox']:checked + label,
 	input[type='radio']:checked + label{
 		text-decoration: underline;
@@ -55,24 +54,32 @@ const ContenedorInputSeccion = styled.div`
 
 const SeccionDestinos = styled.div`
 	width: 90%;
-	height: 200px;
+	height: 300px;
+	/* Safari 6.1+ */
 	display: -webkit-flex;
+	/* IE 10 */ 
+	display: -ms-flex;
 	display: flex;
 	flex-direction: row;
 	border-bottom: 1px solid  #ee7202;
-
 `;
 
 const SeccionPaises = styled.div`
 	width: 100%;
-	height: 200px;
+	height: 300px;
+	/* Safari 6.1+ */
 	display: -webkit-flex;
+	/* IE 10 */ 
+	display: -ms-flex;
 	display: flex;
 	flex-direction: row;
 `;
 
 const ColumnasSeccion = styled.div`
+	/* Safari 6.1+ */
 	display: -webkit-flex;
+	/* IE 10 */ 
+	display: -ms-flex;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -98,8 +105,10 @@ const SeccionFechasPresupuesto = styled.div`
 
 const SeccionBotones = styled.div`
 	width: 100%;
+	/* Safari 6.1+ */
 	display: -webkit-flex;
-	display: flex;
+	/* IE 10 */ 
+	display: -ms-flex;
 	justify-content: center;
 
 	div{
