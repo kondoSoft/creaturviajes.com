@@ -135,7 +135,7 @@ const ButtonNavBarWhite = styled(ButtonNavBar)`
 
 const IconNavBar = styled.img`
   width: ${props => props.logo ? '254px' : '27px'};
-  height: ${props => props.logo ? '80px' : '27px;'}
+  height: ${props => props.logo ? '80px' : '27px;'};
   margin-right: 15px;  
 
 

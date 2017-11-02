@@ -32,7 +32,7 @@ function Home() {
   return (
     <div>
       <Helmet>
-        <title>Home</title>
+        <title>creaturviajes.com</title>
         <meta name="description" content="Description of Home" />
       </Helmet>
       <Menu/>
