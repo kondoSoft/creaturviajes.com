@@ -6,8 +6,9 @@
 
 import React from 'react';
 import { DivCalendario } from './styled';
-//import * as moment from 'moment/moment';
+
 import Moment from 'moment';
+import 'moment/locale/es.js';
 import momentLocalizer from 'react-widgets-moment';
 
 import { Calendar } from 'react-widgets';
@@ -16,8 +17,7 @@ import 'react-widgets/dist/css/react-widgets.css';
 class Calendario extends React.Component {
 
   render(){
-
-  momentLocalizer()
+    momentLocalizer(Moment())
 
 	return (
 		<DivCalendario>
@@ -36,6 +36,7 @@ class Calendario extends React.Component {
                   mt.getMonth()
                 ]
               }
+        currentDateRange={[new Date(2017, 2), new Date(2017, 3)] }
       />
 		</DivCalendario>
 	)

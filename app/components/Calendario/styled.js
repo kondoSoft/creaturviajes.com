@@ -11,15 +11,22 @@ const DivCalendario = styled.div`
 	}
 
 	.rw-calendar-transition-group{
-		border-left: 2px solid #8f8f8f;
-		border-right: 2px solid #8f8f8f;
-		border-bottom: 2px solid #8f8f8f;
+		border-left: 1px solid #8f8f8f;
+		border-right: 1px solid #8f8f8f;
+		border-bottom: 1px solid #8f8f8f;
+	}
+
+	.rw-cell{
+		hover
 	}
 
 	.rw-cell.rw-state-selected, .rw-cell.rw-state-selected:hover{
-		background-color: #ee7202;
-		border: 1px solid #ee7202;
+		background-color: #FDA759;
+		border: 1px solid #FDA759;
 		font-weight: bold;
+	}
+	.rw-cell.rw-state-focus, .rw-cell.rw-state-focus:hover{
+		border: 1px solid #FDA759;
 	}
 `;
 
