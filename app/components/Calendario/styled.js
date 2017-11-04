@@ -4,7 +4,7 @@ const DivCalendario = styled.div`
 	.rw-calendar-header{
 		background:  #ee7202;
 
-		:nth-child(2) {
+		:nth-child(1), :nth-child(2), :nth-child(3) {
 			font-size: 32px;
 			color: white;
 		}
@@ -14,10 +14,6 @@ const DivCalendario = styled.div`
 		border-left: 1px solid #8f8f8f;
 		border-right: 1px solid #8f8f8f;
 		border-bottom: 1px solid #8f8f8f;
-	}
-
-	.rw-cell{
-		hover
 	}
 
 	.rw-cell.rw-state-selected, .rw-cell.rw-state-selected:hover{
