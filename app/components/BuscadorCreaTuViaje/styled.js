@@ -32,8 +32,10 @@ const SeccionIzquierda = styled.div`
 	padding-bottom: 20px;
 `;
 
-const ContenedorInputSeccion = styled.div`	
-	margin: 2%;
+const ContenedorInputSeccion = styled.div`
+
+	margin: ${props => props.moz ? '7%' : '2%'};
+	
 	input[type='checkbox']:checked + label,
 	input[type='radio']:checked + label{
 		text-decoration: underline;

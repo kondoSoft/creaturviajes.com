@@ -83,6 +83,14 @@ class BuscadorCreaTuViaje extends React.Component {
 
 
   render(){
+		//var userAgent = navigator.userAgent || navigator.vendor || window.opera
+
+		var userAgent = window.navigator.product
+		var moz = new RegExp('Gecko')
+		console.log('=======================User Agent===========================')
+		alert(userAgent)
+		console.log(userAgent)
+		console.log('=======================User Agent===========================')
   	  return (
   	  	<form>
   	  	  	<CreaturBuscador>
@@ -93,23 +101,32 @@ class BuscadorCreaTuViaje extends React.Component {
   	  		  				{
   	  		  					Destinos.map(
   	  		  						(item, i)=>{
-  	  		  							if (item === 'Todos los destinos') {
+  	  		  							if (item === 'Todos los destinos' || moz.test(userAgent)) {
 		  		  							return(
-			  									<ContenedorInputSeccion key={i}>
+			  									<ContenedorInputSeccion moz key={i}>
 			  								  		<input type="radio" id={"valueDestinos" + i} name="valueDestinos" value={item} defaultChecked/>
 			  										<label htmlFor={"valueDestinos"+i}> {item}</label>
 			  									</ContenedorInputSeccion>
 		  		  							)
   	  		  							}else{
-		  		  							return(
-			  									<ContenedorInputSeccion key={i}>
+  	  		  								if (moz.test(userAgent)) {
+  	  		  									return(
+			  									<ContenedorInputSeccion moz key={i}>
 			  								  		<input type="radio" id={"valueDestinos" + i} name="valueDestinos" value={item} />
 			  										<label htmlFor={"valueDestinos"+i}> {item}</label>
 			  									</ContenedorInputSeccion>
-		  		  							)
+
+		  		  								)
+		  		  							}else{
+			  		  							return(
+				  									<ContenedorInputSeccion key={i}>
+				  								  		<input type="radio" id={"valueDestinos" + i} name="valueDestinos" value={item} />
+				  										<label htmlFor={"valueDestinos"+i}> {item}</label>
+				  									</ContenedorInputSeccion>
+			  		  							)
+  	  		  								}
   	  		  							}
   	  		  						}
-
   	  		  					)
   	  		  				}
   	  					</ColumnasSeccion>
