@@ -3,13 +3,19 @@ import styled from 'styled-components';
 import { ButtonBanner } from '../BannerPrincipal/styled'
 
 const CuerpoCard = styled.div`
-  width: 440.45px;
+  width: 27%;
   background-color: #ffffff;
   position: relative;
+
     div{
        padding: 5%;
        padding-top: 10px;
     }
+
+  /* xlarge */
+  @media screen and (min-width: 1921px) {
+    width: 453.75px;
+  }
 `;
 
 const ImagenCard = styled.img`
@@ -19,17 +25,110 @@ const ImagenCard = styled.img`
 `;
 
 const LogoPremium = styled.img`
-  width: 20%;
+  width: 18%;
   position: absolute;
-  right: 6%;
-  bottom: 28%;
+
+    /* xsmall-0 */
+  @media screen and (max-width: 480px) {
+
+  }
+
+  /* xsmall-1 */
+  @media screen and (max-width: 600px) and (min-width: 481px) {
+
+  }
+
+  /* small-0 */
+  @media screen and (max-width: 840px) and (min-width: 601px) {
+
+  }
+
+  /* small-1 */
+  @media screen and (max-width: 960px) and (min-width: 841px) {
+
+  }
+
+  /* medium */
+  @media screen and (max-width: 1280px) and (min-width: 961px) {
+    right: 4%;
+    bottom: 36%;
+  }
+
+  /* large-0 */
+  @media screen and (max-width: 1440px) and (min-width: 1281px) {
+    right: 5%;
+    bottom: 34%;
+  }
+
+  /* large-1 */
+  @media screen and (max-width: 1600px) and (min-width: 1441px) {
+    right: 5%;
+    bottom: 30%;
+  }
+
+  /* large-2 */
+  @media screen and (max-width: 1920px) and (min-width: 1601px) {
+    right: 5%;
+    bottom: 28%;
+  }
+
+  /* xlarge */
+  @media screen and (min-width: 1921px) {
+    right: 5%;
+    bottom: 28%;
+  }
+
 `;
 
 const TituloCard = styled.h3`
-  width: 75%;
+  width: 80%;
   font-family: AvenirBook;
   color: #001a5a;
-  font-size: 22px;
+
+      /* xsmall-0 */
+  @media screen and (max-width: 480px) {
+
+  }
+
+  /* xsmall-1 */
+  @media screen and (max-width: 600px) and (min-width: 481px) {
+
+  }
+
+  /* small-0 */
+  @media screen and (max-width: 840px) and (min-width: 601px) {
+
+  }
+
+  /* small-1 */
+  @media screen and (max-width: 960px) and (min-width: 841px) {
+
+  }
+
+  /* medium */
+  @media screen and (max-width: 1280px) and (min-width: 961px) {
+    font-size: 19px;
+  }
+
+  /* large-0 */
+  @media screen and (max-width: 1440px) and (min-width: 1281px) {
+    font-size: 20px;
+  }
+
+  /* large-1 */
+  @media screen and (max-width: 1600px) and (min-width: 1441px) {
+    font-size: 24px;
+  }
+
+  /* large-2 */
+  @media screen and (max-width: 1920px) and (min-width: 1601px) {
+    font-size: 29px;
+  }
+
+  /* xlarge */
+  @media screen and (min-width: 1921px) {
+    font-size: 30px;
+  }
 `;
 
 const TextoCard = styled.p`
@@ -46,8 +145,8 @@ const EspacioBoton = styled.div`
 `;
 
 const ButtonCard = styled(ButtonBanner)`
-	padding: 15px 50px 15px 50px;
-	font-size: 1rem;
+	padding: 100% 20% 100% 20%;
+	font-size: 130%;
 	position: relative;
 	margin-top: -40px;
 	left: auto;
@@ -55,20 +154,12 @@ const ButtonCard = styled(ButtonBanner)`
 `;
 
 const BotonCabecera = styled(ButtonBanner)`
-  padding: 15px 50px 15px 50px;
+  padding: 3% 13% 3% 13%;
   font-size: 1rem;
   bottom: auto;
   left: auto;
   top: 0px;
   right: 0px;
-
-  @media (min-width: 1200px) {
-    bottom: auto;
-    left: auto;
-    top: 0px;
-    right: 0px;
-  }
-
 `;
 
 const EspacioLink = styled(EspacioBoton)`
