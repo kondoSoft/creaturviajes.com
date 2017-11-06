@@ -4,6 +4,7 @@ const ContenedorBanner = styled.div`
   width: 100%;
   position: relative;
 `;
+
 const ImgPrincipal = styled.img`
 	width: 100%;
 	margin: 0px;
@@ -22,8 +23,6 @@ const ButtonBanner = styled.button`
       -ms-user-select: none;
           user-select: none;
   border: 1px solid transparent;
-  padding: 1rem 2.5rem 1rem 2.5rem;
-  font-size: 1.5rem;
   line-height: 1.25;
   transition: all 0.15s ease-in-out;
   color: #fff;
@@ -31,64 +30,125 @@ const ButtonBanner = styled.button`
   border-color: #ee7202;
   position: absolute;
 
-  @media (max-width: 575px) {
+    /* xsmall-0 */
+  @media screen and (max-width: 480px) {
 
   }
 
-  @media (max-width: 767px) {
+  /* xsmall-1 */
+  @media screen and (max-width: 600px) and (min-width: 481px) {
 
   }
 
-  @media (max-width: 991px) {
-    left: 195px;
-    bottom: 300px;
-    font-size: 1rem;
-    padding: .5rem 1.5rem .5rem 1.5rem;
+  /* small-0 */
+  @media screen and (max-width: 840px) and (min-width: 601px) {
+
   }
 
-  @media (max-width: 1199px) {
-    left: 25%;
+  /* small-1 */
+  @media screen and (max-width: 960px) and (min-width: 841px) {
+
+  }
+
+  /* medium */
+  @media screen and (max-width: 1280px) and (min-width: 961px) {
+    left: 23%;
     bottom: 20%;
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: .8rem;
+  }
+
+  /* large-0 */
+  @media screen and (max-width: 1440px) and (min-width: 1281px) {
+    left: 23%;
+    bottom: 20%;
+    padding: 1rem 2.5rem 1rem 2.5rem;
     font-size: 1rem;
-    padding: .5rem 1.5rem .5rem 1.5rem;
   }
-  @media (min-width: 1200px) {
-    left: 25%;
-    bottom: 22%;
+
+  /* large-1 */
+  @media screen and (max-width: 1600px) and (min-width: 1441px) {
+    left: 23%;
+    bottom: 20%;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    font-size: 1.3rem;
   }
+
+  /* large-2 */
+  @media screen and (max-width: 1920px) and (min-width: 1601px) {
+    left: 23%;
+    bottom: 20%;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  /* xlarge */
+  @media screen and (min-width: 1921px) {
+    left: 23%;
+    bottom: 20%;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    font-size: 1.5rem;
+  }
+
 `;
 
 const TituloBanner = styled.p`
 	font-family: AntroVectra;
 	font-weight: bold;
-	font-size: 4rem;
 	color: #001a5a;
 	position: absolute;
-  left: 15%;
-  bottom: 22%;
 
-  @media (max-width: 575px) {
-
-  }
-
-  @media (max-width: 767px) {
+    /* xsmall-0 */
+  @media screen and (max-width: 480px) {
 
   }
 
-  @media (max-width: 991px) {
-    left: 100px;
-    bottom: 300px;
+  /* xsmall-1 */
+  @media screen and (max-width: 600px) and (min-width: 481px) {
+
+  }
+
+  /* small-0 */
+  @media screen and (max-width: 840px) and (min-width: 601px) {
+
+  }
+
+  /* small-1 */
+  @media screen and (max-width: 960px) and (min-width: 841px) {
+
+  }
+
+  /* medium */
+  @media screen and (max-width: 1280px) and (min-width: 961px) {
+    left: 13%;
+    bottom: 22%;
     font-size: 2.5rem;
   }
 
-  @media (max-width: 1199px) {
-    left: 9%;
-    bottom: 18%;
+  /* large-0 */
+  @media screen and (max-width: 1440px) and (min-width: 1281px) {
+    left: 13%;
+    bottom: 22%;
     font-size: 3rem;
   }
 
-  @media (min-width: 1200px) {
-    left: 15%;
+  /* large-1 */
+  @media screen and (max-width: 1600px) and (min-width: 1441px) {
+    left: 13%;
+    bottom: 22%;
+    font-size: 3.5rem;
+  }
+
+  /* large-2 */
+  @media screen and (max-width: 1920px) and (min-width: 1601px) {
+    left: 13%;
+    bottom: 22%;
+    font-size: 4rem;
+  }
+
+  /* xlarge */
+  @media screen and (min-width: 1921px) {
+    left: 13%;
     bottom: 22%;
     font-size: 4rem;
   }
