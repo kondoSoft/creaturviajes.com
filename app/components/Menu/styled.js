@@ -47,6 +47,9 @@ const NavbarBlue = styled.nav`
   @media screen and (max-width: 1920px) and (min-width: 1601px) {
     padding-right: 7.5%;
   }
+  @media screen and (min-width: 1921px) {
+    padding-right: 7.5%; 
+  }
 `;
 
 const NavbarWhite = styled.nav`
@@ -133,6 +136,10 @@ const ButtonNavBar = styled.a`
   @media screen and (max-width: 1920px) and (min-width: 1601px) {
     ${props => props.logo ? 'margin-right: 10%;' : ''}
   }
+
+  @media screen and (min-width: 1921px) {
+    ${props => props.logo ? 'margin-right: 10%;' : ''}
+  }
 `;
 
 const Logo = styled(ButtonNavBar)`
@@ -196,6 +203,13 @@ const IconNavBar = styled.img`
 
   /* large-2 */
   @media screen and (max-width: 1920px) and (min-width: 1601px) {
+    width: ${props => props.logo ? '280px' : '18px'};
+    height: ${props => props.logo ? '60px' : '18px'};
+    margin-right: 15px;
+  }
+
+  /* xlarge */
+  @media screen and (min-width: 1921px) {
     width: ${props => props.logo ? '280px' : '18px'};
     height: ${props => props.logo ? '60px' : '18px'};
     margin-right: 15px;
