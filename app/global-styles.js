@@ -80,7 +80,7 @@ injectGlobal`
   /* large-2 */
   @media screen and (max-width: 1920px) and (min-width: 1601px) {
     body{
-      padding-top: 180px;
+      padding-top: 146px;
     }
   }
   /* xlarge */
