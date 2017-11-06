@@ -85,7 +85,7 @@ const TituloCard = styled.h3`
   font-family: AvenirBook;
   color: #001a5a;
 
-      /* xsmall-0 */
+  /* xsmall-0 */
   @media screen and (max-width: 480px) {
 
   }
@@ -145,7 +145,7 @@ const EspacioBoton = styled.div`
 `;
 
 const ButtonCard = styled(ButtonBanner)`
-	padding: 100% 20% 100% 20%;
+	padding: 3% 13% 3% 13%;
 	font-size: 130%;
 	position: relative;
 	margin-top: -40px;
