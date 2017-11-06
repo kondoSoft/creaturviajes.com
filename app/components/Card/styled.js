@@ -146,7 +146,6 @@ const EspacioBoton = styled.div`
 
 const ButtonCard = styled(ButtonBanner)`
 	padding: 3% 13% 3% 13%;
-	font-size: 130%;
 	position: relative;
 	margin-top: -40px;
 	left: auto;
