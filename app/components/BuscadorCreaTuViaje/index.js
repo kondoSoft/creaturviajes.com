@@ -83,14 +83,32 @@ class BuscadorCreaTuViaje extends React.Component {
 
 
   render(){
-		//var userAgent = navigator.userAgent || navigator.vendor || window.opera
+  		var userAgent
+		// Firefox 1.0+
+		var isFirefox = typeof InstallTrigger !== 'undefined'
+		// Chrome 1+
+    	var isChrome = !!window.chrome && !!window.chrome.webstore
+		// Opera 8.0+
+		var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0
+		// Internet Explorer 6-11
+	    var isIE = /*@cc_on!@*/false || !!document.documentMode
+	    // Edge 20+
+	    var isEdge = !isIE && !!window.StyleMedia
 
-		var userAgent = window.navigator.product
-		var moz = new RegExp('Gecko')
-		console.log('=======================User Agent===========================')
-		alert(userAgent)
+	    if (isOpera) {
+	    	userAgent = 'isOpera'
+		}else if(isFirefox){
+	    	userAgent = 'isFirefox'
+	    }else if(isChrome){
+	    	userAgent = 'isChrome'
+	    }else if(isIE){
+	    	userAgent = 'isInternetExplorer'
+	    }else if(isEdge){
+	    	userAgent = 'isEdge'
+	    }
+	    console.log('======================navegador=========================')
 		console.log(userAgent)
-		console.log('=======================User Agent===========================')
+		console.log('======================navegador=========================')
   	  return (
   	  	<form>
   	  	  	<CreaturBuscador>
@@ -101,23 +119,31 @@ class BuscadorCreaTuViaje extends React.Component {
   	  		  				{
   	  		  					Destinos.map(
   	  		  						(item, i)=>{
-  	  		  							if (item === 'Todos los destinos' || moz.test(userAgent)) {
-		  		  							return(
-			  									<ContenedorInputSeccion moz key={i}>
-			  								  		<input type="radio" id={"valueDestinos" + i} name="valueDestinos" value={item} defaultChecked/>
-			  										<label htmlFor={"valueDestinos"+i}> {item}</label>
-			  									</ContenedorInputSeccion>
-		  		  							)
-  	  		  							}else{
-  	  		  								if (moz.test(userAgent)) {
+  	  		  							if (item === 'Todos los destinos') {
+  	  		  								if (userAgent === 'isFirefox') {
   	  		  									return(
-			  									<ContenedorInputSeccion moz key={i}>
-			  								  		<input type="radio" id={"valueDestinos" + i} name="valueDestinos" value={item} />
-			  										<label htmlFor={"valueDestinos"+i}> {item}</label>
-			  									</ContenedorInputSeccion>
-
-		  		  								)
-		  		  							}else{
+				  									<ContenedorInputSeccion moz key={i}>
+				  								  		<input type="radio" id={"valueDestinos" + i} name="valueDestinos" value={item} defaultChecked/>
+				  										<label htmlFor={"valueDestinos"+i}> {item}</label>
+				  									</ContenedorInputSeccion>
+			  		  							)
+  	  		  								}else{
+			  		  							return(
+				  									<ContenedorInputSeccion key={i}>
+				  								  		<input type="radio" id={"valueDestinos" + i} name="valueDestinos" value={item} defaultChecked/>
+				  										<label htmlFor={"valueDestinos"+i}> {item}</label>
+				  									</ContenedorInputSeccion>
+			  		  							)
+  	  		  								}
+  	  		  							}else{
+  	  		  								if (userAgent === 'isFirefox') {
+			  		  							return(
+				  									<ContenedorInputSeccion moz key={i}>
+				  								  		<input type="radio" id={"valueDestinos" + i} name="valueDestinos" value={item} />
+				  										<label htmlFor={"valueDestinos"+i}> {item}</label>
+				  									</ContenedorInputSeccion>
+			  		  							)
+  	  		  								}else{
 			  		  							return(
 				  									<ContenedorInputSeccion key={i}>
 				  								  		<input type="radio" id={"valueDestinos" + i} name="valueDestinos" value={item} />
@@ -125,6 +151,7 @@ class BuscadorCreaTuViaje extends React.Component {
 				  									</ContenedorInputSeccion>
 			  		  							)
   	  		  								}
+		  		  							
   	  		  							}
   	  		  						}
   	  		  					)
@@ -138,19 +165,37 @@ class BuscadorCreaTuViaje extends React.Component {
   	  		  					Paises.map(
   	  		  						(item, i)=>{
  	  		  							if (item === 'Argentina') {
-  	  		  								return (
-  	  		  									<ContenedorInputSeccion key={i}>
-  	  		  										<input type="radio" id={"valuePaises" + i} name="valuePaises" value={item} defaultChecked/>
-  	  		  										<label htmlFor={"valuePaises"+i}> {item} </label>
-  	  		  									</ContenedorInputSeccion>
-  	  		  									)
+ 	  		  								if (userAgent === 'isFirefox') {
+		  		  								return (
+		  		  									<ContenedorInputSeccion moz key={i}>
+		  		  										<input type="radio" id={"valuePaises" + i} name="valuePaises" value={item} defaultChecked/>
+		  		  										<label htmlFor={"valuePaises"+i}> {item} </label>
+		  		  									</ContenedorInputSeccion>
+			  									)
+ 	  		  								}else{
+		  		  								return (
+		  		  									<ContenedorInputSeccion key={i}>
+		  		  										<input type="radio" id={"valuePaises" + i} name="valuePaises" value={item} defaultChecked/>
+		  		  										<label htmlFor={"valuePaises"+i}> {item} </label>
+		  		  									</ContenedorInputSeccion>
+			  									)
+ 	  		  								}
   	  		  							}else{
-  	  		  								return(
-  	  		  									<ContenedorInputSeccion key={i}>
-  	  		  										<input type="radio" id={"valuePaises" + i} name="valuePaises" value={item}/>
-  	  		  										<label htmlFor={"valuePaises"+i}> {item} </label>
-  	  		  									</ContenedorInputSeccion>
+  	  		  								if (userAgent === 'isFirefox') {
+  	  		  									return(
+  	  		  										<ContenedorInputSeccion moz key={i}>
+  	  		  											<input type="radio" id={"valuePaises" + i} name="valuePaises" value={item}/>
+  	  		  											<label htmlFor={"valuePaises"+i}> {item} </label>
+  	  		  										</ContenedorInputSeccion>
   	  		  									)
+  	  		  								}else{
+  	  		  									return(
+  	  		  										<ContenedorInputSeccion key={i}>
+  	  		  											<input type="radio" id={"valuePaises" + i} name="valuePaises" value={item}/>
+  	  		  											<label htmlFor={"valuePaises"+i}> {item} </label>
+  	  		  										</ContenedorInputSeccion>
+  	  		  									)
+  	  		  								}
   	  		  							}
   	  		  						}
   	  		  					)
@@ -164,19 +209,37 @@ class BuscadorCreaTuViaje extends React.Component {
   	  		  			TiposDeViajes.map(
   	  						(item, i) => {
   	  							if (item === 'Viajes en grupo') {
-			  			  		return(
-				  			  		<ContenedorInputSeccion key={i}>
-				  				  		<input type="checkbox" id={"valueTipoDeViaje"+i} name={"valueTipoDeViaje"+i} defaultChecked/>
-				  						<label htmlFor={"valueTipoDeViaje"+i} > {item}</label>
-				  					</ContenedorInputSeccion>
-				  					)
+  	  								if (userAgent === 'isFirefox') {
+					  			  		return(
+						  			  		<ContenedorInputSeccion moz key={i}>
+						  				  		<input type="checkbox" id={"valueTipoDeViaje"+i} name={"valueTipoDeViaje"+i} defaultChecked/>
+						  						<label htmlFor={"valueTipoDeViaje"+i} > {item}</label>
+						  					</ContenedorInputSeccion>
+						  				)
+  	  								}else {
+					  			  		return(
+						  			  		<ContenedorInputSeccion key={i}>
+						  				  		<input type="checkbox" id={"valueTipoDeViaje"+i} name={"valueTipoDeViaje"+i} defaultChecked/>
+						  						<label htmlFor={"valueTipoDeViaje"+i} > {item}</label>
+						  					</ContenedorInputSeccion>
+						  				)
+  	  								}
   	  							}else{
-			  			  		return(
-				  			  		<ContenedorInputSeccion key={i}>
-				  				  		<input type="checkbox" id={"valueTipoDeViaje"+i} name={"valueTipoDeViaje"+i} />
-				  						<label htmlFor={"valueTipoDeViaje"+i} > {item}</label>
-				  					</ContenedorInputSeccion>
-				  					)
+  	  								if (userAgent === 'isFirefox') {
+					  			  		return(
+						  			  		<ContenedorInputSeccion moz key={i}>
+						  				  		<input type="checkbox" id={"valueTipoDeViaje"+i} name={"valueTipoDeViaje"+i} />
+						  						<label htmlFor={"valueTipoDeViaje"+i} > {item}</label>
+						  					</ContenedorInputSeccion>
+					  					)
+  	  								}else{
+					  			  		return(
+						  			  		<ContenedorInputSeccion key={i}>
+						  				  		<input type="checkbox" id={"valueTipoDeViaje"+i} name={"valueTipoDeViaje"+i} />
+						  						<label htmlFor={"valueTipoDeViaje"+i} > {item}</label>
+						  					</ContenedorInputSeccion>
+					  					)
+  	  								}
   	  							}
   	  				  		}
   	  					)

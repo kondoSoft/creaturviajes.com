@@ -34,7 +34,7 @@ const SeccionIzquierda = styled.div`
 
 const ContenedorInputSeccion = styled.div`
 
-	margin: ${props => props.moz ? '7%' : '2%'};
+	margin: ${props => props.moz ? '5%' : '2%'};
 	
 	input[type='checkbox']:checked + label,
 	input[type='radio']:checked + label{
