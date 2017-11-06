@@ -24,6 +24,7 @@ const TituloSeccion = styled.h3`
 	font-family: AvenirBook;
 	color: #001a5a;
 	width: 100%;
+	${props => props.titleCenter ? 'text-align: center;' : ''}
 `;
 
 const SeccionIzquierda = styled.div`
@@ -34,7 +35,8 @@ const SeccionIzquierda = styled.div`
 
 const ContenedorInputSeccion = styled.div`
 
-	margin: ${props => props.moz ? '5%' : '2%'};
+	padding-top: ${props => props.moz ? '5%' : '2%'};
+	padding-bottom: ${props => props.moz ? '5%' : '2%'};
 	
 	input[type='checkbox']:checked + label,
 	input[type='radio']:checked + label{
