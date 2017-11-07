@@ -44,11 +44,102 @@ const TituloColumna = styled.h3`
 	font-family: AvenirBook;
 	font-size: 24px;
 	margin-bottom: 0px;
+
+	/* xsmall-0 */
+	@media screen and (max-width: 480px) {
+
+	}
+
+	/* xsmall-1 */
+	@media screen and (max-width: 600px) and (min-width: 481px) {
+
+	}
+
+	/* small-0 */
+	@media screen and (max-width: 840px) and (min-width: 601px) {
+
+	}
+
+	/* small-1 */
+	@media screen and (max-width: 960px) and (min-width: 841px) {
+
+	}
+
+	/* medium */
+	@media screen and (max-width: 1280px) and (min-width: 961px) {
+		margin-left: 0px;
+		font-size: 20px;
+	}
+
+	/* large-0 */
+	@media screen and (max-width: 1440px) and (min-width: 1281px) {
+		margin-left: 0px;
+	}
+
+	/* large-1 */
+	@media screen and (max-width: 1600px) and (min-width: 1441px) {
+
+	}
+
+	/* large-2 */
+	@media screen and (max-width: 1920px) and (min-width: 1601px) {
+
+	}
+
+	/* xlarge */
+	@media screen and (min-width: 1921px) {
+
+	}
 `;
 
 const SubTitulo = styled(TituloColumna)`
-	font-size: 15px;
+	font-size: 13px;
 	margin-top: 0px;
+
+	/* xsmall-0 */
+	@media screen and (max-width: 480px) {
+
+	}
+
+	/* xsmall-1 */
+	@media screen and (max-width: 600px) and (min-width: 481px) {
+
+	}
+
+	/* small-0 */
+	@media screen and (max-width: 840px) and (min-width: 601px) {
+
+	}
+
+	/* small-1 */
+	@media screen and (max-width: 960px) and (min-width: 841px) {
+
+	}
+
+	/* medium */
+	@media screen and (max-width: 1280px) and (min-width: 961px) {
+
+	}
+
+	/* large-0 */
+	@media screen and (max-width: 1440px) and (min-width: 1281px) {
+
+	}
+
+	/* large-1 */
+	@media screen and (max-width: 1600px) and (min-width: 1441px) {
+		font-size: 15px;
+	}
+
+	/* large-2 */
+	@media screen and (max-width: 1920px) and (min-width: 1601px) {
+
+	}
+
+	/* xlarge */
+	@media screen and (min-width: 1921px) {
+
+	}
 `;
 
 const SpanNaranja = styled.span`
@@ -116,7 +207,7 @@ const ColumnaSecundaria = styled(ColumnaPrincipalFooter)`
 		}
 	}
 
-	/* large-1 */
+	/* large-1 */                   
 	@media screen and (max-width: 1600px) and (min-width: 1441px) {
 
 	}
@@ -170,6 +261,82 @@ const UltimaColumna = styled(ColumnaPrincipalFooter)`
 				width: 10%;
 			}
 		}
+	}
+
+	/* xsmall-0 */
+	@media screen and (max-width: 480px) {
+
+	}
+
+	/* xsmall-1 */
+	@media screen and (max-width: 600px) and (min-width: 481px) {
+
+	}
+
+	/* small-0 */
+	@media screen and (max-width: 840px) and (min-width: 601px) {
+
+	}
+
+	/* small-1 */
+	@media screen and (max-width: 960px) and (min-width: 841px) {
+
+	}
+
+	/* medium */
+	@media screen and (max-width: 1280px) and (min-width: 961px) {
+		div{
+			div{
+				input{
+					width: 85%;
+				}
+				button
+				{
+					width: 15%;
+				}
+			}
+		}
+	}
+
+	/* large-0 */
+	@media screen and (max-width: 1440px) and (min-width: 1281px) {
+		div{
+			div{
+				input{
+					width: 85%;
+				}
+				button
+				{
+					width: 15%;
+				}
+			}
+		}
+	}
+
+	/* large-1 */
+	@media screen and (max-width: 1600px) and (min-width: 1441px) {
+			div{
+				div{
+					input{
+						width: 80%;
+					}
+					button
+					{
+						width: 10%;
+					}
+				}
+			}
+		}
+	}
+
+	/* large-2 */
+	@media screen and (max-width: 1920px) and (min-width: 1601px) {
+
+	}
+
+	/* xlarge */
+	@media screen and (min-width: 1921px) {
+
 	}
 `;
 
