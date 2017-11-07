@@ -104,12 +104,16 @@ const ColumnaSecundaria = styled(ColumnaPrincipalFooter)`
 
 	/* medium */
 	@media screen and (max-width: 1280px) and (min-width: 961px) {
-		font-size: 18px;
+		li{
+			font-size: 14px;
+		}	
 	}
 
 	/* large-0 */
 	@media screen and (max-width: 1440px) and (min-width: 1281px) {
-
+		li{
+			font-size: 14px;
+		}
 	}
 
 	/* large-1 */
@@ -231,6 +235,55 @@ const ButtonNavBar = styled.a`
   &:hover{
   	opacity: 0.5;
   }
+
+  /* xsmall-0 */
+  @media screen and (max-width: 480px) {
+
+  }
+
+  /* xsmall-1 */
+  @media screen and (max-width: 600px) and (min-width: 481px) {
+
+  }
+
+  /* small-0 */
+  @media screen and (max-width: 840px) and (min-width: 601px) {
+
+  }
+
+  /* small-1 */
+  @media screen and (max-width: 960px) and (min-width: 841px) {
+
+  }
+
+  /* medium */
+  @media screen and (max-width: 1280px) and (min-width: 961px) {
+  	padding: 0px;
+  	margin-right: 16px;
+  }
+
+  /* large-0 */
+  @media screen and (max-width: 1440px) and (min-width: 1281px) {
+  	padding: 0px;
+  	margin-right: 16px;
+
+  }
+
+  /* large-1 */
+  @media screen and (max-width: 1600px) and (min-width: 1441px) {
+
+  }
+
+  /* large-2 */
+  @media screen and (max-width: 1920px) and (min-width: 1601px) {
+
+  }
+
+  /* xlarge */
+  @media screen and (min-width: 1921px) {
+
+  }
+
 `;
 
 const IconNavBar = styled.img`
