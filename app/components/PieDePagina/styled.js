@@ -69,7 +69,7 @@ const ColumnaSecundaria = styled(ColumnaPrincipalFooter)`
 		margin-top: 5px;
 		margin-right: 20px;
 		margin-bottom: 25px;
-		font-size: 14px;
+		font-size: 18px;
 		&:before {
 		    content: "• ";
 		    color: #ee7202;
@@ -104,7 +104,7 @@ const ColumnaSecundaria = styled(ColumnaPrincipalFooter)`
 
 	/* medium */
 	@media screen and (max-width: 1280px) and (min-width: 961px) {
-
+		font-size: 18px;
 	}
 
 	/* large-0 */
