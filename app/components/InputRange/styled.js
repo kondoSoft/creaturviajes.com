@@ -14,6 +14,11 @@ const InputContainer = styled.div`
 		background: #ee7202;
 		border: none;
 	}
+
+	.input-range__label--min,
+	.input-range__label--max{
+		display: none;
+	}
 `;
 
 export { InputContainer }
