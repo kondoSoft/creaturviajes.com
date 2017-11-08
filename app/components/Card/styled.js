@@ -150,6 +150,7 @@ const ButtonCard = styled(ButtonBanner)`
 	margin-top: -40px;
 	left: auto;
 	bottom: 50%;
+  font-size: 1.5rem;
 `;
 
 const BotonCabecera = styled(ButtonBanner)`
