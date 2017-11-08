@@ -33,6 +33,7 @@ const FilaRedesSociales = styled.div`
 `;
 
 const CorreoFooter = styled.h3`
+	font-size: 21px;
 	color: white;
 	margin-top: 100px;
 `;
@@ -365,7 +366,7 @@ const ContenedorFinal = styled.div`
    	margin-left: 30px;
    }
    img{
-   	width: 200px;
+   	width: 150px;
    }
    div{
    	position: absolute;
