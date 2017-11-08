@@ -9,7 +9,8 @@ const CuerpoCard = styled.div`
 
     div{
        padding: 5%;
-       padding-top: 10px;
+       padding-top: 0px;
+       padding-bottom: 0px;
     }
 
   /* xlarge */
@@ -147,7 +148,7 @@ const EspacioBoton = styled.div`
 const ButtonCard = styled(ButtonBanner)`
 	padding: 3% 13% 3% 13%;
 	position: relative;
-	margin-top: -40px;
+	margin-top: -30px;
 	left: auto;
 	bottom: 50%;
 `;
