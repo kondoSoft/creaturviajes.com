@@ -85,11 +85,12 @@ function PieDePagina() {
 	    	</UltimaColumna>
 	    </Footer>
 	    <ContenedorFinal>
-	    <p>Una empresa de</p>
-	    <img src={ LogoMayorista } alt=''/>
-	    <div>
-	    	<a>Política de privacidad / Términos y Condiciones </a>
-	    </div>
+	    	<div>
+			    <p>Una empresa de</p>
+			    <img src={ LogoMayorista } alt=''/>
+		    </div>
+		    <a id='viajesdelujo' >viajesdelujo.com</a>
+		    <a>Política de privacidad / Términos y Condiciones </a>
 	    </ContenedorFinal>
     </ContenedorFooter>
   );

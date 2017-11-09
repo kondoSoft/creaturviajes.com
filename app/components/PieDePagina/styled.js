@@ -34,7 +34,8 @@ const FilaRedesSociales = styled.div`
 
 const CorreoFooter = styled.h3`
 	color: white;
-	margin-top: 100px;
+	font-size: 27px;
+	padding-left: 2%;
 `;
 
 const TituloColumna = styled.h3`
@@ -342,39 +343,50 @@ const UltimaColumna = styled(ColumnaPrincipalFooter)`
 
 
 const LogoFooter = styled.img`
-  width: 40%;
+  width: 50%;
   margin: 0px;
   padding: 0px;
 `;
 
 const IconosRedesSociales = styled.img`
-  width: 35px;
-  margin-right: 20px;
+  width: 45px;
+  margin-right: 30px;
 `;
 
 const ContenedorFinal = styled.div`
    width: 100%;
    display: flex;
+   flex-flow: row;
    align-items: center;
    margin-top: 20px;
    font-family: AvenirBook;
-   p{
-   	color: white;
-   	font-size: 20px;
-   	font-family: AvenirBook;
-   	margin-left: 30px;
-   }
-   img{
-   	width: 200px;
-   }
+   justify-content: space-around;
+
    div{
-   	position: absolute;
-   	right: 75px;
+   	width: 50%;
+   	padding: 0;
+   	margin: 0;
+   	display: flex;
+   	flex-flow: row;
+   	align-items: center;
+	   p {
+	   	color: white;
+	   	font-size: 20px;
+	   	font-family: AvenirBook;
+	   	margin-left: 30px;
+	   }
+
+	   img {
+	   	width: 20%;
+	   }
    }
-   a{
+   a {
    	color: white;
-   	font-size: 14px;
-   	justify-content: right;
+   }
+
+   #viajesdelujo {
+   	color: white;
+   	font-size: 26px;
    }
 `;
 
