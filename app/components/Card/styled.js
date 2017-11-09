@@ -164,7 +164,7 @@ const BotonCabecera = styled(ButtonBanner)`
 `;
 
 const EspacioLink = styled(EspacioBoton)`
-  justify-content: right;
+  justify-content: flex-end;
 `;
 
 const LinkLeerMas = styled.a`
