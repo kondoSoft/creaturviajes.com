@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const ButtonWhats = styled.img`
 	width: 60px;
 	height: 60px;
-	background-color: #ee7202;
+	background-color: #25D366;
 	border-radius: 10%;
 	position: fixed;
 	right: 0;
