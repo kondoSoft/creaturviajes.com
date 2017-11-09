@@ -26,7 +26,7 @@ const ImagenCard = styled.img`
 `;
 
 const LogoPremium = styled.img`
-  width: 18%;
+  width: 14%;
   position: absolute;
 
     /* xsmall-0 */
@@ -51,31 +51,31 @@ const LogoPremium = styled.img`
 
   /* medium */
   @media screen and (max-width: 1280px) and (min-width: 961px) {
-    right: 4%;
-    bottom: 36%;
+    right: 6%;
+    bottom: 31%;
   }
 
   /* large-0 */
   @media screen and (max-width: 1440px) and (min-width: 1281px) {
-    right: 5%;
-    bottom: 34%;
+    right: 6%;
+    bottom: 29%;
   }
 
   /* large-1 */
   @media screen and (max-width: 1600px) and (min-width: 1441px) {
-    right: 5%;
-    bottom: 30%;
+    right: 6%;
+    bottom: 24%;
   }
 
   /* large-2 */
   @media screen and (max-width: 1920px) and (min-width: 1601px) {
-    right: 5%;
-    bottom: 28%;
+    right: 6%;
+    bottom: 22%;
   }
 
   /* xlarge */
   @media screen and (min-width: 1921px) {
-    right: 5%;
+    right: 6%;
     bottom: 28%;
   }
 
