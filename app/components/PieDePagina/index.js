@@ -19,8 +19,6 @@ import {
 		SpanNaranja,
 		IconosRedesSociales,
 		ContenedorFinal,
-		ButtonNavBar,
-		IconNavBar,
 		UltimaColumna
 	} from './styled.js';
 
@@ -31,9 +29,6 @@ import ImgSocialGp from '../../assets/ImagenesPruebaNuevoDiseniov2/google_mas.sv
 import ImgSocialIg from '../../assets/ImagenesPruebaNuevoDiseniov2/instagram.svg';
 import ImgSocialTw from '../../assets/ImagenesPruebaNuevoDiseniov2/twitter.svg';
 import LogoMayorista from '../../assets/ImagenesPruebaNuevoDiseniov2/logo_mayorista.svg';
-import iconLocalizacion from '../../assets/icons/localizacion.svg';
-import iconCorreo from '../../assets/icons/correo.svg';
-
 
 function PieDePagina() {
   return (
@@ -67,14 +62,6 @@ function PieDePagina() {
 	    	</ColumnaSecundaria>
 	    	<UltimaColumna>
 	    		<div>
-		    		<ButtonNavBar blue>
-		    		  <IconNavBar src={iconLocalizacion} alt="Icono Puntos de Venta" />
-		    		  Puntos de Venta
-		    		</ButtonNavBar>
-		    		<ButtonNavBar blue>
-		    		  <IconNavBar src={iconCorreo} alt="Icono Correo" />
-		    		  Contacto
-		    		</ButtonNavBar>
 		    		<TituloColumna>Obtén beneficios exclusivos</TituloColumna>
 		    		<SubTitulo>Date de alta para recibir promociones y más...</SubTitulo>
 		    		<div>

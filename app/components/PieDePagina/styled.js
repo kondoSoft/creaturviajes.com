@@ -2,7 +2,10 @@ import styled from 'styled-components';
 
 const ContenedorFooter = styled.div`
 	background: #001a5a;
-	padding: 3%;
+	padding-top: 1%;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-bottom: 3%;
 `;
 
 const Footer = styled.div`
@@ -34,7 +37,7 @@ const FilaRedesSociales = styled.div`
 
 const CorreoFooter = styled.h3`
 	color: white;
-	font-size: 27px;
+	font-size: 20px;
 	padding-left: 2%;
 `;
 
@@ -344,13 +347,11 @@ const UltimaColumna = styled(ColumnaPrincipalFooter)`
 
 const LogoFooter = styled.img`
   width: 50%;
-  margin: 0px;
-  padding: 0px;
 `;
 
 const IconosRedesSociales = styled.img`
-  width: 45px;
-  margin-right: 30px;
+  width: 33px;
+  margin-right: 20px;
 `;
 
 const ContenedorFinal = styled.div`
@@ -390,87 +391,6 @@ const ContenedorFinal = styled.div`
    }
 `;
 
-const ButtonNavBar = styled.a`
-  font-family: AvenirRoman;
-  display: inline-block;
-  font-weight: normal;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  border: ${props => props.blue ? '1px solid transparent' : 'none'};
-  padding: .5rem 1.5rem .5rem 1.5rem;
-  font-size: 1rem;
-  line-height: 1.25;
-  transition: all 0.15s ease-in-out;
-  color: ${props => props.blue ? 'white' : 'black'};
-  background-color: ${props => props.blue ? '#001a5a' : 'white'};
-  margin-right: ${props => props.logo ? '7%' : ''};
-  border-color: #001a5a;
-  display: ${props => props.displayNone ? 'none' : 'inherit'};
-  &:hover{
-  	opacity: 0.5;
-  }
-
-  /* xsmall-0 */
-  @media screen and (max-width: 480px) {
-
-  }
-
-  /* xsmall-1 */
-  @media screen and (max-width: 600px) and (min-width: 481px) {
-
-  }
-
-  /* small-0 */
-  @media screen and (max-width: 840px) and (min-width: 601px) {
-
-  }
-
-  /* small-1 */
-  @media screen and (max-width: 960px) and (min-width: 841px) {
-
-  }
-
-  /* medium */
-  @media screen and (max-width: 1280px) and (min-width: 961px) {
-  	padding: 0px;
-  	margin-right: 16px;
-  }
-
-  /* large-0 */
-  @media screen and (max-width: 1440px) and (min-width: 1281px) {
-  	padding: 0px;
-  	margin-right: 16px;
-
-  }
-
-  /* large-1 */
-  @media screen and (max-width: 1600px) and (min-width: 1441px) {
-
-  }
-
-  /* large-2 */
-  @media screen and (max-width: 1920px) and (min-width: 1601px) {
-
-  }
-
-  /* xlarge */
-  @media screen and (min-width: 1921px) {
-
-  }
-
-`;
-
-const IconNavBar = styled.img`
-  width: 27px;
-  height: 27px;
-  margin-right: 15px;  
-`;
-
 export {
 		ContenedorFooter,
 		Footer,
@@ -483,8 +403,6 @@ export {
 		SubTitulo,
 		SpanNaranja,
 		IconosRedesSociales,
-		ContenedorFinal, 
-		ButtonNavBar,
-		IconNavBar,
+		ContenedorFinal,
 		UltimaColumna
 	}
