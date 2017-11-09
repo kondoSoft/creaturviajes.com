@@ -29,15 +29,13 @@ const TituloSeccion = styled.h3`
 
 const SeccionIzquierda = styled.div`
 	width: 50%;
-	padding-top: 20px;
 	padding-bottom: 20px;
 `;
 
 const ContenedorInputSeccion = styled.div`
-
 	padding-top: ${props => props.moz ? '5%' : '2%'};
 	padding-bottom: ${props => props.moz ? '5%' : '2%'};
-	
+	${props => props.tipoviaje ? 'padding-left: 15%;' : '' }
 	input[type='checkbox']:checked + label,
 	input[type='radio']:checked + label{
 		text-decoration: underline;
@@ -58,7 +56,7 @@ const ContenedorInputSeccion = styled.div`
 
 const SeccionDestinos = styled.div`
 	width: 90%;
-	height: 300px;
+	height: 200px;
 	/* Safari 6.1+ */
 	display: -webkit-flex;
 	/* IE 10 */ 
@@ -70,7 +68,7 @@ const SeccionDestinos = styled.div`
 
 const SeccionPaises = styled.div`
 	width: 100%;
-	height: 300px;
+	height: 200px;
 	/* Safari 6.1+ */
 	display: -webkit-flex;
 	/* IE 10 */ 
@@ -92,17 +90,13 @@ const ColumnasSeccion = styled.div`
 
 const SeccionTiposDeViaje = styled.div`
 	width: 25%;
-	padding-top: 20px;
 	padding-bottom: 20px;
-	padding-left: 6%;
 	border-right: 1px solid  #ee7202;
 	border-left: 1px solid  #ee7202;
-
 `;
 
 const SeccionFechasPresupuesto = styled.div`
 	width: 25%;
-	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-left: 3%;
 `;
@@ -117,7 +111,6 @@ const SeccionBotones = styled.div`
 
 	div{
 		padding: 30px;
-		padding-top: 60px;
 	}
 `;
 
@@ -133,8 +126,8 @@ const BotonBuscadorAzul = styled.button `
 	  -ms-user-select: none;
 	      user-select: none;
 	border: 1px solid transparent;
-	padding: 1rem 2.5rem 1rem 2.5rem;
-	font-size: 1.5rem;
+	padding: 1rem 2rem 1rem 2rem;
+	font-size: 1rem;
 	line-height: 1.25;
 	transition: all 0.15s ease-in-out;
 	color: #fff;
@@ -145,7 +138,6 @@ const BotonBuscadorAzul = styled.button `
 const BotonBuscadorNaranja = styled(BotonBuscadorAzul)`
 	background: #ee7202;
 	border-color: #ee7202;
-
 `;
 
 export {

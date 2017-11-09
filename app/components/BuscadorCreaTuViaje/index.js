@@ -204,21 +204,21 @@ class BuscadorCreaTuViaje extends React.Component {
   	  		  		</SeccionPaises>
   	  		  	</SeccionIzquierda>
   	  		  	<SeccionTiposDeViaje>
-  	  		  		<TituloSeccion>Tipos de Viaje</TituloSeccion>
+  	  		  		<TituloSeccion titleCenter>Tipos de Viaje</TituloSeccion>
   	  		  		{ 
   	  		  			TiposDeViajes.map(
   	  						(item, i) => {
   	  							if (item === 'Viajes en grupo') {
   	  								if (userAgent === 'isFirefox') {
 					  			  		return(
-						  			  		<ContenedorInputSeccion moz key={i}>
+						  			  		<ContenedorInputSeccion tipoviaje moz key={i}>
 						  				  		<input type="checkbox" id={"valueTipoDeViaje"+i} name={"valueTipoDeViaje"+i} defaultChecked/>
 						  						<label htmlFor={"valueTipoDeViaje"+i} > {item}</label>
 						  					</ContenedorInputSeccion>
 						  				)
   	  								}else {
 					  			  		return(
-						  			  		<ContenedorInputSeccion key={i}>
+						  			  		<ContenedorInputSeccion tipoviaje key={i}>
 						  				  		<input type="checkbox" id={"valueTipoDeViaje"+i} name={"valueTipoDeViaje"+i} defaultChecked/>
 						  						<label htmlFor={"valueTipoDeViaje"+i} > {item}</label>
 						  					</ContenedorInputSeccion>
@@ -227,14 +227,14 @@ class BuscadorCreaTuViaje extends React.Component {
   	  							}else{
   	  								if (userAgent === 'isFirefox') {
 					  			  		return(
-						  			  		<ContenedorInputSeccion moz key={i}>
+						  			  		<ContenedorInputSeccion tipoviaje moz key={i}>
 						  				  		<input type="checkbox" id={"valueTipoDeViaje"+i} name={"valueTipoDeViaje"+i} />
 						  						<label htmlFor={"valueTipoDeViaje"+i} > {item}</label>
 						  					</ContenedorInputSeccion>
 					  					)
   	  								}else{
 					  			  		return(
-						  			  		<ContenedorInputSeccion key={i}>
+						  			  		<ContenedorInputSeccion tipoviaje key={i}>
 						  				  		<input type="checkbox" id={"valueTipoDeViaje"+i} name={"valueTipoDeViaje"+i} />
 						  						<label htmlFor={"valueTipoDeViaje"+i} > {item}</label>
 						  					</ContenedorInputSeccion>
@@ -248,20 +248,10 @@ class BuscadorCreaTuViaje extends React.Component {
   	  		  	<SeccionFechasPresupuesto>
   	  		  		<TituloSeccion titleCenter>Mes de Salida</TituloSeccion>
   	  		  		<Calendario />
-  	  		  		<br/>
-  	  		  		<br/>
   	  		  		<TituloSeccion titleCenter>Presupuesto USD</TituloSeccion>
-  	  		  		<br/>
-  	  		  		<br/>
   	  		  		<InputRange valor='$' valor2='' numMin={0} numMax={10000} numMinValue={2000} numMaxValue={8000} step={50}/>
-  	  		  		<br/>
-  	  		  		<br/>
   	  		  		<TituloSeccion titleCenter>Duración del programa</TituloSeccion>
-  	  		  		<br/>
-  	  		  		<br/>
   	  		  		<InputRange valor='' valor2=' días' numMin={0} numMax={30} numMinValue={2} numMaxValue={25} step={1}/>
-  	  		  		<br/>
-  	  		  		<br/>
   	  		  	</SeccionFechasPresupuesto>
   	  		  	<SeccionBotones>
   	  		  	<div>
