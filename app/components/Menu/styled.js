@@ -203,7 +203,7 @@ const IconNavBar = styled.img`
 
   /* large-2 */
   @media screen and (max-width: 1920px) and (min-width: 1601px) {
-    width: ${props => props.logo ? '280px' : '18px'};
+    width: ${props => props.logo ? '240px' : '18px'};
     height: ${props => props.logo ? '60px' : '18px'};
     margin-right: 15px;
   }

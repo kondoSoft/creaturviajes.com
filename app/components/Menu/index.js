@@ -28,7 +28,7 @@ import iconTelefono from '../../assets/ImagenesPruebaNuevoDiseniov2/telefono.svg
 function Menu() {
   return (
           <ContenedorMenu id="navbar">
-            <NavbarBlue>
+            <NavbarBlue id="azul">
                 <ButtonNavBar blue displayNone id='ocultar4'>
                   <IconNavBar src={iconTelefono} alt="Icono Tipo de Cambio" />
                   (55) 5545 6769
@@ -55,8 +55,8 @@ function Menu() {
                 </ButtonNavBar>
             </NavbarBlue>
             <NavbarWhite>
-              <Logo logo>
-                <IconNavBar logo src={logoCreatur} alt="Logo Creatur" />
+              <Logo logo id="espacioLogoCreatur">
+                <IconNavBar id="LogoCreatur" logo src={logoCreatur} alt="Logo Creatur" />
               </Logo>
               <ButtonNavBarWhite>
                 DESTINOS
@@ -97,19 +97,31 @@ function scrollFunction() {
   var menu2 = document.getElementById('ocultar2')
   var menu3 = document.getElementById('ocultar3')
   var menu4 = document.getElementById('ocultar4')
-  
+  var logoEspacio = document.getElementById('espacioLogoCreatur')
+  var imgLogoCreatur = document.getElementById('LogoCreatur')
+  var azul = document.getElementById('azul')
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 
     menu1.style.display = "none";
     menu2.style.display = "none";
     menu3.style.display = "none";
     menu4.style.display = "inherit";
+    logoEspacio.style.padding = '0';
+    imgLogoCreatur.style.width = '200px';
+    imgLogoCreatur.style.height = '40px';
+    azul.style.paddingTop = '0';
+    azul.style.paddingBottom = '0';
 
   }else{
     menu1.style.display = "inherit";
     menu2.style.display = "inherit";
     menu3.style.display = "inherit";
     menu4.style.display = "none";
+    logoEspacio.style.padding = '.5rem 1.5rem .5rem 1.5rem';
+    imgLogoCreatur.style.width = '240px';
+    imgLogoCreatur.style.height = '60px';
+    azul.style.paddingTop = '0.5rem';
+    azul.style.paddingBottom = '0.5rem';
   }
 } 
 
