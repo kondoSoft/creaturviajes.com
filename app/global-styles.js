@@ -67,25 +67,25 @@ injectGlobal`
   /* medium */
   @media screen and (max-width: 1280px) and (min-width: 961px) {
     body {
-      padding-top: 127.75px;
+      padding-top: 156px;
     }  
   }
   /* large-0 */
   @media screen and (max-width: 1440px) and (min-width: 1281px) {
     body {
-      padding-top: 132.75px;
+      padding-top: 156px;
     }  
   }
   /* large-1 */
   @media screen and (max-width: 1600px) and (min-width: 1441px) {
     body{
-      padding-top: 136px;
+      padding-top: 156px;
     }
   }
   /* large-2 */
   @media screen and (max-width: 1920px) and (min-width: 1601px) {
     body{
-      padding-top: 146px;
+      padding-top: 156px;
     }
   }
   /* xlarge */
