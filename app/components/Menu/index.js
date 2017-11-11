@@ -101,6 +101,15 @@ function scrollFunction() {
   var imgLogoCreatur = document.getElementById('LogoCreatur')
   var azul = document.getElementById('azul')
 
+  var mq480   = window.matchMedia('screen and (max-width: 480px)')
+  var mq600   = window.matchMedia('screen and (max-width: 600px) and (min-width: 481px)')
+  var mq840   = window.matchMedia('screen and (max-width: 840px) and (min-width: 601px)')
+  var mq960   = window.matchMedia('screen and (max-width: 960px) and (min-width: 841px)')
+  var mq1280  = window.matchMedia('screen and (max-width: 1280px) and (min-width: 961px)')
+  var mq1440  = window.matchMedia('screen and (max-width: 1440px) and (min-width: 1281px)')
+  var mq1600  = window.matchMedia('screen and (max-width: 1600px) and (min-width: 1441px)')
+  var mq1920  = window.matchMedia('screen and (max-width: 1920px) and (min-width: 1601px)')
+
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 
     menu1.style.display = 'none'
@@ -108,10 +117,34 @@ function scrollFunction() {
     menu3.style.display = 'none'
     menu4.style.display = 'initial'
     logoEspacio.style.padding = '0'
-    imgLogoCreatur.style.width = '200px'
-    imgLogoCreatur.style.height = '45px'
     azul.style.paddingTop = '0'
     azul.style.paddingBottom = '0'
+
+    if (mq1920.matches) {
+
+      imgLogoCreatur.style.width = '200px'
+      imgLogoCreatur.style.height = '45px'
+
+    }else if(mq1600.matches){
+
+      imgLogoCreatur.style.width = '200px'
+      imgLogoCreatur.style.height = '45px'
+
+    }else if(mq1440.matches){
+
+      imgLogoCreatur.style.width = '200px'
+      imgLogoCreatur.style.height = '45px'
+
+    }else if(mq1280.matches){
+
+      imgLogoCreatur.style.width = '200px'
+      imgLogoCreatur.style.height = '45px'
+
+    }else if(mq960.matches){
+
+      console.log('===================mq960====================')
+
+    }
 
   }else{
 
@@ -119,11 +152,11 @@ function scrollFunction() {
     menu2.style.display = ''
     menu3.style.display = ''
     menu4.style.display = 'none'
-    logoEspacio.style.padding = '.5rem 1.5rem .5rem 1.5rem'
+    logoEspacio.style.padding = ''
     imgLogoCreatur.style.width = ''
     imgLogoCreatur.style.height = ''
-    azul.style.paddingTop = '0.5rem'
-    azul.style.paddingBottom = '0.5rem'
+    azul.style.paddingTop = ''
+    azul.style.paddingBottom = ''
 
   }
 } 

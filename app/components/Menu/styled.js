@@ -56,14 +56,10 @@ const NavbarWhite = styled.nav`
   position: relative;
   display: -ms-flexbox;
   display: flex;
-    -ms-flex-wrap: center;
-        flex-wrap: center;
-   -ms-flex-align: center;
-      align-items: center;
-    -ms-flex-pack: center;
+  align-items: center;
   justify-content: center;
   padding-top: 0.5rem;
-  padding-bottom: 0.5rem;  
+  padding-bottom: 0.5rem;
   width: 100%;
   color: white;
   background-color: #ffffff;
@@ -182,36 +178,36 @@ const IconNavBar = styled.img`
 
   /* medium */
   @media screen and (max-width: 1280px) and (min-width: 961px) {
-    width: ${props => props.logo ? '150px' : '16px'};
-    height: ${props => props.logo ? '35px' : '16px'};
+    width: ${props => props.logo ? '220px' : '16px'};
+    height: ${props => props.logo ? '50px' : '16px'};
     margin-right: 6px;
   }
 
   /* large-0 */
   @media screen and (max-width: 1440px) and (min-width: 1281px) {
-    width: ${props => props.logo ? '180px' : '16px'};
-    height: ${props => props.logo ? '40px' : '16px'};
+    width: ${props => props.logo ? '260px' : '16px'};
+    height: ${props => props.logo ? '60px' : '16px'};
     margin-right: 8px;
   }
 
   /* large-1 */
   @media screen and (max-width: 1600px) and (min-width: 1441px) {
-    width: ${props => props.logo ? '220px' : '18px'};
-    height: ${props => props.logo ? '50px' : '18px'};
+    width: ${props => props.logo ? 'inherit' : '18px'};
+    height: ${props => props.logo ? 'inherit' : '18px'};
     margin-right: 15px;
   }
 
   /* large-2 */
   @media screen and (max-width: 1920px) and (min-width: 1601px) {
-    width: ${props => props.logo ? '240px' : '18px'};
-    height: ${props => props.logo ? '60px' : '18px'};
+    width: ${props => props.logo ? 'inherit' : '18px'};
+    height: ${props => props.logo ? 'inherit' : '18px'};
     margin-right: 15px;
   }
 
   /* xlarge */
   @media screen and (min-width: 1921px) {
-    width: ${props => props.logo ? '280px' : '18px'};
-    height: ${props => props.logo ? '60px' : '18px'};
+    width: ${props => props.logo ? 'inherit' : '18px'};
+    height: ${props => props.logo ? 'inherit' : '18px'};
     margin-right: 15px;
   }
 
