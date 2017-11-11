@@ -67,7 +67,7 @@ injectGlobal`
   /* medium */
   @media screen and (max-width: 1280px) and (min-width: 961px) {
     body {
-      padding-top: 156px;
+      padding-top: 142.75px;
     }  
   }
   /* large-0 */
