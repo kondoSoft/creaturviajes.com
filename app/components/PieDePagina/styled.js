@@ -23,158 +23,71 @@ const Footer = styled.div`
 `;
 
 const ColumnaPrincipalFooter = styled.div`
-	width: 40%;
+	width: 30%;
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	padding-left: 3%;
 `;
 
-const FilaRedesSociales = styled.div`
-	width: 100%;
-	margin-bottom: 25px;
-`;
-
 const CorreoFooter = styled.h3`
 	color: white;
-	font-size: 20px;
+	font-size: 28px;
 	padding-left: 2%;
-`;
-
-const TituloColumna = styled.h3`
-	width: 100%;
-	margin-left: 13px;
-	color: white;
-	font-family: AvenirBook;
-	font-size: 24px;
-	margin-bottom: 0px;
-
-	/* xsmall-0 */
-	@media screen and (max-width: 480px) {
-
-	}
-
-	/* xsmall-1 */
-	@media screen and (max-width: 600px) and (min-width: 481px) {
-
-	}
-
-	/* small-0 */
-	@media screen and (max-width: 840px) and (min-width: 601px) {
-
-	}
-
-	/* small-1 */
-	@media screen and (max-width: 960px) and (min-width: 841px) {
-
-	}
-
-	/* medium */
-	@media screen and (max-width: 1280px) and (min-width: 961px) {
-		margin-left: 0px;
-		font-size: 20px;
-	}
-
-	/* large-0 */
-	@media screen and (max-width: 1440px) and (min-width: 1281px) {
-		margin-left: 0px;
-	}
-
-	/* large-1 */
-	@media screen and (max-width: 1600px) and (min-width: 1441px) {
-
-	}
-
-	/* large-2 */
-	@media screen and (max-width: 1920px) and (min-width: 1601px) {
-
-	}
-
-	/* xlarge */
-	@media screen and (min-width: 1921px) {
-
-	}
-`;
-
-const SubTitulo = styled(TituloColumna)`
-	font-size: 13px;
-	margin-top: 0px;
-
-	/* xsmall-0 */
-	@media screen and (max-width: 480px) {
-
-	}
-
-	/* xsmall-1 */
-	@media screen and (max-width: 600px) and (min-width: 481px) {
-
-	}
-
-	/* small-0 */
-	@media screen and (max-width: 840px) and (min-width: 601px) {
-
-	}
-
-	/* small-1 */
-	@media screen and (max-width: 960px) and (min-width: 841px) {
-
-	}
-
-	/* medium */
-	@media screen and (max-width: 1280px) and (min-width: 961px) {
-
-	}
-
-	/* large-0 */
-	@media screen and (max-width: 1440px) and (min-width: 1281px) {
-
-	}
-
-	/* large-1 */
-	@media screen and (max-width: 1600px) and (min-width: 1441px) {
-		font-size: 15px;
-	}
-
-	/* large-2 */
-	@media screen and (max-width: 1920px) and (min-width: 1601px) {
-
-	}
-
-	/* xlarge */
-	@media screen and (min-width: 1921px) {
-
-	}
 `;
 
 const SpanNaranja = styled.span`
 	color: #ee7202;
 `;
 
+const FilaRedesSociales = styled.div`
+	width: 100%;
+`;
+
+const LogoFooter = styled.img`
+  width: 70%;
+  padding-top: 3%;
+`;
+
+const IconosRedesSociales = styled.img`
+  width: 50px;
+  margin-right: 5%;
+`;
+
 const ColumnaSecundaria = styled(ColumnaPrincipalFooter)`
-	width: 30%;
+	width: 40%;
+	display: -webkit-flex;
 	display: flex;
 	flex-flow: wrap;
 	ul{
+		width: 33.3%;
 		list-style: none;
 		margin: 0px;
 		padding: 0px;
 	}
 	li{
 		color: white;
-		margin-top: 5px;
-		margin-right: 20px;
-		margin-bottom: 25px;
-		font-size: 18px;
+		margin-top: 5%;
+		margin-bottom: 10%;
+		margin-right: 12%;
+
 		&:before {
 		    content: "• ";
 		    color: #ee7202;
 		}
 
-		&:hover {
-		    text-decoration: underline;
-		    text-decoration-color: #ee7202;
-		}
+		a{
+			color: white;
+			text-decoration: none;
+			font-family: AvenirBook;
+			font-size: 22px;
+			font-weight: bold;
+			padding-bottom: 2%;
 
+			&:hover {
+		    	border-bottom: 3px solid #ee7202;
+			}
+		}
 	}
 
 	/* xsmall-0 */
@@ -227,6 +140,110 @@ const ColumnaSecundaria = styled(ColumnaPrincipalFooter)`
 	}
 `;
 
+const TituloColumna = styled.h3`
+	width: 100%;
+	color: white;
+	font-family: AvenirBook;
+	font-size: 28px;
+	margin-bottom: 0px;
+
+	/* xsmall-0 */
+	@media screen and (max-width: 480px) {
+
+	}
+
+	/* xsmall-1 */
+	@media screen and (max-width: 600px) and (min-width: 481px) {
+
+	}
+
+	/* small-0 */
+	@media screen and (max-width: 840px) and (min-width: 601px) {
+
+	}
+
+	/* small-1 */
+	@media screen and (max-width: 960px) and (min-width: 841px) {
+
+	}
+
+	/* medium */
+	@media screen and (max-width: 1280px) and (min-width: 961px) {
+
+	}
+
+	/* large-0 */
+	@media screen and (max-width: 1440px) and (min-width: 1281px) {
+		
+	}
+
+	/* large-1 */
+	@media screen and (max-width: 1600px) and (min-width: 1441px) {
+
+	}
+
+	/* large-2 */
+	@media screen and (max-width: 1920px) and (min-width: 1601px) {
+
+	}
+
+	/* xlarge */
+	@media screen and (min-width: 1921px) {
+
+	}
+`;
+
+const SubTitulo = styled(TituloColumna)`
+	font-size: 20px;
+	margin-top: 0px;
+	font-weight: 100;
+
+	/* xsmall-0 */
+	@media screen and (max-width: 480px) {
+
+	}
+
+	/* xsmall-1 */
+	@media screen and (max-width: 600px) and (min-width: 481px) {
+
+	}
+
+	/* small-0 */
+	@media screen and (max-width: 840px) and (min-width: 601px) {
+
+	}
+
+	/* small-1 */
+	@media screen and (max-width: 960px) and (min-width: 841px) {
+
+	}
+
+	/* medium */
+	@media screen and (max-width: 1280px) and (min-width: 961px) {
+
+	}
+
+	/* large-0 */
+	@media screen and (max-width: 1440px) and (min-width: 1281px) {
+
+	}
+
+	/* large-1 */
+	@media screen and (max-width: 1600px) and (min-width: 1441px) {
+		
+	}
+
+	/* large-2 */
+	@media screen and (max-width: 1920px) and (min-width: 1601px) {
+
+	}
+
+	/* xlarge */
+	@media screen and (min-width: 1921px) {
+
+	}
+`;
+
 const UltimaColumna = styled(ColumnaPrincipalFooter)`
 	width: 30%;
 	
@@ -243,10 +260,11 @@ const UltimaColumna = styled(ColumnaPrincipalFooter)`
 			
 			input{
 				font-family: AvenirRoman;
+				font-size: 20px;
 				background: white;
-				width: 70%;
-				height: 50px;
-				padding-left: 5%;
+				width: 75%;
+				height: 60px;
+				padding: 3%;
 			}
 
 			::-webkit-input-placeholder {
@@ -294,8 +312,7 @@ const UltimaColumna = styled(ColumnaPrincipalFooter)`
 				input{
 					width: 85%;
 				}
-				button
-				{
+				button{
 					width: 15%;
 				}
 			}
@@ -309,8 +326,7 @@ const UltimaColumna = styled(ColumnaPrincipalFooter)`
 				input{
 					width: 85%;
 				}
-				button
-				{
+				button{
 					width: 15%;
 				}
 			}
@@ -324,8 +340,7 @@ const UltimaColumna = styled(ColumnaPrincipalFooter)`
 					input{
 						width: 80%;
 					}
-					button
-					{
+					button{
 						width: 10%;
 					}
 				}
@@ -342,16 +357,6 @@ const UltimaColumna = styled(ColumnaPrincipalFooter)`
 	@media screen and (min-width: 1921px) {
 
 	}
-`;
-
-
-const LogoFooter = styled.img`
-  width: 50%;
-`;
-
-const IconosRedesSociales = styled.img`
-  width: 33px;
-  margin-right: 20px;
 `;
 
 const ContenedorFinal = styled.div`
@@ -383,12 +388,28 @@ const ContenedorFinal = styled.div`
    }
    a {
    	color: white;
+	text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
    }
 
    #viajesdelujo {
    	color: white;
    	font-size: 26px;
+   	margin-left: 25px;
    }
+
+   #logoPremium {
+   		width: 65px;
+   }
+
+   #politicas{
+		margin-left: 20%;
+		font-size: 18px;
+   }
+
 `;
 
 export {

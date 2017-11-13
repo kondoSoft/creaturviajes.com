@@ -29,6 +29,7 @@ import ImgSocialGp from '../../assets/ImagenesPruebaNuevoDiseniov2/google_mas.sv
 import ImgSocialIg from '../../assets/ImagenesPruebaNuevoDiseniov2/instagram.svg';
 import ImgSocialTw from '../../assets/ImagenesPruebaNuevoDiseniov2/twitter.svg';
 import LogoMayorista from '../../assets/ImagenesPruebaNuevoDiseniov2/logo_mayorista.svg';
+import Premium from '../../assets/ImagenesPruebaNuevoDiseniov2/paloma.svg';
 
 function PieDePagina() {
   return (
@@ -38,26 +39,28 @@ function PieDePagina() {
 	    		<LogoFooter src={ImgLogo} alt='Logo Creatur' /> 
 		    	<CorreoFooter><SpanNaranja>info</SpanNaranja>@creaturviajes.com</CorreoFooter>
 		    	<FilaRedesSociales>
-			    	<IconosRedesSociales src={ImgSocialYt} alt=''/>
-			    	<IconosRedesSociales src={ImgSocialFb} alt=''/>
-			    	<IconosRedesSociales src={ImgSocialGp} alt=''/>
-			    	<IconosRedesSociales src={ImgSocialIg} alt=''/>
-			    	<IconosRedesSociales src={ImgSocialTw} alt=''/>
+			    	<a href='#'><IconosRedesSociales src={ImgSocialYt} alt=''/></a>
+			    	<a href='#'><IconosRedesSociales src={ImgSocialFb} alt=''/></a>
+			    	<a href='#'><IconosRedesSociales src={ImgSocialGp} alt=''/></a>
+			    	<a href='#'><IconosRedesSociales src={ImgSocialIg} alt=''/></a>
+			    	<a href='#'><IconosRedesSociales src={ImgSocialTw} alt=''/></a>
 		    	</FilaRedesSociales>
 	    	</ColumnaPrincipalFooter>
 	    	<ColumnaSecundaria>
 	    		<TituloColumna>MENÚ</TituloColumna>
 	    		<ul>
-	    			<li>DESTINOS</li>
-	    			<li>VIAJES DE 15</li>
-	    			<li>OFERTAS</li>
-	    			<li>VIAJES DE MIEL</li>
+	    			<li><a href='#'>DESTINOS</a></li>
+	    			<li><a href='#'>VIAJES DE 15</a></li>
+	    			<li><a href='#'>OFERTAS</a></li>
 	    		</ul>
 	    		<ul>
-	    			<li>GRUPOS</li>
-	    			<li>CREA TU VIAJE</li>
-	    			<li>CRUCEROS</li>
-	    			<li>ESTUDIOS</li>
+	    			<li><a href='#'>VIAJES DE MIEL</a></li>
+	    			<li><a href='#'>ESTUDIOS</a></li>
+	    			<li><a href='#'>CREA TU VIAJE</a></li>
+	    		</ul>
+	    		<ul>
+	    			<li><a href='#'>CRUCEROS</a></li>
+	    			<li><a href='#'>GRUPOS</a></li>
 	    		</ul>
 	    	</ColumnaSecundaria>
 	    	<UltimaColumna>
@@ -76,8 +79,11 @@ function PieDePagina() {
 			    <p>Una empresa de</p>
 			    <img src={ LogoMayorista } alt=''/>
 		    </div>
-		    <a id='viajesdelujo' >viajesdelujo.com</a>
-		    <a>Política de privacidad / Términos y Condiciones </a>
+		    <div>
+		    	<img id='logoPremium' src={ Premium } alt=''/>
+		    	<a href='#' id='viajesdelujo' >viajesdelujo.com</a>
+		    	<a href='#' id='politicas' >Política de privacidad / Términos y Condiciones </a>
+		    </div>
 	    </ContenedorFinal>
     </ContenedorFooter>
   );
