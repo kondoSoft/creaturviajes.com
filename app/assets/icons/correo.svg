@@ -1,1 +1,37 @@
-<svg id="iconos" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.91 95.43"><defs><style>.cls-1{fill:white;}</style></defs><title>correo</title><path class="cls-1" d="M138.36,26.3a4.85,4.85,0,0,0-2.26-1.64,11.3,11.3,0,0,0-5.59-1.52h-118A11.45,11.45,0,0,0,1,34.59v72.56a11.45,11.45,0,0,0,11.44,11.44h118A11.45,11.45,0,0,0,142,107.14V34.59A11.38,11.38,0,0,0,138.36,26.3ZM120.15,33,71.47,65.43,21.85,33Zm10.37,75.82h-118a1.66,1.66,0,0,1-1.63-1.63V37.47l58,37.94a4.9,4.9,0,0,0,5.41,0l57.93-38.66v70.41A1.66,1.66,0,0,1,130.52,108.78Z" transform="translate(-1.04 -23.15)"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   height="16"
+   width="22"
+   version="1.1"
+   viewBox="0 0 21.999999 16"
+   id="iconos">
+  <metadata
+     id="metadata173">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>correo</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs164">
+    <style
+       id="style162">.cls-1{fill:white;}</style>
+  </defs>
+  <title
+     id="title166">correo</title>
+  <path
+     style="fill:#ffffff;stroke-width:0.16172318"
+     id="path168"
+     d="M 21.432057,0.52972335 A 0.75673759,0.81298526 0 0 0 21.079433,0.25481735 1.7631206,1.8941718 0 0 0 20.207234,2.6351829e-5 H 1.7958865 A 1.7865248,1.9193157 0 0 0 0,1.9193414 V 14.082271 a 1.7865248,1.9193157 0 0 0 1.7849645,1.91764 H 20.196312 A 1.7865248,1.9193157 0 0 0 22,14.080595 V 1.9193414 A 1.7756028,1.9075819 0 0 0 21.432057,0.52972335 Z M 18.59078,1.6528164 10.995319,7.0889224 3.2531915,1.6528164 Z M 20.208794,14.362207 H 1.7974468 A 0.25900709,0.27825887 0 0 1 1.5431206,14.088976 V 2.4021044 l 9.0496454,6.359724 a 0.76453901,0.82136655 0 0 0 0.844113,0 l 9.038724,-6.480415 V 14.083948 a 0.25900709,0.27825887 0 0 1 -0.266809,0.271553 z"
+     class="cls-1" />
+</svg>
