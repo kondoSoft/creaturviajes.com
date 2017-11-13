@@ -1,9 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 39.7 39.7" style="fill: #ffffff;" xml:space="preserve">
-<g>
-	<path d="M19.9,0C8.9,0,0,8.9,0,19.9c0,11,8.9,19.9,19.9,19.9c11,0,19.9-8.9,19.9-19.9C39.7,8.9,30.8,0,19.9,0L19.9,0z M24.8,20.6
-		h-3.2v11.5h-4.8V20.6h-2.3v-4.1h2.3v-2.6c0-1.9,0.9-4.8,4.8-4.8l3.5,0v4h-2.6c-0.4,0-1,0.2-1,1.1v2.4h3.6L24.8,20.6z M24.8,20.6"/>
-</g>
-</svg>
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Capa_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 49.999999 49.999999"
+   style="fill:#ffffff"
+   xml:space="preserve"
+   sodipodi:docname="facebook.svg"
+   inkscape:version="0.92.2 (unknown)"
+   width="50"
+   height="50"><metadata
+     id="metadata4303"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs4301" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1533"
+     inkscape:window-height="845"
+     id="namedview4299"
+     showgrid="false"
+     inkscape:zoom="16.72544"
+     inkscape:cx="19.85"
+     inkscape:cy="19.949999"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Capa_1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" /><g
+     id="g4296"
+     transform="scale(1.2562814)"><path
+       d="M 19.9,0 C 8.9,0 0,8.9 0,19.9 c 0,11 8.9,19.9 19.9,19.9 11,0 19.9,-8.9 19.9,-19.9 C 39.7,8.9 30.8,0 19.9,0 Z m 4.9,20.6 H 21.6 V 32.1 H 16.8 V 20.6 h -2.3 v -4.1 h 2.3 v -2.6 c 0,-1.9 0.9,-4.8 4.8,-4.8 h 3.5 v 4 h -2.6 c -0.4,0 -1,0.2 -1,1.1 v 2.4 h 3.6 z m 0,0"
+       id="path4294"
+       inkscape:connector-curvature="0" /></g></svg>

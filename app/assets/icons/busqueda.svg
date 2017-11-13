@@ -1,1 +1,37 @@
-<svg id="iconos" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.18 141.73"><defs><style>.cls-1{fill:white;}</style></defs><title>busqueda</title><path class="cls-1" d="M0,56.93a56.88,56.88,0,0,0,92.68,44.26l38.89,38.89a5.63,5.63,0,0,0,8-8L100.7,93.3A56.92,56.92,0,1,0,0,56.93Zm11.25,0A45.68,45.68,0,1,1,89,89.43l-.06,0,0,0A45.64,45.64,0,0,1,11.25,56.93Z" transform="translate(0)"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   height="21.998793"
+   width="21.998793"
+   version="1.1"
+   viewBox="0 0 21.998794 21.998793"
+   id="iconos">
+  <metadata
+     id="metadata53">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>busqueda</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs44">
+    <style
+       id="style42">.cls-1{fill:white;}</style>
+  </defs>
+  <title
+     id="title46">busqueda</title>
+  <path
+     style="fill:#ffffff;stroke-width:0.15549952"
+     id="path48"
+     d="M 4.8346189e-6,8.8361227 A 8.8606358,8.8290178 0 0 0 14.437482,15.706243 l 6.058195,6.03657 a 0.88121191,0.8780674 0 0 0 1.246222,-1.24177 l -6.055079,-6.0195 A 8.8668669,8.8352267 0 1 0 4.8346189e-6,8.8361227 Z m 1.7524991653811,0 a 7.1159255,7.0905333 0 1 1 12.111717,5.0447103 h -0.0093 v 0 A 7.1096944,7.0843244 0 0 1 1.752504,8.8361227 Z"
+     class="cls-1" />
+</svg>
