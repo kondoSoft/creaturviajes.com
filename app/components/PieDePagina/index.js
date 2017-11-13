@@ -51,13 +51,15 @@ function PieDePagina() {
 	    			<li>DESTINOS</li>
 	    			<li>VIAJES DE 15</li>
 	    			<li>OFERTAS</li>
-	    			<li>VIAJES DE MIEL</li>
 	    		</ul>
 	    		<ul>
-	    			<li>GRUPOS</li>
-	    			<li>CREA TU VIAJE</li>
-	    			<li>CRUCEROS</li>
+	    			<li>VIAJES DE MIEL</li>
 	    			<li>ESTUDIOS</li>
+	    			<li>CREA TU VIAJE</li>
+	    		</ul>
+	    		<ul>
+	    			<li>CRUCEROS</li>
+	    			<li>GRUPOS</li>
 	    		</ul>
 	    	</ColumnaSecundaria>
 	    	<UltimaColumna>
