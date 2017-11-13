@@ -388,12 +388,28 @@ const ContenedorFinal = styled.div`
    }
    a {
    	color: white;
+	text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
    }
 
    #viajesdelujo {
    	color: white;
    	font-size: 26px;
+   	margin-left: 25px;
    }
+
+   #logoPremium {
+   		width: 65px;
+   }
+
+   #politicas{
+		margin-left: 20%;
+		font-size: 18px;
+   }
+
 `;
 
 export {

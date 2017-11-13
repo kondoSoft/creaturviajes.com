@@ -29,6 +29,7 @@ import ImgSocialGp from '../../assets/ImagenesPruebaNuevoDiseniov2/google_mas.sv
 import ImgSocialIg from '../../assets/ImagenesPruebaNuevoDiseniov2/instagram.svg';
 import ImgSocialTw from '../../assets/ImagenesPruebaNuevoDiseniov2/twitter.svg';
 import LogoMayorista from '../../assets/ImagenesPruebaNuevoDiseniov2/logo_mayorista.svg';
+import Premium from '../../assets/ImagenesPruebaNuevoDiseniov2/paloma.svg';
 
 function PieDePagina() {
   return (
@@ -38,11 +39,11 @@ function PieDePagina() {
 	    		<LogoFooter src={ImgLogo} alt='Logo Creatur' /> 
 		    	<CorreoFooter><SpanNaranja>info</SpanNaranja>@creaturviajes.com</CorreoFooter>
 		    	<FilaRedesSociales>
-			    	<IconosRedesSociales src={ImgSocialYt} alt=''/>
-			    	<IconosRedesSociales src={ImgSocialFb} alt=''/>
-			    	<IconosRedesSociales src={ImgSocialGp} alt=''/>
-			    	<IconosRedesSociales src={ImgSocialIg} alt=''/>
-			    	<IconosRedesSociales src={ImgSocialTw} alt=''/>
+			    	<a href='#'><IconosRedesSociales src={ImgSocialYt} alt=''/></a>
+			    	<a href='#'><IconosRedesSociales src={ImgSocialFb} alt=''/></a>
+			    	<a href='#'><IconosRedesSociales src={ImgSocialGp} alt=''/></a>
+			    	<a href='#'><IconosRedesSociales src={ImgSocialIg} alt=''/></a>
+			    	<a href='#'><IconosRedesSociales src={ImgSocialTw} alt=''/></a>
 		    	</FilaRedesSociales>
 	    	</ColumnaPrincipalFooter>
 	    	<ColumnaSecundaria>
@@ -78,8 +79,11 @@ function PieDePagina() {
 			    <p>Una empresa de</p>
 			    <img src={ LogoMayorista } alt=''/>
 		    </div>
-		    <a id='viajesdelujo' >viajesdelujo.com</a>
-		    <a>Política de privacidad / Términos y Condiciones </a>
+		    <div>
+		    	<img id='logoPremium' src={ Premium } alt=''/>
+		    	<a href='#' id='viajesdelujo' >viajesdelujo.com</a>
+		    	<a href='#' id='politicas' >Política de privacidad / Términos y Condiciones </a>
+		    </div>
 	    </ContenedorFinal>
     </ContenedorFooter>
   );
