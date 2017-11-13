@@ -75,10 +75,14 @@ const ColumnaSecundaria = styled(ColumnaPrincipalFooter)`
 		    color: #ee7202;
 		}
 
-		label{
+		a{
+			color: white;
+			text-decoration: none;
 			font-family: AvenirBook;
 			font-size: 22px;
+			font-weight: bold;
 			padding-bottom: 2%;
+			
 			&:hover {
 		    	border-bottom: 3px solid #ee7202;
 			}

@@ -48,18 +48,18 @@ function PieDePagina() {
 	    	<ColumnaSecundaria>
 	    		<TituloColumna>MENÚ</TituloColumna>
 	    		<ul>
-	    			<li><label>DESTINOS</label></li>
-	    			<li><label>VIAJES DE 15</label></li>
-	    			<li><label>OFERTAS</label></li>
+	    			<li><a href='#'>DESTINOS</a></li>
+	    			<li><a href='#'>VIAJES DE 15</a></li>
+	    			<li><a href='#'>OFERTAS</a></li>
 	    		</ul>
 	    		<ul>
-	    			<li><label>VIAJES DE MIEL</label></li>
-	    			<li><label>ESTUDIOS</label></li>
-	    			<li><label>CREA TU VIAJE</label></li>
+	    			<li><a href='#'>VIAJES DE MIEL</a></li>
+	    			<li><a href='#'>ESTUDIOS</a></li>
+	    			<li><a href='#'>CREA TU VIAJE</a></li>
 	    		</ul>
 	    		<ul>
-	    			<li><label>CRUCEROS</label></li>
-	    			<li><label>GRUPOS</label></li>
+	    			<li><a href='#'>CRUCEROS</a></li>
+	    			<li><a href='#'>GRUPOS</a></li>
 	    		</ul>
 	    	</ColumnaSecundaria>
 	    	<UltimaColumna>
