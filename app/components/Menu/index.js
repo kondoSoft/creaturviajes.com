@@ -35,7 +35,7 @@ function Menu() {
                 </ButtonNavBar>
                 <ButtonNavBar blue id='ocultar1' >
                   <IconNavBar src={iconDinero} alt="Icono Tipo de Cambio" />
-                  Dolar $21 Euro$20
+                  Tipo de Cambio
                 </ButtonNavBar>
                 <ButtonNavBar blue id='ocultar2'>
                   <IconNavBar src={iconLocalizacion} alt="Icono Puntos de Venta" />
