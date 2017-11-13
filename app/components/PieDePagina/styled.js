@@ -66,24 +66,22 @@ const ColumnaSecundaria = styled(ColumnaPrincipalFooter)`
 	}
 	li{
 		color: white;
-		/*
-		padding-top: 5px;
-		padding-right: 20px;
-		padding-bottom: 25px;
-		*/
 		margin-top: 5%;
 		margin-bottom: 10%;
 		margin-right: 12%;
-		font-size: 22px;
 
 		&:before {
 		    content: "• ";
 		    color: #ee7202;
 		}
 
-		&:hover {
-		    text-decoration: underline;
-		    text-decoration-color: #ee7202;
+		label{
+			font-family: AvenirBook;
+			font-size: 22px;
+			padding-bottom: 2%;
+			&:hover {
+		    	border-bottom: 3px solid #ee7202;
+			}
 		}
 	}
 
