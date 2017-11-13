@@ -23,22 +23,34 @@ const Footer = styled.div`
 `;
 
 const ColumnaPrincipalFooter = styled.div`
-	width: 40%;
+	width: 30%;
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	padding-left: 3%;
 `;
 
-const FilaRedesSociales = styled.div`
-	width: 100%;
-	margin-bottom: 25px;
-`;
-
 const CorreoFooter = styled.h3`
 	color: white;
-	font-size: 20px;
+	font-size: 28px;
 	padding-left: 2%;
+`;
+
+const SpanNaranja = styled.span`
+	color: #ee7202;
+`;
+
+const FilaRedesSociales = styled.div`
+	width: 100%;
+`;
+
+const LogoFooter = styled.img`
+  width: 70%;
+`;
+
+const IconosRedesSociales = styled.img`
+  width: 50px;
+  margin-right: 5%;
 `;
 
 const TituloColumna = styled.h3`
@@ -144,10 +156,6 @@ const SubTitulo = styled(TituloColumna)`
 	@media screen and (min-width: 1921px) {
 
 	}
-`;
-
-const SpanNaranja = styled.span`
-	color: #ee7202;
 `;
 
 const ColumnaSecundaria = styled(ColumnaPrincipalFooter)`
@@ -342,16 +350,6 @@ const UltimaColumna = styled(ColumnaPrincipalFooter)`
 	@media screen and (min-width: 1921px) {
 
 	}
-`;
-
-
-const LogoFooter = styled.img`
-  width: 50%;
-`;
-
-const IconosRedesSociales = styled.img`
-  width: 33px;
-  margin-right: 20px;
 `;
 
 const ContenedorFinal = styled.div`
