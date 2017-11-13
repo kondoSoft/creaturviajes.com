@@ -14,9 +14,9 @@ import elige3 from '../../assets/ImagenesPruebaNuevoDiseniov2/elige3.jpg';
 function SeccionTipoDeViaje() {
   return (
   		<DivTipoDeViaje>
-	  	   	<Card ImgCard={elige1} TituloCard='MES DEL CRUCERO' TextoCuerpo='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' LinkLeerMas />
-	  	   	<Card ImgCard={elige2} TituloCard='WHISTLER' TextoCuerpo='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' LinkLeerMas />
-	  	   	<Card ImgCard={elige3} TituloCard='SINGAPUR Y MYANMAR' TextoCuerpo='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' LinkLeerMas />
+	  	   	<Card ImgCard={elige1} TituloCard='¿QUÉ SON LOS VIAJES A LA MEDIDA?' TextoCuerpo='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' LinkLeerMas />
+	  	   	<Card ImgCard={elige2} TituloCard='¿QUÉ PUEDO ESPERAR DE LOS CIRCUITOS?' TextoCuerpo='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' LinkLeerMas />
+	  	   	<Card ImgCard={elige3} TituloCard='¿POR QUÉ VIAJAR EN UN CRUCERO?' TextoCuerpo='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' LinkLeerMas />
   	   </DivTipoDeViaje>
   );
 }

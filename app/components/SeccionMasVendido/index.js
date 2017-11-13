@@ -25,7 +25,7 @@ function SeccionMasVendido() {
 	    <DivMasVendido>
 	    	<Card ImgCard={Vendidos4} BotonCabecera TextoBotonCabecera='Semana Santa' TituloCard='CUBA' TextoCuerpo='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' />
 	    	<Card ImgCard={Vendidos5} BotonCabecera TextoBotonCabecera='Semana Santa' TituloCard='MARRUECOS Y TOSCANA' Premium TextoCuerpo='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' />
-	    	<Card ImgCard={Vendidos6} BotonCabecera TextoBotonCabecera='Semana Santa' TituloCard='ORLANDO' TextoCuerpo='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' />
+	    	<Card ImgCard={Vendidos6} BotonCabecera TextoBotonCabecera='Verano' TituloCard='ORLANDO' TextoCuerpo='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' />
 	    </DivMasVendido>
     </div>
   );

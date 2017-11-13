@@ -49,15 +49,15 @@ function PieDePagina() {
 	    		<TituloColumna>MENÚ</TituloColumna>
 	    		<ul>
 	    			<li>DESTINOS</li>
-	    			<li>CRUCEROS</li>
-	    			<li>GRUPOS</li>
+	    			<li>VIAJES DE 15</li>
 	    			<li>OFERTAS</li>
+	    			<li>VIAJES DE MIEL</li>
 	    		</ul>
 	    		<ul>
-	    			<li>VIAJES DE MIEL</li>
-	    			<li>VIAJES DE 15</li>
-	    			<li>VIAJES DE ESTUDIO</li>
-	    			<li>BUSCA TU VIAJE</li>
+	    			<li>GRUPOS</li>
+	    			<li>CREA TU VIAJE</li>
+	    			<li>CRUCEROS</li>
+	    			<li>ESTUDIOS</li>
 	    		</ul>
 	    	</ColumnaSecundaria>
 	    	<UltimaColumna>
