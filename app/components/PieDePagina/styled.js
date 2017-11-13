@@ -46,6 +46,7 @@ const FilaRedesSociales = styled.div`
 
 const LogoFooter = styled.img`
   width: 70%;
+  padding-top: 3%;
 `;
 
 const IconosRedesSociales = styled.img`
@@ -82,7 +83,7 @@ const ColumnaSecundaria = styled(ColumnaPrincipalFooter)`
 			font-size: 22px;
 			font-weight: bold;
 			padding-bottom: 2%;
-			
+
 			&:hover {
 		    	border-bottom: 3px solid #ee7202;
 			}
@@ -141,10 +142,9 @@ const ColumnaSecundaria = styled(ColumnaPrincipalFooter)`
 
 const TituloColumna = styled.h3`
 	width: 100%;
-	margin-left: 13px;
 	color: white;
 	font-family: AvenirBook;
-	font-size: 24px;
+	font-size: 28px;
 	margin-bottom: 0px;
 
 	/* xsmall-0 */
@@ -169,13 +169,12 @@ const TituloColumna = styled.h3`
 
 	/* medium */
 	@media screen and (max-width: 1280px) and (min-width: 961px) {
-		margin-left: 0px;
-		font-size: 20px;
+
 	}
 
 	/* large-0 */
 	@media screen and (max-width: 1440px) and (min-width: 1281px) {
-		margin-left: 0px;
+		
 	}
 
 	/* large-1 */
@@ -195,8 +194,9 @@ const TituloColumna = styled.h3`
 `;
 
 const SubTitulo = styled(TituloColumna)`
-	font-size: 13px;
+	font-size: 20px;
 	margin-top: 0px;
+	font-weight: 100;
 
 	/* xsmall-0 */
 	@media screen and (max-width: 480px) {
@@ -230,7 +230,7 @@ const SubTitulo = styled(TituloColumna)`
 
 	/* large-1 */
 	@media screen and (max-width: 1600px) and (min-width: 1441px) {
-		font-size: 15px;
+		
 	}
 
 	/* large-2 */
@@ -260,10 +260,11 @@ const UltimaColumna = styled(ColumnaPrincipalFooter)`
 			
 			input{
 				font-family: AvenirRoman;
+				font-size: 20px;
 				background: white;
-				width: 70%;
-				height: 50px;
-				padding-left: 5%;
+				width: 75%;
+				height: 60px;
+				padding: 3%;
 			}
 
 			::-webkit-input-placeholder {
@@ -311,8 +312,7 @@ const UltimaColumna = styled(ColumnaPrincipalFooter)`
 				input{
 					width: 85%;
 				}
-				button
-				{
+				button{
 					width: 15%;
 				}
 			}
@@ -326,8 +326,7 @@ const UltimaColumna = styled(ColumnaPrincipalFooter)`
 				input{
 					width: 85%;
 				}
-				button
-				{
+				button{
 					width: 15%;
 				}
 			}
@@ -341,8 +340,7 @@ const UltimaColumna = styled(ColumnaPrincipalFooter)`
 					input{
 						width: 80%;
 					}
-					button
-					{
+					button{
 						width: 10%;
 					}
 				}
