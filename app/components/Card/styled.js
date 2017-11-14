@@ -5,12 +5,13 @@ import { ButtonBanner } from '../BannerPrincipal/styled'
 const CuerpoCard = styled.div`
   width: 27%;
   background-color: #ffffff;
-  position: relative;
 
     div{
        padding: 5%;
        padding-top: 0px;
        padding-bottom: 0px;
+       margin: 0;
+       position: relative;
     }
 
   /* xlarge */
@@ -51,41 +52,41 @@ const LogoPremium = styled.img`
 
   /* medium */
   @media screen and (max-width: 1280px) and (min-width: 961px) {
-    right: 6%;
-    bottom: 31%;
+    right: 7%;
+    top: 0;
   }
 
   /* large-0 */
   @media screen and (max-width: 1440px) and (min-width: 1281px) {
-    right: 6%;
-    bottom: 29%;
+    right: 7%;
+    top: 0;
   }
 
   /* large-1 */
   @media screen and (max-width: 1600px) and (min-width: 1441px) {
-    right: 6%;
-    bottom: 24%;
+    right: 7%;
+    top: 0;
   }
 
   /* large-2 */
   @media screen and (max-width: 1920px) and (min-width: 1601px) {
-    right: 6%;
-    bottom: 22%;
+    right: 7%;
+    top: 0;
   }
 
   /* xlarge */
   @media screen and (min-width: 1921px) {
-    right: 6%;
-    bottom: 28%;
+    right: 7%;
+    top: 0;
   }
 
 `;
 
 const TituloCard = styled.h3`
-  width: 80%;
   font-family: AvenirBook;
   color: #001a5a;
-
+  margin-top: 5%;
+  margin-bottom: 3%;
   /* xsmall-0 */
   @media screen and (max-width: 480px) {
 
@@ -134,9 +135,10 @@ const TituloCard = styled.h3`
 
 const TextoCard = styled.p`
   color: #95a5a6;
-  font-size: 18px;
+  font-size: 20px;
   font-family: AvenirRoman;
   text-align: justify;
+  margin-top: 3%;
 `;
 
 const EspacioBoton = styled.div`
