@@ -34,6 +34,54 @@ const CorreoFooter = styled.h3`
 	color: white;
 	font-size: 28px;
 	padding-left: 2%;
+
+	/* xsmall-0 */
+	@media screen and (max-width: 480px) {
+
+	}
+
+	/* xsmall-1 */
+	@media screen and (max-width: 600px) and (min-width: 481px) {
+
+	}
+
+	/* small-0 */
+	@media screen and (max-width: 840px) and (min-width: 601px) {
+
+	}
+
+	/* small-1 */
+	@media screen and (max-width: 960px) and (min-width: 841px) {
+
+	}
+
+	/* medium */
+	@media screen and (max-width: 1280px) and (min-width: 961px) {
+		font-size: 23px;
+		padding-left: 0%;
+	}
+
+	/* large-0 */
+	@media screen and (max-width: 1440px) and (min-width: 1281px) {
+		font-size: 26px;
+		padding-left: 2%;
+	}
+
+	/* large-1 */
+	@media screen and (max-width: 1600px) and (min-width: 1441px) {
+		font-size: 26px;
+		padding-left: 2%;
+	}
+
+	/* large-2 */
+	@media screen and (max-width: 1920px) and (min-width: 1601px) {
+
+	}
+
+	/* xlarge */
+	@media screen and (min-width: 1921px) {
+
+	}
 `;
 
 const SpanNaranja = styled.span`
@@ -52,6 +100,51 @@ const LogoFooter = styled.img`
 const IconosRedesSociales = styled.img`
   width: 50px;
   margin-right: 5%;
+
+  /* xsmall-0 */
+  @media screen and (max-width: 480px) {
+
+  }
+
+  /* xsmall-1 */
+  @media screen and (max-width: 600px) and (min-width: 481px) {
+
+  }
+
+  /* small-0 */
+  @media screen and (max-width: 840px) and (min-width: 601px) {
+
+  }
+
+  /* small-1 */
+  @media screen and (max-width: 960px) and (min-width: 841px) {
+
+  }
+
+  /* medium */
+  @media screen and (max-width: 1280px) and (min-width: 961px) {
+  	width: 45px;
+  }
+
+  /* large-0 */
+  @media screen and (max-width: 1440px) and (min-width: 1281px) {
+  	
+  }
+
+  /* large-1 */
+  @media screen and (max-width: 1600px) and (min-width: 1441px) {
+
+  }
+
+  /* large-2 */
+  @media screen and (max-width: 1920px) and (min-width: 1601px) {
+
+  }
+
+  /* xlarge */
+  @media screen and (min-width: 1921px) {
+
+  }
 `;
 
 const ColumnaSecundaria = styled(ColumnaPrincipalFooter)`
@@ -59,6 +152,7 @@ const ColumnaSecundaria = styled(ColumnaPrincipalFooter)`
 	display: -webkit-flex;
 	display: flex;
 	flex-flow: wrap;
+	padding-left: inherit;
 	ul{
 		width: 33.3%;
 		list-style: none;
@@ -113,20 +207,29 @@ const ColumnaSecundaria = styled(ColumnaPrincipalFooter)`
 	/* medium */
 	@media screen and (max-width: 1280px) and (min-width: 961px) {
 		li{
-			font-size: 14px;
-		}	
+			a{
+				font-size: 14px;
+			}
+		}
 	}
 
 	/* large-0 */
 	@media screen and (max-width: 1440px) and (min-width: 1281px) {
 		li{
-			font-size: 14px;
+			a{
+				font-size: 18px;
+			}
 		}
+
 	}
 
 	/* large-1 */                   
 	@media screen and (max-width: 1600px) and (min-width: 1441px) {
-
+		li{
+			a{
+				font-size: 20px;
+			}
+		}
 	}
 
 	/* large-2 */
@@ -169,12 +272,12 @@ const TituloColumna = styled.h3`
 
 	/* medium */
 	@media screen and (max-width: 1280px) and (min-width: 961px) {
-
+		font-size: 24px;
 	}
 
 	/* large-0 */
 	@media screen and (max-width: 1440px) and (min-width: 1281px) {
-		
+		font-size: 26px;
 	}
 
 	/* large-1 */
@@ -220,17 +323,17 @@ const SubTitulo = styled(TituloColumna)`
 
 	/* medium */
 	@media screen and (max-width: 1280px) and (min-width: 961px) {
-
+		font-size: 14px;
 	}
 
 	/* large-0 */
 	@media screen and (max-width: 1440px) and (min-width: 1281px) {
-
+		font-size: 16px;
 	}
 
 	/* large-1 */
 	@media screen and (max-width: 1600px) and (min-width: 1441px) {
-		
+		font-size: 18px;
 	}
 
 	/* large-2 */
@@ -246,7 +349,7 @@ const SubTitulo = styled(TituloColumna)`
 
 const UltimaColumna = styled(ColumnaPrincipalFooter)`
 	width: 30%;
-	
+
 	div{
 		
 		display: flex;
@@ -341,11 +444,13 @@ const UltimaColumna = styled(ColumnaPrincipalFooter)`
 						width: 80%;
 					}
 					button{
-						width: 10%;
+						width: 13%;
 					}
 				}
 			}
 		}
+
+
 	}
 
 	/* large-2 */
@@ -410,6 +515,59 @@ const ContenedorFinal = styled.div`
 		font-size: 18px;
    }
 
+   /* xsmall-0 */
+   @media screen and (max-width: 480px) {
+
+   }
+
+   /* xsmall-1 */
+   @media screen and (max-width: 600px) and (min-width: 481px) {
+
+   }
+
+   /* small-0 */
+   @media screen and (max-width: 840px) and (min-width: 601px) {
+
+   }
+
+   /* small-1 */
+   @media screen and (max-width: 960px) and (min-width: 841px) {
+
+   }
+
+   /* medium */
+   @media screen and (max-width: 1280px) and (min-width: 961px) {
+   	   #politicas{
+   			margin-left: 5%;
+   			font-size: 12px;
+   	   }
+   }
+
+   /* large-0 */
+   @media screen and (max-width: 1440px) and (min-width: 1281px) {
+   	   #politicas{
+   			margin-left: 10%;
+   			font-size: 14px;
+   	   }
+   }
+
+   /* large-1 */
+   @media screen and (max-width: 1600px) and (min-width: 1441px) {
+   	   #politicas{
+   			margin-left: 15%;
+   			font-size: 14px;
+   	   }
+   }
+
+   /* large-2 */
+   @media screen and (max-width: 1920px) and (min-width: 1601px) {
+
+   }
+
+   /* xlarge */
+   @media screen and (min-width: 1921px) {
+
+   }
 `;
 
 export {
