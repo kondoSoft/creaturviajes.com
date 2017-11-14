@@ -57,20 +57,20 @@ const CorreoFooter = styled.h3`
 
 	/* medium */
 	@media screen and (max-width: 1280px) and (min-width: 961px) {
-		font-size: 23px;
+		font-size: 21px;
 		padding-left: 0%;
 	}
 
 	/* large-0 */
 	@media screen and (max-width: 1440px) and (min-width: 1281px) {
-		font-size: 26px;
-		padding-left: 2%;
+		font-size: 23px;
+		padding-left: 0%;
 	}
 
 	/* large-1 */
 	@media screen and (max-width: 1600px) and (min-width: 1441px) {
 		font-size: 26px;
-		padding-left: 2%;
+		padding-left: 0%;
 	}
 
 	/* large-2 */
@@ -95,6 +95,51 @@ const FilaRedesSociales = styled.div`
 const LogoFooter = styled.img`
   width: 70%;
   padding-top: 3%;
+
+  /* xsmall-0 */
+  @media screen and (max-width: 480px) {
+
+  }
+
+  /* xsmall-1 */
+  @media screen and (max-width: 600px) and (min-width: 481px) {
+
+  }
+
+  /* small-0 */
+  @media screen and (max-width: 840px) and (min-width: 601px) {
+
+  }
+
+  /* small-1 */
+  @media screen and (max-width: 960px) and (min-width: 841px) {
+
+  }
+
+  /* medium */
+  @media screen and (max-width: 1280px) and (min-width: 961px) {
+  	width: 80%;
+  }
+
+  /* large-0 */
+  @media screen and (max-width: 1440px) and (min-width: 1281px) {
+	width: 75%;
+  }
+
+  /* large-1 */
+  @media screen and (max-width: 1600px) and (min-width: 1441px) {
+  	width: 74%;
+  }
+
+  /* large-2 */
+  @media screen and (max-width: 1920px) and (min-width: 1601px) {
+
+  }
+
+  /* xlarge */
+  @media screen and (min-width: 1921px) {
+
+  }
 `;
 
 const IconosRedesSociales = styled.img`
@@ -123,17 +168,17 @@ const IconosRedesSociales = styled.img`
 
   /* medium */
   @media screen and (max-width: 1280px) and (min-width: 961px) {
-  	width: 45px;
+  	width: 38px;
   }
 
   /* large-0 */
   @media screen and (max-width: 1440px) and (min-width: 1281px) {
-  	
+  	width: 40px;
   }
 
   /* large-1 */
   @media screen and (max-width: 1600px) and (min-width: 1441px) {
-
+  	width: 45px;
   }
 
   /* large-2 */
@@ -208,7 +253,7 @@ const ColumnaSecundaria = styled(ColumnaPrincipalFooter)`
 	@media screen and (max-width: 1280px) and (min-width: 961px) {
 		li{
 			a{
-				font-size: 14px;
+				font-size: 16px;
 			}
 		}
 	}
@@ -414,6 +459,8 @@ const UltimaColumna = styled(ColumnaPrincipalFooter)`
 			div{
 				input{
 					width: 85%;
+					height: 45px;
+					font-size: 16px;
 				}
 				button{
 					width: 15%;
@@ -428,6 +475,8 @@ const UltimaColumna = styled(ColumnaPrincipalFooter)`
 			div{
 				input{
 					width: 85%;
+					height: 50px;
+					font-size: 16px;
 				}
 				button{
 					width: 15%;
@@ -442,6 +491,7 @@ const UltimaColumna = styled(ColumnaPrincipalFooter)`
 				div{
 					input{
 						width: 80%;
+						height: 55px;
 					}
 					button{
 						width: 13%;
@@ -547,7 +597,7 @@ const ContenedorFinal = styled.div`
    @media screen and (max-width: 1440px) and (min-width: 1281px) {
    	   #politicas{
    			margin-left: 10%;
-   			font-size: 14px;
+   			font-size: 13px;
    	   }
    }
 
