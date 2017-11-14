@@ -19,6 +19,9 @@ const InputContainer = styled.div`
 	.input-range__label--max{
 		display: none;
 	}
+	.input-range__label--value{
+		top: .5rem;
+	}
 `;
 
 export { InputContainer }
