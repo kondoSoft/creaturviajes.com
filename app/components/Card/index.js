@@ -31,7 +31,7 @@ function Card(props) {
         {props.Premium ? <LogoPremium src={PalomaDorada} alt='Logo Premium'/> : ''}
 	      <TextoCard>{props.TextoCuerpo}</TextoCard>
         <EspacioLink>
-          {props.LinkLeerMas ? <LinkLeerMas>Leer más...</LinkLeerMas> : ''}
+          {props.LinkLeerMas ? <LinkLeerMas href='#'>Leer más...</LinkLeerMas> : ''}
         </EspacioLink>
       </div>
     </CuerpoCard>

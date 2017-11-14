@@ -18,14 +18,14 @@ function SeccionMasVendido() {
   return (
   	<div>
 	    <DivMasVendido>
-	    	<Card ImgCard={Vendidos1} BotonCabecera TextoBotonCabecera='Fin de año' TituloCard='PERÚ' TextoCuerpo='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' />
-	    	<Card ImgCard={Vendidos2} BotonCabecera TextoBotonCabecera='Fin de año' TituloCard='WHISTLER' TextoCuerpo='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' />
-	    	<Card ImgCard={Vendidos3} BotonCabecera TextoBotonCabecera='Fin de año' TituloCard='NUEVA YORK' TextoCuerpo='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' />
+	    	<Card ImgCard={Vendidos1} BotonCabecera TextoBotonCabecera='Fin de año' TituloCard='PERÚ' Premium TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' />
+	    	<Card ImgCard={Vendidos2} BotonCabecera TextoBotonCabecera='Fin de año' TituloCard='WHISTLER' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' />
+	    	<Card ImgCard={Vendidos3} BotonCabecera TextoBotonCabecera='Fin de año' TituloCard='NUEVA YORK' Premium TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' />
 	    </DivMasVendido>
 	    <DivMasVendido>
-	    	<Card ImgCard={Vendidos4} BotonCabecera TextoBotonCabecera='Semana Santa' TituloCard='CUBA' TextoCuerpo='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' />
-	    	<Card ImgCard={Vendidos5} BotonCabecera TextoBotonCabecera='Semana Santa' TituloCard='MARRUECOS Y TOSCANA' Premium TextoCuerpo='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' />
-	    	<Card ImgCard={Vendidos6} BotonCabecera TextoBotonCabecera='Verano' TituloCard='ORLANDO' TextoCuerpo='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' />
+	    	<Card ImgCard={Vendidos4} BotonCabecera TextoBotonCabecera='Semana Santa' TituloCard='CUBA' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' />
+	    	<Card ImgCard={Vendidos5} BotonCabecera TextoBotonCabecera='Semana Santa' TituloCard='MARRUECOS Y TOSCANA' Premium TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' />
+	    	<Card ImgCard={Vendidos6} BotonCabecera TextoBotonCabecera='Verano' TituloCard='ORLANDO' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' />
 	    </DivMasVendido>
     </div>
   );
