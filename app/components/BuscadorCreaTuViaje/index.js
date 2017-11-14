@@ -250,6 +250,7 @@ class BuscadorCreaTuViaje extends React.Component {
   	  		  		<Calendario />
   	  		  		<TituloSeccion titleCenter>Presupuesto USD</TituloSeccion>
   	  		  		<InputRange valor='$' valor2='' numMin={0} numMax={10000} numMinValue={2000} numMaxValue={8000} step={50}/>
+  	  		  		<br/>
   	  		  		<TituloSeccion titleCenter>Duración del programa</TituloSeccion>
   	  		  		<InputRange valor='' valor2=' días' numMin={0} numMax={30} numMinValue={2} numMaxValue={25} step={1}/>
   	  		  	</SeccionFechasPresupuesto>
