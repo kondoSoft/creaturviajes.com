@@ -5,19 +5,20 @@ import { ButtonBanner } from '../BannerPrincipal/styled'
 const CuerpoCard = styled.div`
   width: 27%;
   background-color: #ffffff;
-
-    div{
-       padding: 5%;
-       padding-top: 0px;
-       padding-bottom: 0px;
-       margin: 0;
-       position: relative;
-    }
+  position: relative;
 
   /* xlarge */
   @media screen and (min-width: 1921px) {
     width: 453.75px;
   }
+`;
+
+const CuerpoTextoCard = styled.div`
+  padding: 5%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0;
+  position: relative;
 `;
 
 const ImagenCard = styled.img`
@@ -191,6 +192,7 @@ const BotonCabecera = styled(ButtonBanner)`
 
 const EspacioLink = styled(EspacioBoton)`
   justify-content: flex-end;
+  padding-bottom: 3%;
 `;
 
 const LinkLeerMas = styled.a`
@@ -201,8 +203,14 @@ const LinkLeerMas = styled.a`
   font-family: AvenirRoman;
 `;
 
+const LinkViajeLujo = styled(LinkLeerMas)`
+  color: #dcaf1f;
+  text-decoration: none;
+`;
+
 export {
-  CuerpoCard, 
+  CuerpoCard,
+  CuerpoTextoCard, 
   ImagenCard, 
   LogoPremium, 
   TituloCard,
@@ -211,5 +219,6 @@ export {
   ButtonCard,
   BotonCabecera,
   EspacioLink,
-  LinkLeerMas
+  LinkLeerMas,
+  LinkViajeLujo
 }
