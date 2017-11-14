@@ -135,10 +135,34 @@ const TituloCard = styled.h3`
 
 const TextoCard = styled.p`
   color: #95a5a6;
-  font-size: 20px;
   font-family: AvenirRoman;
   text-align: justify;
   margin-top: 3%;
+
+  /* medium */
+  @media screen and (max-width: 1280px) and (min-width: 961px) {
+    font-size: 16px;
+  }
+
+  /* large-0 */
+  @media screen and (max-width: 1440px) and (min-width: 1281px) {
+    font-size: 18px;
+  }
+
+  /* large-1 */
+  @media screen and (max-width: 1600px) and (min-width: 1441px) {
+    font-size: 20px;
+  }
+
+  /* large-2 */
+  @media screen and (max-width: 1920px) and (min-width: 1601px) {
+    font-size: 20px;
+  }
+
+  /* xlarge */
+  @media screen and (min-width: 1921px) {
+    font-size: 20px;
+  }
 `;
 
 const EspacioBoton = styled.div`
