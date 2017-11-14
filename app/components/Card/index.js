@@ -6,7 +6,8 @@
 
 import React from 'react';
 import { 
-	CuerpoCard, 
+	CuerpoCard,
+  CuerpoTextoCard, 
 	ImagenCard, 
   LogoPremium,
   TituloCard, 
@@ -16,7 +17,8 @@ import {
 	ButtonCard,
   BotonCabecera,
   EspacioLink,
-  LinkLeerMas
+  LinkLeerMas,
+  LinkViajeLujo
   } from './styled';
 import PalomaDorada from '../../assets/ImagenesPruebaNuevoDiseniov2/paloma.svg';
 
@@ -26,14 +28,13 @@ function Card(props) {
         {props.BotonCabecera ? <BotonCabecera>{props.TextoBotonCabecera}</BotonCabecera> : ''}
       <ImagenCard src={props.ImgCard} alt=''/>
       	{props.BotonMedio ? <EspacioBoton><ButtonCard>{props.TextoBoton}</ButtonCard></EspacioBoton> : ''}
-      <div>
+      <CuerpoTextoCard>
 	      <TituloCard>{props.TituloCard}</TituloCard>
         {props.Premium ? <LogoPremium src={PalomaDorada} alt='Logo Premium'/> : ''}
 	      <TextoCard>{props.TextoCuerpo}</TextoCard>
-        <EspacioLink>
-          {props.LinkLeerMas ? <LinkLeerMas href='#'>Leer más...</LinkLeerMas> : ''}
-        </EspacioLink>
-      </div>
+        {props.LinkLeerMas ? <EspacioLink><LinkLeerMas href='#'>Leer más...</LinkLeerMas></EspacioLink> : ''}
+        {props.Premium ? <EspacioLink><LinkViajeLujo>Viajes de Lujo</LinkViajeLujo></EspacioLink> : ''}
+      </CuerpoTextoCard>
     </CuerpoCard>
   );
 }
