@@ -25,6 +25,7 @@ const ImagenCard = styled.img`
   width: 100%;
   margin: 0px;
   padding: 0px;
+  cursor: pointer;
 `;
 
 const LogoPremium = styled.img`
@@ -88,6 +89,7 @@ const TituloCard = styled.h3`
   color: #001a5a;
   margin-top: 5%;
   margin-bottom: 3%;
+  cursor: pointer;
   /* xsmall-0 */
   @media screen and (max-width: 480px) {
 

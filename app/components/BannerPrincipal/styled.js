@@ -18,6 +18,7 @@ const ButtonBanner = styled.button`
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
+  cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;

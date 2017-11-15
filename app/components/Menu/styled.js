@@ -100,6 +100,7 @@ const ButtonNavBar = styled.a`
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
+  cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;

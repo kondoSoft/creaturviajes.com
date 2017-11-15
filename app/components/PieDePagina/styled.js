@@ -429,6 +429,7 @@ const UltimaColumna = styled(ColumnaPrincipalFooter)`
 				background: #ee7202;
 				color: white;
 				width: 10%;
+				cursor: pointer;
 			}
 		}
 	}

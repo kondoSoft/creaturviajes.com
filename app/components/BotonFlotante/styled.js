@@ -9,6 +9,7 @@ const ButtonWhats = styled.img`
 	right: 0;
 	top: 45%;
 	z-index: 999;
+	cursor: pointer;
 `;
 
 export { ButtonWhats }

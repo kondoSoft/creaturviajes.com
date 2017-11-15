@@ -43,6 +43,7 @@ const ContenedorInputSeccion = styled.div`
 		font-family: AvenirBook;
 	}
 	label{
+		cursor: pointer;
 		&:hover, 
 		&:focus, 
 		&.focus,
@@ -133,6 +134,7 @@ const BotonBuscadorAzul = styled.button `
 	color: #fff;
 	background: #001a5a;
 	border-color: #001a5a;
+	cursor: pointer;
 `;
 
 const BotonBuscadorNaranja = styled(BotonBuscadorAzul)`
