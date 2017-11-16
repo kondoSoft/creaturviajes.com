@@ -3,7 +3,11 @@ import styled from 'styled-components';
 import { ButtonBanner } from '../BannerPrincipal/styled'
 
 const CuerpoCard = styled.div`
-  width: 27%;
+  width: ${props => props.slide ? '100%' : '27%'};
+  ${props => props.slide ? 'margin-left: auto;' : ''}
+  ${props => props.slide ? 'margin-right: auto;' : ''}
+  ${props => props.slide ? 'padding-left: 8%;' : ''}
+  ${props => props.slide ? 'padding-right: 8%;' : ''}
   background-color: #ffffff;
   position: relative;
 
