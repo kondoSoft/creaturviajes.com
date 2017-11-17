@@ -5,6 +5,7 @@ const DivTipoDeViaje = styled.div`
 	background-color: #ffffff;
 	padding-left: 2%;
 	padding-right: 2%;
+	padding-bottom: 3%;
 	
 	.slick-prev, .slick-next{
 		top: 40%;

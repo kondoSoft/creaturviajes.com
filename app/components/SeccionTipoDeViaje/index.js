@@ -44,26 +44,12 @@ function SeccionTipoDeViaje() {
   return (
   		<DivTipoDeViaje>
   			<Slider {...settings}>
-	          <div><Card slide ImgCard={elige1} TituloCard='1' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
-	          <div><Card slide ImgCard={elige2} TituloCard='2' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
-	          <div><Card slide ImgCard={elige3} TituloCard='3' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
-	          <div><Card slide ImgCard={elige1} TituloCard='4' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
-	          <div><Card slide ImgCard={elige2} TituloCard='5' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
-	          <div><Card slide ImgCard={elige3} TituloCard='6' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
-	          <div><Card slide ImgCard={elige1} TituloCard='7' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
-	          <div><Card slide ImgCard={elige2} TituloCard='8' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
-	          <div><Card slide ImgCard={elige3} TituloCard='9' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
-	          <div><Card slide ImgCard={elige1} TituloCard='10' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
-	          <div><Card slide ImgCard={elige2} TituloCard='11' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
-	          <div><Card slide ImgCard={elige3} TituloCard='12' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
-	          <div><Card slide ImgCard={elige1} TituloCard='13' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
-	          <div><Card slide ImgCard={elige2} TituloCard='14' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
-	          <div><Card slide ImgCard={elige3} TituloCard='15' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
-	          <div><Card slide ImgCard={elige1} TituloCard='16' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
-	          <div><Card slide ImgCard={elige2} TituloCard='17' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
-	          <div><Card slide ImgCard={elige3} TituloCard='18' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
-	          <div><Card slide ImgCard={elige3} TituloCard='19' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
-	          <div><Card slide ImgCard={elige3} TituloCard='20' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
+	          <div><Card slide ImgCard={elige1} TituloCard='¿QUÉ SON LOS VIAJES A LA MEDIDA?' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
+	          <div><Card slide ImgCard={elige2} TituloCard='¿QUÉ PUEDO ESPERAR DE LOS CIRCUITOS?' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
+	          <div><Card slide ImgCard={elige3} TituloCard='¿POR QUÉ VIAJAR EN UN CRUCERO?' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
+	          <div><Card slide ImgCard={elige1} TituloCard='¿QUÉ SON LAS EXPEDICIONES?' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
+	          <div><Card slide ImgCard={elige2} TituloCard='¿QUÉ PUEDO ESPERAR DE UN SAFARI?' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
+	          <div><Card slide ImgCard={elige3} TituloCard='¿QUÉ ES ALAS SOBRE EL MUNDO?' TextoCuerpo='Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa. Descripción del programa.' LinkLeerMas /></div>
   			</Slider>
   	   </DivTipoDeViaje>
   );
