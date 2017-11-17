@@ -24,7 +24,7 @@ import PalomaDorada from '../../assets/ImagenesPruebaNuevoDiseniov2/paloma.svg';
 
 function Card(props) {
   return (
-    <CuerpoCard>
+    <CuerpoCard slide={props.slide}>
         {props.BotonCabecera ? <BotonCabecera>{props.TextoBotonCabecera}</BotonCabecera> : ''}
       <ImagenCard src={props.ImgCard} alt=''/>
       	{props.BotonMedio ? <EspacioBoton><ButtonCard>{props.TextoBoton}</ButtonCard></EspacioBoton> : ''}
