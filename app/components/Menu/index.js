@@ -8,6 +8,7 @@ import React from 'react';
 import { ContenedorMenu,
          NavbarBlue,
          NavbarWhite,
+         SeccionOculta,
          ButtonNavBar,
          ButtonNavBarWhite,
          IconNavBar,
@@ -26,6 +27,27 @@ import logoCreatur from '!file-loader!../../assets/icons/Logo_Creatur_Viajes.png
 import iconTelefono from '../../assets/ImagenesPruebaNuevoDiseniov2/telefono.svg'
 
 function Menu() {
+  function mostrarTipoCambio(e) {
+      e.preventDefault()
+      var seccionTipoDeCambio = document.getElementById("seccionTipoDeCambio")
+      seccionTipoDeCambio.classList.toggle('open')
+      // if (seccionTipoDeCambio.style.display === '' || seccionTipoDeCambio.style.display === 'none') {
+      //   seccionTipoDeCambio.style.display = 'flex'
+      // }else{
+      //   seccionTipoDeCambio.style.display = 'none'
+      // }
+  }
+
+  function mostrarPuntosVentas(e) {
+      e.preventDefault()
+      var seccionPuntosVenta = document.getElementById("seccionPuntosVenta")
+      
+      if (seccionPuntosVenta.style.display === '' || seccionPuntosVenta.style.display === 'none') {
+        seccionPuntosVenta.style.display = 'flex'
+      }else{
+        seccionPuntosVenta.style.display = 'none'
+      }
+  }
   return (
           <ContenedorMenu id="navbar">
             <NavbarBlue id="azul">
@@ -33,11 +55,11 @@ function Menu() {
                   <IconNavBar src={iconTelefono} alt="Icono Tipo de Cambio" />
                   (55) 5545 6769
                 </ButtonNavBar>
-                <ButtonNavBar blue id='ocultar1' >
+                <ButtonNavBar blue id='ocultar1' onClick={mostrarTipoCambio}>
                   <IconNavBar src={iconDinero} alt="Icono Tipo de Cambio" />
                   Tipo de Cambio
                 </ButtonNavBar>
-                <ButtonNavBar blue id='ocultar2'>
+                <ButtonNavBar blue id='ocultar2' onClick={mostrarPuntosVentas}>
                   <IconNavBar src={iconLocalizacion} alt="Icono Puntos de Venta" />
                   Puntos de Venta
                 </ButtonNavBar>
@@ -54,6 +76,20 @@ function Menu() {
                   Iniciar Sesión
                 </ButtonNavBar>
             </NavbarBlue>
+            <SeccionOculta id='seccionTipoDeCambio' className='oculta'>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </SeccionOculta>
+            <SeccionOculta id='seccionPuntosVenta' className='oculta'>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+              </p>
+            </SeccionOculta>
             <NavbarWhite>
               <Logo logo id="espacioLogoCreatur">
                 <IconNavBar id="LogoCreatur" logo src={logoCreatur} alt="Logo Creatur" />
@@ -159,7 +195,7 @@ function scrollFunction() {
     azul.style.paddingBottom = ''
 
   }
-} 
+}
 
 Menu.propTypes = {
 

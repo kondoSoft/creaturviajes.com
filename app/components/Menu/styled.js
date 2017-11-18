@@ -6,6 +6,25 @@ const ContenedorMenu = styled.div`
   right: 0;
   left: 0;
   z-index: 1030;
+
+  .oculta {
+      display: none;
+      -webkit-transition:height 1s linear;
+      -moz-transition: height 1s linear;
+      -ms-transition: height 1s linear;
+      -o-transition: height 1s linear;
+      transition: height 1s linear;
+
+  }
+  .oculta.open {
+    display: inherit;
+    -webkit-transition:height 1s linear;
+    -moz-transition: height 1s linear;
+    -ms-transition: height 1s linear;
+    -o-transition: height 1s linear;
+    transition: height 1s linear;
+
+  }
 `;
 
 const NavbarBlue = styled.nav`
@@ -91,6 +110,12 @@ const NavbarWhite = styled.nav`
     padding-right: 7.5%; 
     padding-left: 7.5%; 
   }
+`;
+
+const SeccionOculta = styled(NavbarWhite)`
+    p{
+      color: black;
+    }
 `;
 
 const ButtonNavBar = styled.a`
@@ -246,7 +271,8 @@ const IconNavBar = styled.img`
 export { 
   ContenedorMenu,
   NavbarBlue, 
-  NavbarWhite, 
+  NavbarWhite,
+  SeccionOculta,
   ButtonNavBar,
   ButtonNavBarWhite,
   IconNavBar,
