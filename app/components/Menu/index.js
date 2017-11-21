@@ -39,6 +39,8 @@ function Menu() {
     var logoEspacio = document.getElementById('espacioLogoCreatur')
     var imgLogoCreatur = document.getElementById('LogoCreatur')
     var azul = document.getElementById('azul')
+    var seccionTipoDeCambio = document.getElementById('seccionTipoDeCambio')
+    var seccionPuntosVenta = document.getElementById('seccionPuntosVenta')
 
     var mq480   = window.matchMedia('screen and (max-width: 480px)')
     var mq600   = window.matchMedia('screen and (max-width: 600px) and (min-width: 481px)')
@@ -58,6 +60,14 @@ function Menu() {
       logoEspacio.style.padding = '0'
       azul.style.paddingTop = '0'
       azul.style.paddingBottom = '0'
+      
+      if (seccionPuntosVenta.classList.contains('abierto')) {
+        seccionPuntosVenta.classList.remove('abierto')
+        seccionPuntosVenta.classList.add('cerrado')
+      }else if(seccionTipoDeCambio.classList.contains('abierto')){
+        seccionTipoDeCambio.classList.remove('abierto')
+        seccionTipoDeCambio.classList.add('cerrado')
+      }
 
       if (mq1920.matches) {
 
@@ -102,18 +112,30 @@ function Menu() {
 
   function mostrar(idSeccion) {
       var seccion = document.getElementById(idSeccion)
+      var seccionTipoDeCambio = document.getElementById('seccionTipoDeCambio')
+      var seccionPuntosVenta = document.getElementById('seccionPuntosVenta')
 
       if (seccion.classList.contains('cerrado-sin') || seccion.classList.contains('cerrado')) {
+        
+        if (seccionPuntosVenta.classList.contains('abierto')) {
 
+          seccionPuntosVenta.classList.remove('abierto')
+          seccionPuntosVenta.classList.add('cerrado')
+
+        }else if(seccionTipoDeCambio.classList.contains('abierto')){
+
+          seccionTipoDeCambio.classList.remove('abierto')
+          seccionTipoDeCambio.classList.add('cerrado')
+          
+        }
         seccion.classList.remove('cerrado-sin')
         seccion.classList.remove('cerrado')
         seccion.classList.add('abierto')
-
       }else{
-
+        seccion.classList.remove('cerrado-sin')
         seccion.classList.remove('abierto')
         seccion.classList.add('cerrado')
-        
+
       }
 
   }

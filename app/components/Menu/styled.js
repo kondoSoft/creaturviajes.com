@@ -28,13 +28,13 @@ const ContenedorMenu = styled.div`
     height: 100px;
     overflow: hidden;
     animation-name: abierto;
-    animation-duration: 1s;
+    animation-duration: .5s;
   }
   .cerrado{
     height: 0px;
     overflow: hidden;
     animation-name: cerrado;
-    animation-duration: 1s;
+    animation-duration: .5s;
   }
   .cerrado-sin{
     height: 0px;
