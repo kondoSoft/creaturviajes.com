@@ -9,7 +9,7 @@ const ContenedorMenu = styled.div`
 
   @keyframes cerrado{
     from{
-      height: initial;
+      height: 100px;
     }
     to{
       height: 0px;
@@ -20,12 +20,12 @@ const ContenedorMenu = styled.div`
       height: 0px;
     }
     to{
-      height: initial;
+      height: 100px;
     }
   }
 
   .abierto{
-    height: initial;
+    height: 100px;
     overflow: hidden;
     animation-name: abierto;
     animation-duration: 1s;
