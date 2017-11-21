@@ -7,23 +7,38 @@ const ContenedorMenu = styled.div`
   left: 0;
   z-index: 1030;
 
-  .oculta {
-      display: none;
-      -webkit-transition:height 1s linear;
-      -moz-transition: height 1s linear;
-      -ms-transition: height 1s linear;
-      -o-transition: height 1s linear;
-      transition: height 1s linear;
-
+  @keyframes cerrado{
+    from{
+      height: initial;
+    }
+    to{
+      height: 0px;
+    }
   }
-  .oculta.open {
-    display: inherit;
-    -webkit-transition:height 1s linear;
-    -moz-transition: height 1s linear;
-    -ms-transition: height 1s linear;
-    -o-transition: height 1s linear;
-    transition: height 1s linear;
+  @keyframes abierto{
+    from{
+      height: 0px;
+    }
+    to{
+      height: initial;
+    }
+  }
 
+  .abierto{
+    height: initial;
+    overflow: hidden;
+    animation-name: abierto;
+    animation-duration: 1s;
+  }
+  .cerrado{
+    height: 0px;
+    overflow: hidden;
+    animation-name: cerrado;
+    animation-duration: 1s;
+  }
+  .cerrado-sin{
+    height: 0px;
+    overflow: hidden;
   }
 `;
 
@@ -112,7 +127,7 @@ const NavbarWhite = styled.nav`
   }
 `;
 
-const SeccionOculta = styled(NavbarWhite)`
+const SeccionOculta = styled.div`
     p{
       color: black;
     }
