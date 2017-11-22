@@ -16,6 +16,9 @@ import { ContenedorMenu,
          IconNavBar,
          Logo
        } from './styled';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import iconBusqueda from '../../assets/icons/busqueda.svg';
 import iconCorreo from '../../assets/icons/correo.svg';
 import iconDinero from '../../assets/icons/dinero.svg';
@@ -146,6 +149,33 @@ function Menu() {
       }
 
   }
+
+  function SamplePrevArrow(props) {
+    const {className, onClick} = props
+    return (
+      <div className={className} onClick={onClick}>
+        <div className='flechaIzquierda'></div>
+      </div>
+    );
+  }
+
+  function SampleNextArrow(props) {
+    const {className, onClick} = props
+    return (
+      <div className={className} onClick={onClick}>
+        <div className='flechaDerecha'></div>
+      </div>
+    );
+  }
+
+  const settings = {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
+  };
   return (
           <ContenedorMenu id="navbar">
             <NavbarBlue id="azul">
@@ -177,30 +207,57 @@ function Menu() {
             <SeccionOculta id='seccionTipoDeCambio' className='cerrado-sin'>
               <div id='tipoCambio'>
                 <h4>TIPO DE CAMBIO DEL DÍA</h4>
-                <Banderas src={flagUSD} alt="dolar" /><label>USD $19.20</label>
-                <Banderas src={flagEUR} alt="dolar" /><label>USD $19.20</label>
-                <Banderas src={flagCAD} alt="dolar" /><label>USD $19.20</label>
-                <Banderas src={flagGBR} alt="dolar" /><label>USD $19.20</label>
-                <Banderas src={flagJPY} alt="dolar" jpy /><label>USD $19.20</label>
+                <Banderas src={flagUSD} alt="USD" /><label>USD $19.20</label>
+                <Banderas src={flagEUR} alt="EUR" /><label>EUR $22.70</label>
+                <Banderas src={flagCAD} alt="CAD" /><label>CAD $15.40</label>
+                <Banderas src={flagGBR} alt="GBR" /><label>GBR $25.50</label>
+                <Banderas src={flagJPY} alt="JPY" jpy /><label>JPY $5.99</label>
               </div>
             </SeccionOculta>
             <SeccionOculta id='seccionPuntosVenta' className='cerrado-sin'>
                 <div id='puntoVenta'>
-                  <PuntoVenta>
-
-                  </PuntoVenta>
-                  <PuntoVenta>
-                   
-                  </PuntoVenta>
-                  <PuntoVenta>
-                   
-                  </PuntoVenta>
-                  <PuntoVenta>
-                   
-                  </PuntoVenta>
-                  <PuntoVenta>
-                   
-                  </PuntoVenta>
+                  <Slider {...settings}>
+                      <div>
+                        <PuntoVenta>
+                          <h4>CD. DE MÉXICO</h4>
+                          <p>Tel. (55) 5545 6769</p>
+                          <p>Montecito No. 38 WTC Piso 2</p>
+                          <p>Oficina 10B Col. Napoles</p>
+                        </PuntoVenta>
+                      </div>
+                      <div>
+                        <PuntoVenta>
+                          <h4>VILLAHERMOSA</h4>
+                          <p>Tel. (993) 310 9900</p>
+                          <p>Paseo Tabasco No. 1404</p>
+                          <p>Col. Tabasco 2000</p>
+                        </PuntoVenta>
+                      </div>
+                      <div>
+                        <PuntoVenta>
+                          <h4>MÉRIDA</h4>
+                          <p>Tel. (999) 371 4118</p>
+                          <p>Solare Plaza, Local 112PB,</p>
+                          <p>Calle 49 No. 230 x 26 y 28</p>
+                        </PuntoVenta>
+                      </div>
+                      <div>
+                        <PuntoVenta>
+                          <h4>CD. DEL CARMEN</h4>
+                          <p>Tel. (938) 384 2298</p>
+                          <p>Plaza Soriana Local 40 y 41</p>
+                          <p>Col. Aviación</p>
+                        </PuntoVenta>
+                      </div>
+                      <div>
+                        <PuntoVenta>
+                          <h4>COATZACOALCOS</h4>
+                          <p>Tel. (921) 218 3644</p>
+                          <p>Plaza Quadrum Local 5A</p>
+                          <p>Col. Santa Rosa</p>
+                        </PuntoVenta>
+                      </div>
+                  </Slider>
                 </div>
             </SeccionOculta>
             <NavbarWhite>

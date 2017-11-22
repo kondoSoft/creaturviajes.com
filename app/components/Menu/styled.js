@@ -31,42 +31,11 @@ const ContenedorMenu = styled.div`
     background-color: #ffffff;
     animation-name: abierto;
     animation-duration: .5s;
-    
+    border-bottom: 1px solid #ee7202;
+
     padding-right: 6.5%; 
     padding-left: 6.5%;
     
-  }
-
-  #tipoCambio{
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    h4{
-      color: #ee7202;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-    }
-    label{
-      font-family: AvenirRoman;
-      margin-right: 3%; 
-    }
-  }
-  #puntoVenta{
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
-    width: 100%;
-    height: 100%;
-    background-color: white;
   }
 
   .cerrado{
@@ -79,6 +48,7 @@ const ContenedorMenu = styled.div`
     padding-right: 6.5%; 
     padding-left: 6.5%;
   }
+  
   .cerrado-sin{
     height: 0px;
     overflow: hidden;
@@ -87,17 +57,100 @@ const ContenedorMenu = styled.div`
     padding-right: 6.5%; 
     padding-left: 6.5%;
   }
+
+  #tipoCambio{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    h4{
+      color: #ee7202;
+      width: 100%;
+      margin: 0;
+    }
+    label{
+      font-family: AvenirRoman;
+      margin-right: 3%; 
+    }
+  }
+
+  #puntoVenta{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+  
 `;
 
 const SeccionOculta = styled.div`
 
+  padding-left: 2%;
+  padding-right: 2%;
+
+  .slick-prev, .slick-next{
+    top: 50%;
+  }
+  .slick-prev{
+    left: -2%;
+    z-index: 1;
+  }
+  .slick-next{
+    right: -2%;
+    z-index: 1;
+  }
+
+  .slick-arrow.slick-prev, .slick-arrow.slick-next{
+    background-color: white;
+    width: 30px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slick-prev:before, .slick-next:before{
+    content: '';
+  }
+
+  .flechaIzquierda {
+    height: 15px; 
+    width: 15px;
+    border: 1px solid black;
+    border-width: 0 0 1px 1px;
+    transform: rotate(45deg);
+  }
+
+  .flechaDerecha {
+    height: 15px; 
+    width: 15px;
+    border: 1px solid black;
+    border-width: 1px 1px 0 0;
+    transform: rotate(45deg);
+  }
 `;
 
 const PuntoVenta = styled.div`
-  width: 18%;
-  height: 100%;
-  border: 3px solid black;
-  background-color: green;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8%;
+  padding-right: 8%;
+  font-family: AvenirRoman;
+  border-right: 1px solid #ee7202;
+  h4{
+      color: #ee7202;
+      width: 100%;
+  }
+  p{
+    font-family: AvenirRoman;
+    padding: 0;
+    margin: 0;
+  }
+  
+
 `;
 
 const Banderas = styled.img`
