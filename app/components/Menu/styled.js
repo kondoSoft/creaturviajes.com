@@ -9,7 +9,7 @@ const ContenedorMenu = styled.div`
 
   @keyframes cerrado{
     from{
-      height: 100px;
+      height: 150px;
     }
     to{
       height: 0px;
@@ -20,26 +20,90 @@ const ContenedorMenu = styled.div`
       height: 0px;
     }
     to{
-      height: 100px;
+      height: 150px;
     }
   }
 
   .abierto{
-    height: 100px;
+    font-family: AvenirRoman;
+    height: 150px;
     overflow: hidden;
+    background-color: #ffffff;
     animation-name: abierto;
     animation-duration: .5s;
+    
+    padding-right: 6.5%; 
+    padding-left: 6.5%;
+    
   }
+
+  #tipoCambio{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    h4{
+      color: #ee7202;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    label{
+      font-family: AvenirRoman;
+      margin-right: 3%; 
+    }
+  }
+  #puntoVenta{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+
   .cerrado{
     height: 0px;
     overflow: hidden;
     animation-name: cerrado;
     animation-duration: .5s;
+    background-color: #ffffff;
+
+    padding-right: 6.5%; 
+    padding-left: 6.5%;
   }
   .cerrado-sin{
     height: 0px;
     overflow: hidden;
+    background-color: #ffffff;
+
+    padding-right: 6.5%; 
+    padding-left: 6.5%;
   }
+`;
+
+const SeccionOculta = styled.div`
+
+`;
+
+const PuntoVenta = styled.div`
+  width: 18%;
+  height: 100%;
+  border: 3px solid black;
+  background-color: green;
+`;
+
+const Banderas = styled.img`
+  width: 2.5%;
+  margin-right: 1%;
+  ${props => props.jpy ? 'border: .5px solid black;' : ''}
 `;
 
 const NavbarBlue = styled.nav`
@@ -123,14 +187,8 @@ const NavbarWhite = styled.nav`
   }
   @media screen and (min-width: 1921px) {
     padding-right: 7.5%; 
-    padding-left: 7.5%; 
+    padding-left: 7.5%;
   }
-`;
-
-const SeccionOculta = styled.div`
-    p{
-      color: black;
-    }
 `;
 
 const ButtonNavBar = styled.a`
@@ -154,11 +212,6 @@ const ButtonNavBar = styled.a`
   background-color: ${props => props.blue ? '#001a5a' : 'white'};
   border-color: #001a5a;
   display: ${props => props.displayNone ? 'none' : 'inherit'};
-
-
-  &:hover{
-    opacity: 0.5;
-  }
 
   /* xsmall-0 */
   @media screen and (max-width: 480px) {
@@ -288,6 +341,8 @@ export {
   NavbarBlue, 
   NavbarWhite,
   SeccionOculta,
+  PuntoVenta,
+  Banderas,
   ButtonNavBar,
   ButtonNavBarWhite,
   IconNavBar,

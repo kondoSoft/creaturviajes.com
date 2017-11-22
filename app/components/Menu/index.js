@@ -9,6 +9,8 @@ import { ContenedorMenu,
          NavbarBlue,
          NavbarWhite,
          SeccionOculta,
+         PuntoVenta,
+         Banderas,
          ButtonNavBar,
          ButtonNavBarWhite,
          IconNavBar,
@@ -24,7 +26,12 @@ import iconLocalizacion from '../../assets/icons/localizacion.svg';
 import iconUsuario from '../../assets/icons/usuario.svg';
 import iconYoutube from '../../assets/icons/youtube.svg';
 import logoCreatur from '!file-loader!../../assets/icons/Logo_Creatur_Viajes.png';
-import iconTelefono from '../../assets/ImagenesPruebaNuevoDiseniov2/telefono.svg'
+import iconTelefono from '../../assets/ImagenesPruebaNuevoDiseniov2/telefono.svg';
+import flagUSD from '../../assets/currenciesFlags/usd.svg';
+import flagEUR from '../../assets/currenciesFlags/eur.svg';
+import flagCAD from '../../assets/currenciesFlags/cad.svg';
+import flagGBR from '../../assets/currenciesFlags/gbr.svg';
+import flagJPY from '../../assets/currenciesFlags/jpy.svg';
 
 function Menu() {
   // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
@@ -60,7 +67,7 @@ function Menu() {
       logoEspacio.style.padding = '0'
       azul.style.paddingTop = '0'
       azul.style.paddingBottom = '0'
-      
+
       if (seccionPuntosVenta.classList.contains('abierto')) {
         seccionPuntosVenta.classList.remove('abierto')
         seccionPuntosVenta.classList.add('cerrado')
@@ -168,18 +175,33 @@ function Menu() {
                 </ButtonNavBar>
             </NavbarBlue>
             <SeccionOculta id='seccionTipoDeCambio' className='cerrado-sin'>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
+              <div id='tipoCambio'>
+                <h4>TIPO DE CAMBIO DEL DÍA</h4>
+                <Banderas src={flagUSD} alt="dolar" /><label>USD $19.20</label>
+                <Banderas src={flagEUR} alt="dolar" /><label>USD $19.20</label>
+                <Banderas src={flagCAD} alt="dolar" /><label>USD $19.20</label>
+                <Banderas src={flagGBR} alt="dolar" /><label>USD $19.20</label>
+                <Banderas src={flagJPY} alt="dolar" jpy /><label>USD $19.20</label>
+              </div>
             </SeccionOculta>
             <SeccionOculta id='seccionPuntosVenta' className='cerrado-sin'>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-              </p>
+                <div id='puntoVenta'>
+                  <PuntoVenta>
+
+                  </PuntoVenta>
+                  <PuntoVenta>
+                   
+                  </PuntoVenta>
+                  <PuntoVenta>
+                   
+                  </PuntoVenta>
+                  <PuntoVenta>
+                   
+                  </PuntoVenta>
+                  <PuntoVenta>
+                   
+                  </PuntoVenta>
+                </div>
             </SeccionOculta>
             <NavbarWhite>
               <Logo logo id="espacioLogoCreatur">
