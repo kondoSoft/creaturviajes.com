@@ -6,6 +6,281 @@ const ContenedorMenu = styled.div`
   right: 0;
   left: 0;
   z-index: 1030;
+
+  @keyframes cerrado{
+    from{
+      height: 150px;
+    }
+    to{
+      height: 0px;
+    }
+  }
+  @keyframes abierto{
+    from{
+      height: 0px;
+    }
+    to{
+      height: 150px;
+    }
+  }
+  
+  .abierto{
+    font-family: AvenirRoman;
+    height: 150px;
+    overflow: hidden;
+    background-color: #ffffff;
+    animation-name: abierto;
+    animation-duration: .5s;
+    border-bottom: 1px solid #ee7202;
+
+    padding-right: 6.5%; 
+    padding-left: 6.5%;
+    
+  }
+
+  .cerrado{
+    height: 0px;
+    overflow: hidden;
+    animation-name: cerrado;
+    animation-duration: .5s;
+    background-color: #ffffff;
+
+    padding-right: 6.5%; 
+    padding-left: 6.5%;
+  }
+
+  .cerrado-sin{
+    height: 0px;
+    overflow: hidden;
+    background-color: #ffffff;
+
+    padding-right: 6.5%; 
+    padding-left: 6.5%;
+  }
+
+  #tipoCambio{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    h4{
+      color: #ee7202;
+      width: 100%;
+      margin: 0;
+    }
+    label{
+      font-family: AvenirRoman;
+      margin-right: 3%; 
+    }
+  }
+
+  #puntoVenta{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+
+  /* xsmall-0 */
+  @media screen and (max-width: 480px) {
+
+  }
+
+  /* xsmall-1 */
+  @media screen and (max-width: 600px) and (min-width: 481px) {
+
+  }
+
+  /* small-0 */
+  @media screen and (max-width: 840px) and (min-width: 601px) {
+
+  }
+
+  /* small-1 */
+  @media screen and (max-width: 960px) and (min-width: 841px) {
+
+  }
+
+  /* medium */
+  @media screen and (max-width: 1280px) and (min-width: 961px) {
+    @keyframes cerrado{
+      from{
+        height: 130px;
+      }
+      to{
+        height: 0px;
+      }
+    }
+    @keyframes abierto{
+      from{
+        height: 0px;
+      }
+      to{
+        height: 130px;
+      }
+    }
+    
+    .abierto{
+      height: 130px;
+    }
+  }
+
+  /* large-0 */
+  @media screen and (max-width: 1440px) and (min-width: 1281px) {
+    @keyframes cerrado{
+      from{
+        height: 140px;
+      }
+      to{
+        height: 0px;
+      }
+    }
+    @keyframes abierto{
+      from{
+        height: 0px;
+      }
+      to{
+        height: 140px;
+      }
+    }
+    
+    .abierto{
+      height: 140px;
+    }
+  }
+
+  /* large-1 */
+  @media screen and (max-width: 1600px) and (min-width: 1441px) {
+    
+  }
+
+  /* large-2 */
+  @media screen and (max-width: 1920px) and (min-width: 1601px) {
+
+  }
+  
+`;
+
+const SeccionOculta = styled.div`
+
+  .slick-prev, .slick-next{
+    top: 50%;
+  }
+  .slick-prev{
+    left: -5%;
+    z-index: 1;
+  }
+  .slick-next{
+    right: -5%;
+    z-index: 1;
+  }
+
+  .slick-arrow.slick-prev, .slick-arrow.slick-next{
+    background-color: white;
+    width: 30px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slick-prev:before, .slick-next:before{
+    content: '';
+  }
+
+  .flechaIzquierda {
+    height: 15px; 
+    width: 15px;
+    border: 1px solid black;
+    border-width: 0 0 1px 1px;
+    transform: rotate(45deg);
+  }
+
+  .flechaDerecha {
+    height: 15px; 
+    width: 15px;
+    border: 1px solid black;
+    border-width: 1px 1px 0 0;
+    transform: rotate(45deg);
+  }
+`;
+
+const PuntoVenta = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 0;
+  font-family: AvenirRoman;
+  border-right: .5px solid #ee7202;
+  h4{
+      color: #ee7202;
+      width: 100%;
+  }
+  p{
+    font-family: AvenirRoman;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* xsmall-0 */
+  @media screen and (max-width: 480px) {
+
+  }
+
+  /* xsmall-1 */
+  @media screen and (max-width: 600px) and (min-width: 481px) {
+
+  }
+
+  /* small-0 */
+  @media screen and (max-width: 840px) and (min-width: 601px) {
+
+  }
+
+  /* small-1 */
+  @media screen and (max-width: 960px) and (min-width: 841px) {
+
+  }
+
+  /* medium */
+  @media screen and (max-width: 1280px) and (min-width: 961px) {
+    h4{
+      font-size: 16px;
+    }
+    p{
+      font-size: 12px;
+    }
+  }
+
+  /* large-0 */
+  @media screen and (max-width: 1440px) and (min-width: 1281px) {
+    h4{
+      font-size: 16px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+
+  /* large-1 */
+  @media screen and (max-width: 1600px) and (min-width: 1441px) {
+
+  }
+
+  /* large-2 */
+  @media screen and (max-width: 1920px) and (min-width: 1601px) {
+
+  }
+`;
+
+const Banderas = styled.img`
+  width: 2.5%;
+  margin-right: 1%;
+  ${props => props.jpy ? 'border: .5px solid black;' : ''}
 `;
 
 const NavbarBlue = styled.nav`
@@ -89,7 +364,7 @@ const NavbarWhite = styled.nav`
   }
   @media screen and (min-width: 1921px) {
     padding-right: 7.5%; 
-    padding-left: 7.5%; 
+    padding-left: 7.5%;
   }
 `;
 
@@ -114,11 +389,6 @@ const ButtonNavBar = styled.a`
   background-color: ${props => props.blue ? '#001a5a' : 'white'};
   border-color: #001a5a;
   display: ${props => props.displayNone ? 'none' : 'inherit'};
-
-
-  &:hover{
-    opacity: 0.5;
-  }
 
   /* xsmall-0 */
   @media screen and (max-width: 480px) {
@@ -246,7 +516,10 @@ const IconNavBar = styled.img`
 export { 
   ContenedorMenu,
   NavbarBlue, 
-  NavbarWhite, 
+  NavbarWhite,
+  SeccionOculta,
+  PuntoVenta,
+  Banderas,
   ButtonNavBar,
   ButtonNavBarWhite,
   IconNavBar,
