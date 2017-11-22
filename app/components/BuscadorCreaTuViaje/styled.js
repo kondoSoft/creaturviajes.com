@@ -52,6 +52,12 @@ const ContenedorInputSeccion = styled.div`
 		  color: #ee7202;
 		}
 	}
+	input[type='radio']{
+		display: none;
+	}
+	input[type='checkbox']{
+		display: none;
+	}
 	
 `;
 
@@ -109,7 +115,6 @@ const SeccionBotones = styled.div`
 	/* IE 10 */ 
 	display: -ms-flex;
 	justify-content: center;
-
 	div{
 		padding: 30px;
 	}
