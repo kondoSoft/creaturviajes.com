@@ -23,7 +23,7 @@ const ContenedorMenu = styled.div`
       height: 150px;
     }
   }
-
+  
   .abierto{
     font-family: AvenirRoman;
     height: 150px;
@@ -48,7 +48,7 @@ const ContenedorMenu = styled.div`
     padding-right: 6.5%; 
     padding-left: 6.5%;
   }
-  
+
   .cerrado-sin{
     height: 0px;
     overflow: hidden;
@@ -65,7 +65,7 @@ const ContenedorMenu = styled.div`
     align-items: center;
     flex-flow: row wrap;
     width: 100%;
-    height: 50%;
+    height: 100%;
     background-color: white;
     h4{
       color: #ee7202;
