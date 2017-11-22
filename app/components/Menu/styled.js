@@ -84,23 +84,98 @@ const ContenedorMenu = styled.div`
     height: 100%;
     background-color: white;
   }
+
+  /* xsmall-0 */
+  @media screen and (max-width: 480px) {
+
+  }
+
+  /* xsmall-1 */
+  @media screen and (max-width: 600px) and (min-width: 481px) {
+
+  }
+
+  /* small-0 */
+  @media screen and (max-width: 840px) and (min-width: 601px) {
+
+  }
+
+  /* small-1 */
+  @media screen and (max-width: 960px) and (min-width: 841px) {
+
+  }
+
+  /* medium */
+  @media screen and (max-width: 1280px) and (min-width: 961px) {
+    @keyframes cerrado{
+      from{
+        height: 130px;
+      }
+      to{
+        height: 0px;
+      }
+    }
+    @keyframes abierto{
+      from{
+        height: 0px;
+      }
+      to{
+        height: 130px;
+      }
+    }
+    
+    .abierto{
+      height: 130px;
+    }
+  }
+
+  /* large-0 */
+  @media screen and (max-width: 1440px) and (min-width: 1281px) {
+    @keyframes cerrado{
+      from{
+        height: 140px;
+      }
+      to{
+        height: 0px;
+      }
+    }
+    @keyframes abierto{
+      from{
+        height: 0px;
+      }
+      to{
+        height: 140px;
+      }
+    }
+    
+    .abierto{
+      height: 140px;
+    }
+  }
+
+  /* large-1 */
+  @media screen and (max-width: 1600px) and (min-width: 1441px) {
+    
+  }
+
+  /* large-2 */
+  @media screen and (max-width: 1920px) and (min-width: 1601px) {
+
+  }
   
 `;
 
 const SeccionOculta = styled.div`
 
-  padding-left: 2%;
-  padding-right: 2%;
-
   .slick-prev, .slick-next{
     top: 50%;
   }
   .slick-prev{
-    left: -2%;
+    left: -5%;
     z-index: 1;
   }
   .slick-next{
-    right: -2%;
+    right: -5%;
     z-index: 1;
   }
 
@@ -138,8 +213,9 @@ const PuntoVenta = styled.div`
   margin-right: auto;
   padding-left: 8%;
   padding-right: 8%;
+  padding-top: 0;
   font-family: AvenirRoman;
-  border-right: 1px solid #ee7202;
+  border-right: .5px solid #ee7202;
   h4{
       color: #ee7202;
       width: 100%;
@@ -150,7 +226,55 @@ const PuntoVenta = styled.div`
     margin: 0;
   }
   
+  /* xsmall-0 */
+  @media screen and (max-width: 480px) {
 
+  }
+
+  /* xsmall-1 */
+  @media screen and (max-width: 600px) and (min-width: 481px) {
+
+  }
+
+  /* small-0 */
+  @media screen and (max-width: 840px) and (min-width: 601px) {
+
+  }
+
+  /* small-1 */
+  @media screen and (max-width: 960px) and (min-width: 841px) {
+
+  }
+
+  /* medium */
+  @media screen and (max-width: 1280px) and (min-width: 961px) {
+    h4{
+      font-size: 16px;
+    }
+    p{
+      font-size: 12px;
+    }
+  }
+
+  /* large-0 */
+  @media screen and (max-width: 1440px) and (min-width: 1281px) {
+    h4{
+      font-size: 16px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+
+  /* large-1 */
+  @media screen and (max-width: 1600px) and (min-width: 1441px) {
+
+  }
+
+  /* large-2 */
+  @media screen and (max-width: 1920px) and (min-width: 1601px) {
+
+  }
 `;
 
 const Banderas = styled.img`

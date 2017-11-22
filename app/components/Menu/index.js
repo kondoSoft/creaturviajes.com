@@ -124,6 +124,8 @@ function Menu() {
       var seccion = document.getElementById(idSeccion)
       var seccionTipoDeCambio = document.getElementById('seccionTipoDeCambio')
       var seccionPuntosVenta = document.getElementById('seccionPuntosVenta')
+      var iconoTipoCambio = document.getElementById('iconoDinero')
+      var iconoPuntosVentas = document.getElementById('iconoLocalizacion')
 
       if (seccion.classList.contains('cerrado-sin') || seccion.classList.contains('cerrado')) {
         
@@ -138,6 +140,7 @@ function Menu() {
           seccionTipoDeCambio.classList.add('cerrado')
           
         }
+        
         seccion.classList.remove('cerrado-sin')
         seccion.classList.remove('cerrado')
         seccion.classList.add('abierto')
@@ -184,11 +187,11 @@ function Menu() {
                   (55) 5545 6769
                 </ButtonNavBar>
                 <ButtonNavBar blue id='ocultar1' onClick={() => mostrar('seccionTipoDeCambio')}>
-                  <IconNavBar src={iconDinero} alt="Icono Tipo de Cambio" />
+                  <IconNavBar id='iconoDinero' src={iconDinero} alt="Icono Tipo de Cambio" />
                   Tipo de Cambio
                 </ButtonNavBar>
                 <ButtonNavBar blue id='ocultar2' onClick={() => mostrar('seccionPuntosVenta')}>
-                  <IconNavBar src={iconLocalizacion} alt="Icono Puntos de Venta" />
+                  <IconNavBar id='iconoLocalizacion' src={iconLocalizacion} alt="Icono Puntos de Venta" />
                   Puntos de Venta
                 </ButtonNavBar>
                 <ButtonNavBar blue id='ocultar3'>
