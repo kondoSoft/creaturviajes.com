@@ -166,7 +166,9 @@ const ContenedorMenu = styled.div`
 `;
 
 const SeccionOculta = styled.div`
-
+  .slick-slider{
+    height: 100%;
+  }
   .slick-prev, .slick-next{
     top: 50%;
   }
