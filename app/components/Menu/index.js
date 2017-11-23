@@ -213,7 +213,7 @@ function Menu() {
                 <Banderas src={flagUSD} alt="USD" /><label>USD $19.20</label>
                 <Banderas src={flagEUR} alt="EUR" /><label>EUR $22.70</label>
                 <Banderas src={flagCAD} alt="CAD" /><label>CAD $15.40</label>
-                <Banderas src={flagGBR} alt="GBR" /><label>GBR $25.50</label>
+                <Banderas src={flagGBR} alt="GBR" /><label>GBP $25.50</label>
                 <Banderas src={flagJPY} alt="JPY" jpy /><label>JPY $5.99</label>
               </div>
             </SeccionOculta>
