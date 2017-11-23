@@ -158,7 +158,7 @@ class BuscadorCreaTuViaje extends React.Component {
   	  		  				}
   	  					</ColumnasSeccion>
   	  		  		</SeccionDestinos>
-  	  		  		<TituloSeccion>Países</TituloSeccion>
+  	  		  		<TituloSeccion Paises>Países</TituloSeccion>
   	  		  		<SeccionPaises>
   	  		  				<ColumnasSeccion>
   	  		  				{

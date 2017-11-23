@@ -2,10 +2,9 @@ import styled from 'styled-components';
 
 const CreaturBuscador = styled.div`
 	width: 100%;
-	height: auto;
 	padding-top: 0px;
-	padding-left: 7%;
-	padding-right: 7%;
+	padding-left: 6%;
+	padding-right: 6%;
 	padding-bottom: 3%;
 	margin-top: 0px;
 	background: white;
@@ -23,38 +22,35 @@ const CreaturBuscador = styled.div`
 const TituloSeccion = styled.h3`
 	font-family: AvenirBook;
 	color: #001a5a;
-	width: 100%;
+	width: ${props => props.Paises ? '90%' : '100%'};
 	${props => props.titleCenter ? 'text-align: center;' : ''}
+	${props => props.Paises ? 'border-top: 1px solid  #ee7202;' : ''}
+	${props => props.Paises ? 'padding-top: 5%;' : ''}
 `;
 
 const SeccionIzquierda = styled.div`
-	width: 50%;
+	width: 45%;
 	padding-bottom: 20px;
 `;
 
 const ContenedorInputSeccion = styled.div`
-	padding-top: ${props => props.moz ? '5%' : '2%'};
-	padding-bottom: ${props => props.moz ? '5%' : '2%'};
-	${props => props.tipoviaje ? 'padding-left: 15%;' : '' }
+	padding-top: ${props => props.moz ? '3%' : '1%'};
+	padding-bottom: ${props => props.moz ? '3%' : '1%'};
+	${props => props.tipoviaje ? 'padding-left: 25%;' : '' }
+	${props => props.tipoviaje ? 'padding-right: 25%;' : '' }
 	input[type='checkbox']:checked + label,
 	input[type='radio']:checked + label{
-		text-decoration: underline;
+		border-bottom: 1px solid #ee7202;
 		color: #ee7202;
 		font-family: AvenirBook;
 	}
 	label{
 		cursor: pointer;
-		&:hover, 
-		&:focus, 
-		&.focus,
-		&:active {
-		  text-decoration: underline;
-		  color: #ee7202;
+		&:before {
+		    content: "• ";
 		}
 	}
-	input[type='radio']{
-		display: none;
-	}
+	input[type='radio'],
 	input[type='checkbox']{
 		display: none;
 	}
@@ -62,7 +58,7 @@ const ContenedorInputSeccion = styled.div`
 `;
 
 const SeccionDestinos = styled.div`
-	width: 90%;
+	width: 100%;
 	height: 200px;
 	/* Safari 6.1+ */
 	display: -webkit-flex;
@@ -70,10 +66,10 @@ const SeccionDestinos = styled.div`
 	display: -ms-flex;
 	display: flex;
 	flex-direction: row;
-	border-bottom: 1px solid  #ee7202;
 `;
 
 const SeccionPaises = styled.div`
+
 	width: 100%;
 	height: 200px;
 	/* Safari 6.1+ */
@@ -96,7 +92,7 @@ const ColumnasSeccion = styled.div`
 `;
 
 const SeccionTiposDeViaje = styled.div`
-	width: 25%;
+	width: 30%;
 	padding-bottom: 20px;
 	border-right: 1px solid  #ee7202;
 	border-left: 1px solid  #ee7202;
