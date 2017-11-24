@@ -117,7 +117,7 @@ const ContenedorMenu = styled.div`
   @media screen and (max-width: 1280px) and (min-width: 961px) {
     @keyframes cerrado{
       from{
-        height: 120px;
+        height: 110px;
       }
       to{
         height: 0px;
@@ -128,17 +128,41 @@ const ContenedorMenu = styled.div`
         height: 0px;
       }
       to{
-        height: 120px;
+        height: 110px;
       }
     }
     
     .abierto{
-      height: 120px;
+      height: 110px;
     }
   }
 
   /* large-0 */
   @media screen and (max-width: 1440px) and (min-width: 1281px) {
+    @keyframes cerrado{
+      from{
+        height: 110px;
+      }
+      to{
+        height: 0px;
+      }
+    }
+    @keyframes abierto{
+      from{
+        height: 0px;
+      }
+      to{
+        height: 110px;
+      }
+    }
+    
+    .abierto{
+      height: 110px;
+    }
+  }
+
+  /* large-1 */
+  @media screen and (max-width: 1600px) and (min-width: 1441px) {
     @keyframes cerrado{
       from{
         height: 130px;
@@ -159,11 +183,6 @@ const ContenedorMenu = styled.div`
     .abierto{
       height: 130px;
     }
-  }
-
-  /* large-1 */
-  @media screen and (max-width: 1600px) and (min-width: 1441px) {
-    
   }
 
   /* large-2 */
@@ -260,26 +279,31 @@ const PuntoVenta = styled.div`
   /* medium */
   @media screen and (max-width: 1280px) and (min-width: 961px) {
     h4{
-      font-size: 16px;
+      font-size: 14px;
     }
     p{
-      font-size: 12px;
+      font-size: 11px;
     }
   }
 
   /* large-0 */
   @media screen and (max-width: 1440px) and (min-width: 1281px) {
     h4{
-      font-size: 16px;
+      font-size: 14px;
     }
     p{
-      font-size: 14px;
+      font-size: 11px;
     }
   }
 
   /* large-1 */
   @media screen and (max-width: 1600px) and (min-width: 1441px) {
-
+    h4{
+      font-size: 16px;
+    }
+    p{
+      font-size: 14px;
+    }
   }
 
   /* large-2 */
