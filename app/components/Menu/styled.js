@@ -84,6 +84,13 @@ const ContenedorMenu = styled.div`
     width: 100%;
     height: 100%;
     background-color: white;
+    h4{
+      padding-left: 15%;
+    }
+    p{
+      padding-left: 15%;
+      text-align: justify;
+    }    
   }
 
   /* xsmall-0 */
