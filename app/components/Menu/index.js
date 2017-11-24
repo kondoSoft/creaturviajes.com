@@ -223,7 +223,7 @@ function Menu() {
                       <div>
                         <PuntoVenta>
                           <h4>CD. DE MÉXICO</h4>
-                          <p>Tel. (55) 5545 6769</p>
+                          <p>Tel. <a href='tel:+525555456769' target='_blank' >(55) 5545 6769</a></p>
                           <p>Montecito No. 38 WTC Piso 2</p>
                           <p>Oficina 10B Col. Napoles</p>
                         </PuntoVenta>
@@ -231,7 +231,7 @@ function Menu() {
                       <div>
                         <PuntoVenta>
                           <h4>VILLAHERMOSA</h4>
-                          <p>Tel. (993) 310 9900</p>
+                          <p>Tel. <a href='tel:+529933109900' target='_blank'> (993) 310 9900</a></p>
                           <p>Paseo Tabasco No. 1404</p>
                           <p>Col. Tabasco 2000</p>
                         </PuntoVenta>
@@ -239,7 +239,7 @@ function Menu() {
                       <div>
                         <PuntoVenta>
                           <h4>MÉRIDA</h4>
-                          <p>Tel. (999) 371 4118</p>
+                          <p>Tel. <a href='tel:+529993714118' target='_blank'> (999) 371 4118</a></p>
                           <p>Solare Plaza, Local 112PB,</p>
                           <p>Calle 49 No. 230 x 26 y 28</p>
                         </PuntoVenta>
@@ -247,7 +247,7 @@ function Menu() {
                       <div>
                         <PuntoVenta>
                           <h4>CD. DEL CARMEN</h4>
-                          <p>Tel. (938) 384 2298</p>
+                          <p>Tel. <a href='tel:+529383842298' target='_blank'> (938) 384 2298</a></p>
                           <p>Plaza Soriana Local 40 y 41</p>
                           <p>Col. Aviación</p>
                         </PuntoVenta>
@@ -255,7 +255,7 @@ function Menu() {
                       <div>
                         <PuntoVenta>
                           <h4>COATZACOALCOS</h4>
-                          <p>Tel. (921) 218 3644</p>
+                          <p>Tel. <a href='tel:+529212183644' target='_blank'> (921) 218 3644</a></p>
                           <p>Plaza Quadrum Local 5A</p>
                           <p>Col. Santa Rosa</p>
                         </PuntoVenta>
