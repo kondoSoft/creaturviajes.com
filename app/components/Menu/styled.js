@@ -9,7 +9,7 @@ const ContenedorMenu = styled.div`
 
   @keyframes cerrado{
     from{
-      height: 150px;
+      height: 140px;
     }
     to{
       height: 0px;
@@ -20,13 +20,13 @@ const ContenedorMenu = styled.div`
       height: 0px;
     }
     to{
-      height: 150px;
+      height: 140px;
     }
   }
   
   .abierto{
     font-family: AvenirRoman;
-    height: 150px;
+    height: 140px;
     overflow: hidden;
     background-color: #ffffff;
     animation-name: abierto;
@@ -65,8 +65,9 @@ const ContenedorMenu = styled.div`
     align-items: center;
     flex-flow: row wrap;
     width: 100%;
-    height: 100%;
+    height: 70%;
     background-color: white;
+    padding-top: 2%;
     h4{
       color: #ee7202;
       width: 100%;
@@ -83,6 +84,13 @@ const ContenedorMenu = styled.div`
     width: 100%;
     height: 100%;
     background-color: white;
+    h4{
+      padding-left: 15%;
+    }
+    p{
+      padding-left: 15%;
+      text-align: justify;
+    }    
   }
 
   /* xsmall-0 */
@@ -109,6 +117,54 @@ const ContenedorMenu = styled.div`
   @media screen and (max-width: 1280px) and (min-width: 961px) {
     @keyframes cerrado{
       from{
+        height: 110px;
+      }
+      to{
+        height: 0px;
+      }
+    }
+    @keyframes abierto{
+      from{
+        height: 0px;
+      }
+      to{
+        height: 110px;
+      }
+    }
+    
+    .abierto{
+      height: 110px;
+    }
+  }
+
+  /* large-0 */
+  @media screen and (max-width: 1440px) and (min-width: 1281px) {
+    @keyframes cerrado{
+      from{
+        height: 110px;
+      }
+      to{
+        height: 0px;
+      }
+    }
+    @keyframes abierto{
+      from{
+        height: 0px;
+      }
+      to{
+        height: 110px;
+      }
+    }
+    
+    .abierto{
+      height: 110px;
+    }
+  }
+
+  /* large-1 */
+  @media screen and (max-width: 1600px) and (min-width: 1441px) {
+    @keyframes cerrado{
+      from{
         height: 130px;
       }
       to{
@@ -127,35 +183,6 @@ const ContenedorMenu = styled.div`
     .abierto{
       height: 130px;
     }
-  }
-
-  /* large-0 */
-  @media screen and (max-width: 1440px) and (min-width: 1281px) {
-    @keyframes cerrado{
-      from{
-        height: 140px;
-      }
-      to{
-        height: 0px;
-      }
-    }
-    @keyframes abierto{
-      from{
-        height: 0px;
-      }
-      to{
-        height: 140px;
-      }
-    }
-    
-    .abierto{
-      height: 140px;
-    }
-  }
-
-  /* large-1 */
-  @media screen and (max-width: 1600px) and (min-width: 1441px) {
-    
   }
 
   /* large-2 */
@@ -221,6 +248,7 @@ const PuntoVenta = styled.div`
   h4{
       color: #ee7202;
       width: 100%;
+      margin-bottom: 1%;
   }
   p{
     font-family: AvenirRoman;
@@ -251,26 +279,31 @@ const PuntoVenta = styled.div`
   /* medium */
   @media screen and (max-width: 1280px) and (min-width: 961px) {
     h4{
-      font-size: 16px;
+      font-size: 14px;
     }
     p{
-      font-size: 12px;
+      font-size: 11px;
     }
   }
 
   /* large-0 */
   @media screen and (max-width: 1440px) and (min-width: 1281px) {
     h4{
-      font-size: 16px;
+      font-size: 14px;
     }
     p{
-      font-size: 14px;
+      font-size: 11px;
     }
   }
 
   /* large-1 */
   @media screen and (max-width: 1600px) and (min-width: 1441px) {
-
+    h4{
+      font-size: 16px;
+    }
+    p{
+      font-size: 14px;
+    }
   }
 
   /* large-2 */
@@ -282,7 +315,7 @@ const PuntoVenta = styled.div`
 const Banderas = styled.img`
   width: 2.5%;
   margin-right: 1%;
-  ${props => props.jpy ? 'border: .5px solid black;' : ''}
+  ${props => props.jpy ? 'border: 1px solid black;' : ''}
 `;
 
 const NavbarBlue = styled.nav`
