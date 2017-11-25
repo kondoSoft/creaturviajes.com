@@ -513,29 +513,29 @@ const IconNavBar = styled.img`
 
   /* medium */
   @media screen and (max-width: 1280px) and (min-width: 961px) {
-    width: ${props => props.logo ? '220px' : '16px'};
+    width: ${props => props.logo ? '210px' : '16px'};
     height: ${props => props.logo ? '50px' : '16px'};
     margin-right: 6px;
   }
 
   /* large-0 */
   @media screen and (max-width: 1440px) and (min-width: 1281px) {
-    width: ${props => props.logo ? '260px' : '20px'};
+    width: ${props => props.logo ? '250px' : '20px'};
     height: ${props => props.logo ? '60px' : '20px'};
     margin-right: 8px;
   }
 
   /* large-1 */
   @media screen and (max-width: 1600px) and (min-width: 1441px) {
-    width: ${props => props.logo ? 'inherit' : '22px'};
-    height: ${props => props.logo ? 'inherit' : '22px'};
+    width: ${props => props.logo ? '270px' : '22px'};
+    height: ${props => props.logo ? '70px' : '22px'};
     margin-right: 10px;
   }
 
   /* large-2 */
   @media screen and (max-width: 1920px) and (min-width: 1601px) {
-    width: ${props => props.logo ? 'inherit' : '22px'};
-    height: ${props => props.logo ? 'inherit' : '22px'};
+    width: ${props => props.logo ? '270px' : '22px'};
+    height: ${props => props.logo ? '70px' : '22px'};
     margin-right: 10px;
   }
 
