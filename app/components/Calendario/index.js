@@ -30,12 +30,12 @@ class Calendario extends React.Component {
 		<DivCalendario>
         <div className='Main'>
           <div className='Header'>
-            <div id='FlechaIzquierda'>
-              <div className='FlechaIzq' onClick={() => cambio('Izquierda')} ></div>
+            <div id='FlechaIzquierda' onClick={() => cambio('Izquierda')}>
+              <div className='FlechaIzq' ></div>
             </div>
             <div className='Titulo'>2017</div>
-            <div id='FlechaDerecha'>
-              <div className='FlechaDer' onClick={() => cambio('Derecha')} ></div>
+            <div id='FlechaDerecha' onClick={() => cambio('Derecha')}>
+              <div className='FlechaDer' ></div>
             </div>
           </div>
           <div className='Body'>
@@ -43,7 +43,7 @@ class Calendario extends React.Component {
               meses.map(
                 (item, i)=>{
                   return(
-                    <div className='Mes' key={i}>{item}</div>
+                    <button className='Mes' key={i}>{item}</button>
                   )
                 }
               )

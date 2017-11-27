@@ -17,14 +17,19 @@ const DivCalendario = styled.div`
 		color: white;
 		.Titulo{
 			width: 70%;
-			font-size: 28px;
+			font-size: 36px;
 			text-align: center;
 		}
 		#FlechaIzquierda, #FlechaDerecha{
+			cursor: pointer;
 			width: 15%;
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
+
+			&:hover{
+				background-color: blue;
+			}
 		}
 		.FlechaIzq{
 			width: 0; 
@@ -52,9 +57,9 @@ const DivCalendario = styled.div`
 		width: 100%;
 		height: 100%;
 		background-color: white;
-		border-left: 3px solid gray;
-		border-right: 3px solid gray;
-		border-bottom: 3px solid gray;
+		border-left: 2px solid gray;
+		border-right: 2px solid gray;
+		border-bottom: 2px solid gray;
 
 		.Mes{
 			cursor: pointer;
@@ -65,9 +70,12 @@ const DivCalendario = styled.div`
 			-webkit-flex-align-items: center;
 						 align-items: center;
 			width: 25%;
+			height: 100%;
+			padding: 0;
 			margin-top: 7%;
 			margin-bottom: 7%;
-			&:hover{
+			&:hover,
+			&:active{
 				background-color: #F4AA67;
 			}
 		}
