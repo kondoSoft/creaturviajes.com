@@ -18,13 +18,32 @@ class Calendario extends React.Component {
                     'Jul', 'Ago', 'Sep',
                     'Oct', 'Nov', 'Dic'
                   ]
+    const date = new Date()
+    const AnioActual = date.getFullYear()
+    let Anio = date.getFullYear()
+    const limiteSuperiorAnio = AnioActual + 2
 
   function cambio(msj){
-    var CalendarioCuerpo = document.getElementsByClassName('Body')
 
-    console.log('================'+msj+'====================')
-    console.log(msj)
-    console.log(CalendarioCuerpo)
+    var Titulo = document.getElementById('anio')
+
+    if (msj === 'Izquierda') {
+      if (Anio <= AnioActual) {
+        Anio
+      }else{
+        Anio = Anio - 1
+      }
+
+    }else if(msj === 'Derecha'){
+      if (Anio < limiteSuperiorAnio) {
+        Anio = Anio + 1
+      }else{
+        Anio
+      }
+
+    }
+
+    Titulo.innerHTML = Anio
   }
 	return (
 		<DivCalendario>
@@ -33,7 +52,7 @@ class Calendario extends React.Component {
             <div id='FlechaIzquierda' onClick={() => cambio('Izquierda')}>
               <div className='FlechaIzq' ></div>
             </div>
-            <div className='Titulo'>2017</div>
+            <div id='anio' className='Titulo'>{Anio}</div>
             <div id='FlechaDerecha' onClick={() => cambio('Derecha')}>
               <div className='FlechaDer' ></div>
             </div>
