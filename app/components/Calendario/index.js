@@ -10,7 +10,7 @@ import { DivCalendario } from './styled';
 
 class Calendario extends React.Component {
 
-  render(){
+  render(props){
 
     const meses = [
                     'Ene', 'Feb', 'Mar',
@@ -21,14 +21,14 @@ class Calendario extends React.Component {
     const date = new Date()
     const AnioActual = date.getFullYear()
     let Anio = date.getFullYear()
-    const limiteSuperiorAnio = AnioActual + 2
+    const limiteSuperiorAnio = AnioActual + this.props.limiteSuperior || AnioActual
+    const limiteInferiorAnio = AnioActual - this.props.limiteInferior || AnioActual
 
   function cambio(msj){
-
     var Titulo = document.getElementById('anio')
 
     if (msj === 'Izquierda') {
-      if (Anio <= AnioActual) {
+      if (Anio <= limiteInferiorAnio) {
         Anio
       }else{
         Anio = Anio - 1
@@ -43,6 +43,7 @@ class Calendario extends React.Component {
 
     }
 
+    console.log(Anio)
     Titulo.innerHTML = Anio
   }
 	return (
