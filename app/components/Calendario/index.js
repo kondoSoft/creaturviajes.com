@@ -23,6 +23,7 @@ class Calendario extends React.Component {
     let Anio = date.getFullYear()
     const limiteSuperiorAnio = AnioActual + this.props.limiteSuperior || AnioActual
     const limiteInferiorAnio = AnioActual - this.props.limiteInferior || AnioActual
+    const sumaLimites = (this.props.limiteInferior || 0) + (this.props.limiteSuperior || 0)
 
   function cambio(msj){
     var Titulo = document.getElementById('anio')
@@ -42,10 +43,44 @@ class Calendario extends React.Component {
       }
 
     }
-
-    console.log(Anio)
     Titulo.innerHTML = Anio
   }
+  function Bodies(){
+    let bodiesArray = []
+    for (var j = 0; j < sumaLimites; j++) {
+      if (j === 0) {
+        bodiesArray.push(
+          <div className='Body'>
+            {
+              meses.map(
+                (item, i)=>{
+                  return(
+                    <div className='Mes' key={i}>{item}</div>
+                  )
+                }
+              )
+            }
+          </div>
+        )
+      }else{
+        bodiesArray.push(
+            <div className='Body'>
+              {
+                meses.map(
+                  (item, i)=>{
+                    return(
+                      <div className='Mes' key={i}>{item}</div>
+                    )
+                  }
+                )
+              }
+            </div>
+        )
+      }
+    }
+    return bodiesArray
+  }
+  
 	return (
 		<DivCalendario>
         <div className='Main'>
@@ -58,19 +93,9 @@ class Calendario extends React.Component {
               <div className='FlechaDer' ></div>
             </div>
           </div>
-          <div className='Body'>
-            {
-              meses.map(
-                (item, i)=>{
-                  return(
-                    <button className='Mes' key={i}>{item}</button>
-                  )
-                }
-              )
-            }
-          </div>
-          <div className='Body oculto'>
-          </div>
+          {
+            Bodies()
+          }
         </div>
 		</DivCalendario>
 	)

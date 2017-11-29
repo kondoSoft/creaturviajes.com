@@ -70,10 +70,10 @@ const DivCalendario = styled.div`
 			-webkit-flex-align-items: center;
 						 align-items: center;
 			width: 25%;
-			height: 100%;
-			padding: 0;
+			height: 75%;
 			margin-top: 7%;
 			margin-bottom: 7%;
+			border: 1px solid black;
 			&:hover,
 			&:active{
 				background-color: #F4AA67;
