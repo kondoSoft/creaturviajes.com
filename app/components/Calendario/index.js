@@ -26,59 +26,51 @@ class Calendario extends React.Component {
     const sumaLimites = (this.props.limiteInferior || 0) + (this.props.limiteSuperior || 0)
 
   function cambio(msj){
+
     var Titulo = document.getElementById('anio')
+    var body = document.getElementById('body')
 
     if (msj === 'Izquierda') {
+
       if (Anio <= limiteInferiorAnio) {
+
         Anio
+
       }else{
+
         Anio = Anio - 1
+
       }
 
     }else if(msj === 'Derecha'){
-      if (Anio < limiteSuperiorAnio) {
-        Anio = Anio + 1
-      }else{
-        Anio
-      }
 
+      if (Anio < limiteSuperiorAnio) {
+        
+        Anio = Anio + 1
+        
+      }else{
+
+        Anio
+
+      }
     }
     Titulo.innerHTML = Anio
   }
+
   function Bodies(){
-    let bodiesArray = []
-    for (var j = 0; j < sumaLimites; j++) {
-      if (j === 0) {
-        bodiesArray.push(
-          <div className='Body'>
-            {
-              meses.map(
-                (item, i)=>{
-                  return(
-                    <div className='Mes' key={i}>{item}</div>
-                  )
-                }
-              )
-            }
-          </div>
-        )
-      }else{
-        bodiesArray.push(
-            <div className='Body'>
-              {
-                meses.map(
-                  (item, i)=>{
-                    return(
-                      <div className='Mes' key={i}>{item}</div>
-                    )
-                  }
+    return (
+      <div id={'body'} className='Body'>
+        {
+          meses.map(
+            (item, i)=>{
+                return(
+                  <input type='button' className='Mes' key={i} value={item}></input>
                 )
-              }
-            </div>
-        )
-      }
-    }
-    return bodiesArray
+            }
+          )
+        }
+      </div>
+    )
   }
   
 	return (
@@ -100,7 +92,7 @@ class Calendario extends React.Component {
 		</DivCalendario>
 	)
 
-  }
+}  
 }
 
 Calendario.propTypes = {
