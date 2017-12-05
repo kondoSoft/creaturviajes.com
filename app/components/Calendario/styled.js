@@ -17,8 +17,24 @@ const DivCalendario = styled.div`
 	  border: 0;
 	  outline: none;
 	}
-	.react-calendar button:not([disabled]):hover {
-	  cursor: pointer;
+	button.react-calendar__tile[disabled] {
+	  background-color: #f0f0f0;
+	}
+	button.react-calendar__tile:not([disabled]):hover {
+	  background-color: #e6e6e6;
+	}
+	.react-calendar__tile--hasActive {
+	  background: #76baff;
+	}
+	button.react-calendar__tile--hasActive:not([disabled]):hover {
+	  background: #a9d4ff;
+	}
+	.react-calendar__tile--active {
+	  background: #ee7202;
+	  color: white;
+	}
+	button.react-calendar__tile--active:not([disabled]):hover {
+		background: #ee7202;
 	}
 	.react-calendar__navigation {
 		background: #ee7202;
