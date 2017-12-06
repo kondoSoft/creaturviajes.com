@@ -19,6 +19,7 @@ class Calendario extends React.Component {
   
   componentDidMount() {
     setMonthsNames()
+    setOnClickFunction()
   }
 
   render(){    
@@ -55,6 +56,22 @@ class Calendario extends React.Component {
       titleMonths[i].textContent = finalMonthName
     }
     
+  }
+  function setOnClickFunction(){
+    
+    let titleMonths = document.getElementsByTagName('button')
+    console.log('==================================titleMonths==================================')
+    console.log(titleMonths[6].classList)
+    for (let i = 0; i < titleMonths.length; i++) {
+      titleMonths[i].onclick = function() {
+        if (!titleMonths[i].classList.contains('react-calendar__tile--active')) {
+          titleMonths[i].classList.add('react-calendar__tile--active')
+        }else if(titleMonths[i].classList.contains('react-calendar__tile--active')){
+          titleMonths[i].classList.remove('react-calendar__tile--active')
+        }
+
+      }
+    }
   }
 
 Calendario.propTypes = {
