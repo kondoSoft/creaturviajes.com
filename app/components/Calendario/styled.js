@@ -30,11 +30,11 @@ const DivCalendario = styled.div`
 	  background: #a9d4ff;
 	}
 	.react-calendar__tile--active {
-	  background: #ee7202;
+	  background: #f8c699;
 	  color: white;
 	}
 	button.react-calendar__tile--active:not([disabled]):hover {
-		background: #ee7202;
+		background: #f18e34;
 	}
 	.react-calendar__navigation {
 		background: #ee7202;
@@ -55,7 +55,12 @@ const DivCalendario = styled.div`
 	.react-calendar__decade-view .react-calendar__tile,
 	.react-calendar__century-view .react-calendar__tile {
 	  padding: 1em 1em;
-	}	
+	}
+
+	.react-calendar__year-view__months > * {
+	    flex-basis: 25% !important;
+	}
+
 `;
 
 

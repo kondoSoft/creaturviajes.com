@@ -60,18 +60,21 @@ class Calendario extends React.Component {
   function setOnClickFunction(){
     
     let titleMonths = document.getElementsByTagName('button')
-    console.log('==================================titleMonths==================================')
-    console.log(titleMonths[6].classList)
+    
     for (let i = 0; i < titleMonths.length; i++) {
       titleMonths[i].onclick = function() {
         if (!titleMonths[i].classList.contains('react-calendar__tile--active')) {
-          titleMonths[i].classList.add('react-calendar__tile--active')
-        }else if(titleMonths[i].classList.contains('react-calendar__tile--active')){
-          titleMonths[i].classList.remove('react-calendar__tile--active')
+          titleMonths[i].classList.toggle('react-calendar__tile--active')
+        }else if (titleMonths[i].classList.contains('react-calendar__tile--active')) {
+          titleMonths[i].classList.toggle('react-calendar__tile--active')
         }
-
       }
     }
+    titleMonths[7].classList.add('react-calendar__tile--active')
+    titleMonths[11].classList.add('react-calendar__tile--active')
+    titleMonths[12].classList.add('react-calendar__tile--active')
+    titleMonths[13].classList.add('react-calendar__tile--active')
+    titleMonths[17].classList.remove('react-calendar__tile--active')
   }
 
 Calendario.propTypes = {
