@@ -11,10 +11,10 @@ const DivCalendario = styled.div`
 	  border-bottom: 1px solid #a0a096;
 	  border-left: 1px solid #a0a096;
 	  border-right: 1px solid #a0a096;
+	  font-family: AvenirRomans;
 	}
 	
 	.react-calendar button {
-	  border: 0;
 	  outline: none;
 	}
 	button.react-calendar__tile[disabled] {
@@ -54,11 +54,37 @@ const DivCalendario = styled.div`
 	.react-calendar__year-view .react-calendar__tile,
 	.react-calendar__decade-view .react-calendar__tile,
 	.react-calendar__century-view .react-calendar__tile {
-	  padding: 1em 1em;
+	  margin-top: 15px;
+	  margin-bottom: 15px;
+	  font-size: 18px;
+	  font-weigth: bolder;
 	}
 
 	.react-calendar__year-view__months > * {
 	    flex-basis: 25% !important;
+	}
+
+	#FlechaIzquierda, #FlechaDerecha{
+		cursor: pointer;
+		width: 100%;
+		height: 44px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.FlechaIzq{
+		width: 0; 
+	    height: 0; 
+	    border-right: 20px solid #ffffff;
+	    border-top: 10px solid transparent;
+	    border-bottom: 10px solid transparent; 
+	}
+	.FlechaDer{
+		width: 0; 
+	    height: 0; 
+	    border-left: 20px solid #ffffff;
+	    border-top: 10px solid transparent;
+	    border-bottom: 10px solid transparent; 
 	}
 
 `;

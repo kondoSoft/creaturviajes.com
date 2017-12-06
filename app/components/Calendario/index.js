@@ -10,6 +10,22 @@ import { DivCalendario } from './styled';
 //import Calendar from 'react-calendar';
 import Calendar from 'react-calendar/build/entry.nostyle';
 
+function PrevArrow() {
+  return (
+    <div id='FlechaIzquierda' >
+      <div className='FlechaIzq'></div>
+    </div>
+  );
+}
+
+function NextArrow() {
+  return (
+    <div id='FlechaDerecha' >
+      <div className='FlechaDer'></div>
+    </div>
+  );
+}
+
 class Calendario extends React.Component {
   state = {
     date: new Date(),
@@ -19,20 +35,26 @@ class Calendario extends React.Component {
   
   componentDidMount() {
     setMonthsNames()
-    setOnClickFunction()
+    setMockup()
   }
 
   render(){    
+    let finderCalendar = document.getElementById('calendarFinder')
+    console.log(finderCalendar)
     return (
       <DivCalendario>
-        <Calendar
+        <Calendar 
+            id='calendarFinder'
             onChange={this.onChange}
             value={this.state.date}
+            returnValue='range'
             view='year'
-            //minDate={new Date(2015)}
-            //maxDate={new Date(2020)}
+            minDate={new Date(2017, 0, 1)}
+            maxDate={new Date(2020, 11, 31)}
             minDetail='year'
             maxDetail='year'
+            prevLabel={<PrevArrow/>}
+            nextLabel={<NextArrow/>}
           />
       </DivCalendario>
     )
@@ -57,10 +79,10 @@ class Calendario extends React.Component {
     }
     
   }
-  function setOnClickFunction(){
+  function setMockup(){
     
     let titleMonths = document.getElementsByTagName('button')
-    
+
     for (let i = 0; i < titleMonths.length; i++) {
       titleMonths[i].onclick = function() {
         if (!titleMonths[i].classList.contains('react-calendar__tile--active')) {
@@ -70,6 +92,7 @@ class Calendario extends React.Component {
         }
       }
     }
+
     titleMonths[7].classList.add('react-calendar__tile--active')
     titleMonths[11].classList.add('react-calendar__tile--active')
     titleMonths[12].classList.add('react-calendar__tile--active')
