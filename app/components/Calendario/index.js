@@ -6,7 +6,6 @@
 
 import React from 'react';
 import { DivCalendario } from './styled';
-
 //import Calendar from 'react-calendar';
 import Calendar from 'react-calendar/build/entry.nostyle';
 
@@ -26,28 +25,47 @@ function NextArrow() {
   );
 }
 
+const nombreMeses = [
+  'Ene', 'Feb', 'Mar', 'Abr', 
+  'May', 'Jun', 'Jul', 'Ago', 
+  'Sep', 'Oct', 'Nov', 'Dic'
+]
+
+let fechaActual = new Date()
+
 class Calendario extends React.Component {
-  state = {
-    date: new Date(),
+  constructor(props){
+    super(props)
+    this.state = {
+      valuesCalendar: {
+        date: fechaActual,
+        monthValue: nombreMeses[fechaActual.getMonth()]
+      }
+    }
+
+    this.handleChange = this.handleChange.bind(this);
   }
 
-  onChange = date => this.setState({ date })
-  
+  handleChange(event) {
+      this.setState({valuesCalendar: {monthValue: nombreMeses[event.getMonth()]}});
+  }
+
   componentDidMount() {
     setMonthsNames()
     setMockup()
+
   }
 
   render(){    
-    let finderCalendar = document.getElementById('calendarFinder')
-    console.log(finderCalendar)
+    
+      console.log('=====================monthValue=====================')
+      console.log(this.state.valuesCalendar.monthValue)
     return (
       <DivCalendario>
         <Calendar 
-            id='calendarFinder'
-            onChange={this.onChange}
-            value={this.state.date}
-            returnValue='range'
+            onChange={this.handleChange}
+            value={this.state.valuesCalendar.date}
+            returnValue='start'
             view='year'
             minDate={new Date(2017, 0, 1)}
             maxDate={new Date(2020, 11, 31)}
@@ -93,6 +111,7 @@ class Calendario extends React.Component {
       }
     }
 
+    // titleMonths[7].setAttribute('disabled', 'disabled')
     titleMonths[7].classList.add('react-calendar__tile--active')
     titleMonths[11].classList.add('react-calendar__tile--active')
     titleMonths[12].classList.add('react-calendar__tile--active')
