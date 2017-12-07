@@ -8,7 +8,7 @@ const DivTipoDeViaje = styled.div`
 	padding-bottom: 3%;
 	
 	.slick-prev, .slick-next{
-		top: 40%;
+		top: 50%;
 	}
 	.slick-prev{
 		left: 1.5%;
