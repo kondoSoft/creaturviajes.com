@@ -22,6 +22,7 @@ const CreaturBuscador = styled.div`
 const TituloSeccion = styled.h3`
 	font-family: AvenirBook;
 	color: #001a5a;
+	margin-bottom: 0;
 	width: ${props => props.Paises ? '90%' : '100%'};
 	${props => props.titleCenter ? 'text-align: center;' : ''}
 	${props => props.Paises ? 'border-top: 1px solid  #ee7202;' : ''}
