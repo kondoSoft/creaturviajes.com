@@ -253,7 +253,7 @@ const ColumnaSecundaria = styled(ColumnaPrincipalFooter)`
 	@media screen and (max-width: 1280px) and (min-width: 961px) {
 		li{
 			a{
-				font-size: 16px;
+				font-size: 15px;
 			}
 		}
 	}
@@ -262,7 +262,7 @@ const ColumnaSecundaria = styled(ColumnaPrincipalFooter)`
 	@media screen and (max-width: 1440px) and (min-width: 1281px) {
 		li{
 			a{
-				font-size: 18px;
+				font-size: 16px;
 			}
 		}
 
@@ -272,7 +272,7 @@ const ColumnaSecundaria = styled(ColumnaPrincipalFooter)`
 	@media screen and (max-width: 1600px) and (min-width: 1441px) {
 		li{
 			a{
-				font-size: 20px;
+				font-size: 19px;
 			}
 		}
 	}
