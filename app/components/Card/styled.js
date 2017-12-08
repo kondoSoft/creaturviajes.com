@@ -19,10 +19,10 @@ const CuerpoCard = styled.div`
 
 const CuerpoTextoCard = styled.div`
   padding: 5%;
-  padding-top: 0px;
-  padding-bottom: 0px;
   margin: 0;
   position: relative;
+  display: flex;
+  flex-flow: row wrap;
 `;
 
 const ImagenCard = styled.img`
@@ -34,58 +34,9 @@ const ImagenCard = styled.img`
 
 const LogoPremium = styled.img`
   width: 14%;
-  position: absolute;
-
-    /* xsmall-0 */
-  @media screen and (max-width: 480px) {
-
-  }
-
-  /* xsmall-1 */
-  @media screen and (max-width: 600px) and (min-width: 481px) {
-
-  }
-
-  /* small-0 */
-  @media screen and (max-width: 840px) and (min-width: 601px) {
-
-  }
-
-  /* small-1 */
-  @media screen and (max-width: 960px) and (min-width: 841px) {
-
-  }
-
-  /* medium */
-  @media screen and (max-width: 1280px) and (min-width: 961px) {
-    right: 7%;
-    top: 0;
-  }
-
-  /* large-0 */
-  @media screen and (max-width: 1440px) and (min-width: 1281px) {
-    right: 7%;
-    top: 0;
-  }
-
-  /* large-1 */
-  @media screen and (max-width: 1600px) and (min-width: 1441px) {
-    right: 7%;
-    top: 0;
-  }
-
-  /* large-2 */
-  @media screen and (max-width: 1920px) and (min-width: 1601px) {
-    right: 7%;
-    top: 0;
-  }
-
-  /* xlarge */
-  @media screen and (min-width: 1921px) {
-    right: 7%;
-    top: 0;
-  }
-
+  position: relative;
+  top: -5px;
+  margin-left: 3%;
 `;
 
 const TituloCard = styled.h3`
@@ -179,7 +130,6 @@ const EspacioBoton = styled.div`
 `;
 
 const ButtonCard = styled(ButtonBanner)`
-	padding: 3% 13% 3% 13%;
 	position: relative;
 	margin-top: -30px;
 	left: auto;
