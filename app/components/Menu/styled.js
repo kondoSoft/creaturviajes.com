@@ -417,13 +417,13 @@ const ButtonNavBar = styled.a`
           user-select: none;
   border: ${props => props.blue ? '1px solid transparent' : 'none'};
   padding: .5rem 1.5rem .5rem 1.5rem;
-  font-size: 1rem;
   line-height: 1.25;
   transition: all 0.15s ease-in-out;
   color: ${props => props.blue ? 'white' : 'black'};
   background-color: ${props => props.blue ? '#001a5a' : 'white'};
   border-color: #001a5a;
   display: ${props => props.displayNone ? 'none' : 'inherit'};
+  ${props => props.logo ? 'flex-grow: 1;' : '' }
 
   /* xsmall-0 */
   @media screen and (max-width: 480px) {
@@ -447,29 +447,22 @@ const ButtonNavBar = styled.a`
   /* medium */
   @media screen and (max-width: 1280px) and (min-width: 961px) {
     padding: 10px 15px 10px 15px;
-    font-size: 15px;
-    ${props => props.logo ? 'flex-grow: 1;' : '' }
   }
 
   /* large-0 */
   @media screen and (max-width: 1440px) and (min-width: 1281px) {
     padding: 10px 15px 10px 15px;
-    font-size: 15px;
-    ${props => props.logo ? 'flex-grow: 1;' : '' }
   }
 
   /* large-1 */
   @media screen and (max-width: 1600px) and (min-width: 1441px) {
-    ${props => props.logo ? 'flex-grow: 1;' : '' }
   }
 
   /* large-2 */
   @media screen and (max-width: 1920px) and (min-width: 1601px) {
-    ${props => props.logo ? 'flex-grow: 1;' : '' }
   }
 
   @media screen and (min-width: 1921px) {
-    ${props => props.logo ? 'flex-grow: 1;' : '' }
   }
 `;
 
@@ -484,7 +477,6 @@ const ButtonNavBarWhite = styled(ButtonNavBar)`
       text-decoration: underline;
       text-decoration-color: #ee7202;
       color: #ee7202;
-      font-weight: bold;
       background-color: white;
     }
 `;
@@ -538,14 +530,6 @@ const IconNavBar = styled.img`
     height: ${props => props.logo ? '70px' : '22px'};
     margin-right: 10px;
   }
-
-  /* xlarge */
-  @media screen and (min-width: 1921px) {
-    width: ${props => props.logo ? 'inherit' : '20px'};
-    height: ${props => props.logo ? 'inherit' : '20px'};
-    margin-right: 15px;
-  }
-
 `;
 
 export { 
