@@ -4,4 +4,4 @@
  *
  */
 
-export const DEFAULT_ACTION = 'app/Home/DEFAULT_ACTION';
+export const USER_AGENT = 'app/Home/USER_AGENT';

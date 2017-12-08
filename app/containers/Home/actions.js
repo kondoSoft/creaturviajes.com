@@ -5,11 +5,12 @@
  */
 
 import {
-  DEFAULT_ACTION,
+  USER_AGENT,
 } from './constants';
 
-export function defaultAction() {
+export function defaultAction(browser) {
   return {
-    type: DEFAULT_ACTION,
+    type: USER_AGENT,
+    browser,
   };
 }

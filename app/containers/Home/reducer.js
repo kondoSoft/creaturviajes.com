@@ -6,15 +6,17 @@
 
 import { fromJS } from 'immutable';
 import {
-  DEFAULT_ACTION,
+  USER_AGENT,
 } from './constants';
 
-const initialState = fromJS({});
+const initialState = fromJS({
+	browser: null,
+});
 
 function homeReducer(state = initialState, action) {
   switch (action.type) {
-    case DEFAULT_ACTION:
-      return state;
+    case USER_AGENT:
+      return state.set('browser', action.browser);
     default:
       return state;
   }
