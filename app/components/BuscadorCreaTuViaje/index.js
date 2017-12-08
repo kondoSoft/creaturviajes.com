@@ -37,7 +37,6 @@ const Destinos = [
 					'América Latina',
 					'Norteamérica'
 				];
-var d = 0;
 
 const Paises = [
 				'Argentina',
@@ -56,7 +55,6 @@ const Paises = [
 				'Perú',
 				'México'
 				];
-var p = 0;
 
 const TiposDeViajes = [
 						'Viajes en grupo',
@@ -72,46 +70,22 @@ const TiposDeViajes = [
 						'Canal Barge Cruceros',
 						'Expediciones'
 					];
-var t = 0;
 
 
 class BuscadorCreaTuViaje extends React.Component {
 	constructor(props) {
-		super(props);
-		
+		super(props)
+		this.state = {
+			userAgent: this.props.userAgent
+		}
 	}
 
 
   render(){
-  		var userAgent
-		// Firefox 1.0+
-		var isFirefox = typeof InstallTrigger !== 'undefined'
-		// Chrome 1+
-    	var isChrome = !!window.chrome && !!window.chrome.webstore
-		// Opera 8.0+
-		var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0
-		// Internet Explorer 6-11
-	    var isIE = /*@cc_on!@*/false || !!document.documentMode
-	    // Edge 20+
-	    var isEdge = !isIE && !!window.StyleMedia
-
-	    if (isOpera) {
-	    	userAgent = 'isOpera'
-		}else if(isFirefox){
-	    	userAgent = 'isFirefox'
-	    }else if(isChrome){
-	    	userAgent = 'isChrome'
-	    }else if(isIE){
-	    	userAgent = 'isInternetExplorer'
-	    }else if(isEdge){
-	    	userAgent = 'isEdge'
-	    }
-	    console.log('======================navegador=========================')
-		console.log(userAgent)
-		console.log('======================navegador=========================')
+  		
   	  return (
   	  	<form>
-  	  	  	<CreaturBuscador>
+  	  	  	<CreaturBuscador >
   	  		  	<SeccionIzquierda>
   	  		  		<TituloSeccion>Destinos</TituloSeccion>
   	  		  		<SeccionDestinos>
@@ -120,7 +94,7 @@ class BuscadorCreaTuViaje extends React.Component {
   	  		  					Destinos.map(
   	  		  						(item, i)=>{
   	  		  							if (item === 'Todos los destinos') {
-  	  		  								if (userAgent === 'isFirefox') {
+  	  		  								if (this.state.userAgent === 'isFirefox') {
   	  		  									return(
 				  									<ContenedorInputSeccion moz key={i}>
 				  								  		<input type="radio" id={"valueDestinos" + i} name="valueDestinos" value={item} defaultChecked/>
@@ -136,7 +110,7 @@ class BuscadorCreaTuViaje extends React.Component {
 			  		  							)
   	  		  								}
   	  		  							}else{
-  	  		  								if (userAgent === 'isFirefox') {
+  	  		  								if (this.state.userAgent === 'isFirefox') {
 			  		  							return(
 				  									<ContenedorInputSeccion moz key={i}>
 				  								  		<input type="radio" id={"valueDestinos" + i} name="valueDestinos" value={item} />
@@ -165,7 +139,7 @@ class BuscadorCreaTuViaje extends React.Component {
   	  		  					Paises.map(
   	  		  						(item, i)=>{
  	  		  							if (item === 'Argentina') {
- 	  		  								if (userAgent === 'isFirefox') {
+ 	  		  								if (this.state.userAgent === 'isFirefox') {
 		  		  								return (
 		  		  									<ContenedorInputSeccion moz key={i}>
 		  		  										<input type="radio" id={"valuePaises" + i} name="valuePaises" value={item} defaultChecked/>
@@ -181,7 +155,7 @@ class BuscadorCreaTuViaje extends React.Component {
 			  									)
  	  		  								}
   	  		  							}else{
-  	  		  								if (userAgent === 'isFirefox') {
+  	  		  								if (this.state.userAgent === 'isFirefox') {
   	  		  									return(
   	  		  										<ContenedorInputSeccion moz key={i}>
   	  		  											<input type="radio" id={"valuePaises" + i} name="valuePaises" value={item}/>
@@ -209,7 +183,7 @@ class BuscadorCreaTuViaje extends React.Component {
   	  		  			TiposDeViajes.map(
   	  						(item, i) => {
   	  							if (item === 'Viajes en grupo') {
-  	  								if (userAgent === 'isFirefox') {
+  	  								if (this.state.userAgent === 'isFirefox') {
 					  			  		return(
 						  			  		<ContenedorInputSeccion tipoviaje moz key={i}>
 						  				  		<input type="checkbox" id={"valueTipoDeViaje"+i} name={"valueTipoDeViaje"+i} defaultChecked/>
@@ -225,7 +199,7 @@ class BuscadorCreaTuViaje extends React.Component {
 						  				)
   	  								}
   	  							}else{
-  	  								if (userAgent === 'isFirefox') {
+  	  								if (this.state.userAgent === 'isFirefox') {
 					  			  		return(
 						  			  		<ContenedorInputSeccion tipoviaje moz key={i}>
 						  				  		<input type="checkbox" id={"valueTipoDeViaje"+i} name={"valueTipoDeViaje"+i} />
