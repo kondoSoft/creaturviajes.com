@@ -34,9 +34,9 @@ const ImagenCard = styled.img`
 
 const LogoPremium = styled.img`
   width: 14%;
-  position: relative;
-  top: -5px;
+  height: 100%;
   margin-left: 3%;
+  margin-top: 4%;
 `;
 
 const TituloCard = styled.h3`
