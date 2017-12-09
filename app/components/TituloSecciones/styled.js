@@ -10,7 +10,7 @@ const SeccionTitulo = styled.div`
 	background: ${props => props.Color ? '#ffffff' : '#f5f4f4'}
 `;	
 
-const Titulo = styled.h1`
+const Titulo = styled.h2`
 	color: #001a5a;
 	font-family: AvenirBook;
 `;
