@@ -81,23 +81,19 @@ function Menu() {
 
       if (mq1920.matches) {
 
-        imgLogoCreatur.style.width = '200px'
-        imgLogoCreatur.style.height = '45px'
+        imgLogoCreatur.style.width = '180px'
 
       }else if(mq1600.matches){
 
-        imgLogoCreatur.style.width = '200px'
-        imgLogoCreatur.style.height = '45px'
+        imgLogoCreatur.style.width = '180px'
 
       }else if(mq1440.matches){
 
-        imgLogoCreatur.style.width = '200px'
-        imgLogoCreatur.style.height = '45px'
+        imgLogoCreatur.style.width = '180px'
 
       }else if(mq1280.matches){
 
-        imgLogoCreatur.style.width = '200px'
-        imgLogoCreatur.style.height = '45px'
+        imgLogoCreatur.style.width = '180px'
 
       }else if(mq960.matches){
 

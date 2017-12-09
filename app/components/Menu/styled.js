@@ -320,18 +320,10 @@ const Banderas = styled.img`
 
 const NavbarBlue = styled.nav`
   position: relative;
-  /* Safari 6.1+ */
-  display: -webkit-flex;
-   /* IE 10 */ 
-  display: -ms-flex;
   display: flex;
-  -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-flex-align: center;
-         align-items: center;
-  -webkit-flex-pack: justify;
-  -webkit-flex-justify-content: flex-end;
-               justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   width: 100%;
@@ -482,6 +474,9 @@ const ButtonNavBarWhite = styled(ButtonNavBar)`
 `;
 
 const IconNavBar = styled.img`
+  
+  margin-right: 10px;
+  ${props => props.logo ? 'height: 100%;' : '' }
 
   /* xsmall-0 */
   @media screen and (max-width: 480px) {
@@ -505,29 +500,19 @@ const IconNavBar = styled.img`
 
   /* medium */
   @media screen and (max-width: 1280px) and (min-width: 961px) {
-    width: ${props => props.logo ? '210px' : '16px'};
-    height: ${props => props.logo ? '50px' : '16px'};
+
     margin-right: 6px;
   }
 
   /* large-0 */
   @media screen and (max-width: 1440px) and (min-width: 1281px) {
-    width: ${props => props.logo ? '250px' : '20px'};
-    height: ${props => props.logo ? '60px' : '20px'};
+    
     margin-right: 8px;
   }
 
   /* large-1 */
   @media screen and (max-width: 1600px) and (min-width: 1441px) {
-    width: ${props => props.logo ? '270px' : '22px'};
-    height: ${props => props.logo ? '70px' : '22px'};
-    margin-right: 10px;
-  }
-
-  /* large-2 */
-  @media screen and (max-width: 1920px) and (min-width: 1601px) {
-    width: ${props => props.logo ? '270px' : '22px'};
-    height: ${props => props.logo ? '70px' : '22px'};
+    
     margin-right: 10px;
   }
 `;
