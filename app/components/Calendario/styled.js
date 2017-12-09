@@ -11,9 +11,12 @@ const DivCalendario = styled.div`
 	  border-bottom: 1px solid #a0a096;
 	  border-left: 1px solid #a0a096;
 	  border-right: 1px solid #a0a096;
-	  font-family: AvenirRomans;
+	  * {
+	    font-family: AvenirRoman;
+	  }
+	  
 	}
-	
+
 	.react-calendar button {
 	  outline: none;
 	}
@@ -38,11 +41,10 @@ const DivCalendario = styled.div`
 	}
 	.react-calendar__navigation {
 		background: #ee7202;
-		font-size: 36px;
+		font-size: 30px;
 		color: white;
-		padding-top: 2%;
-		padding-bottom: 2%;
-		border: 0;
+		padding-top: 1%;
+		align-items: center;
 	}
 	.react-calendar__navigation button {
 	  min-width: 44px;
