@@ -10,9 +10,9 @@ import IconWhats from '../../assets/ImagenesPruebaNuevoDiseniov2/whatsapp.svg';
 
 function BotonFlotante() {
   return (
-    <div>
-    	<ButtonWhats src={IconWhats} />
-    </div>
+  	<ButtonWhats>
+  		<img src={IconWhats} />
+  	</ButtonWhats>
   );
 }
 
